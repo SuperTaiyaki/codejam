@@ -27,6 +27,13 @@ import itertools
 #       Actual algorithm: Take a block, append onto the end until a free set is
 #       formed
 
+# Blowout case:
+# 100 factorial...? ok, 26 factorial because it'll be running through the list
+# repeatedly, only updating the last element...
+# Which isn't even all that bad, because it's circular... uhh...
+# is ab bc cd .... the worst case then?
+# Or the reverse?
+
 def debug(*args, **kwargs):
     # print(*args, **kwargs)
     pass
@@ -34,6 +41,7 @@ def debug(*args, **kwargs):
 cases = int(input())
 
 for case in range (1, cases + 1):
+    debug("===========================main start=================")
     nblocks = int(input())
     blocks = input().split()
     cblocks = []
@@ -69,16 +77,20 @@ for case in range (1, cases + 1):
     impossible = False
 
     while pblocks:
-        debug(pblocks)
+        debug("--------ITER START------------")
+        debug("pblocks:  %s" % pblocks)
+        debug("floating: %s" % floating)
+        debug("Locked: %s" % locked)
         (block, count) =  pblocks.pop(0)
-        for char in block:
-            if char in locked:
-                debug("Character overlap; aborting")
-                impossible = True
-                break
+
+        debug("Evaluating %s" % block)
+        #for char in block:
+            #if char in locked:
+            #    debug("Character overlap; aborting")
+            #    impossible = True
+            #    break
         if impossible:
             break
-        debug("Evaluating %s" % block)
         # (block, count) =
         segment = block
 
@@ -108,13 +120,21 @@ for case in range (1, cases + 1):
             # Next segment has Y permutations
             # So... multiply them together
 
-            segment += chars
+            if len(segment) > 1:
+                segment += chars
+            else:
+                segment = chars
+            debug("New segment: %s" % segment)
             count *= perms
             matched = i
         if impossible:
             break
         if matched is not False:
             del pblocks[matched]
+            if len(segment) > 3:
+                debug("Locking %s" % segment[1:-1])
+                for char in segment[1:-1]:
+                    locked.add(char)
             pblocks.append((segment, count))
         else: 
             # So, nothing to append onto the tail
@@ -128,9 +148,12 @@ for case in range (1, cases + 1):
                     matched += 1
             debug("Head matches: %s" % matched)
             if matched == 0:
-                if len(segment) > 2:
-                    for char in segment[1:-1]:
+                if len(segment) > 2 or len(segment) == 1:
+
+                    debug("Locking %s" % segment)
+                    for char in segment:
                         locked.add(char)
+                debug("No head matches for %s; floating" % segment)
                 floating.append((segment, count))
             elif matched > 1:
                 impossible = True
@@ -141,6 +164,24 @@ for case in range (1, cases + 1):
 
     debug("Final pblocks: %s" % pblocks)
     debug("Final floating: %s" % floating)
+
+    # Check for illegal condition, where characters are non-contiguous
+    chars = set()
+    last = ''
+    for block in floating:
+        last = ''
+        for char in block[0]:
+            if last == char:
+                continue
+            if char in chars:
+                impossible = True
+                debug("Found illegal char %s in floating" % char)
+                break
+            else:
+                chars.add(char)
+                last = char
+        if impossible:
+            break
 
     if impossible: 
         print("Case #%s: %s" % (case, 0))
