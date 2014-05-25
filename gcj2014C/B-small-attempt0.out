@@ -1,0 +1,4822 @@
+===========================main start=================
+['o', 'yq', 'xnjwkbplst', 'i', 'd', 'z']
+[('o', 1), ('d', 1), ('z', 1), ('i', 1), ('yq', 1), ('xnjwkbplst', 1)]
+--------ITER START------------
+pblocks:  [('o', 1), ('d', 1), ('z', 1), ('i', 1), ('yq', 1), ('xnjwkbplst', 1)]
+floating: []
+Locked: set()
+Evaluating o
+Head matches: 0
+Locking o
+No head matches for o; floating
+--------ITER START------------
+pblocks:  [('d', 1), ('z', 1), ('i', 1), ('yq', 1), ('xnjwkbplst', 1)]
+floating: [('o', 1)]
+Locked: {'o'}
+Evaluating d
+Head matches: 0
+Locking d
+No head matches for d; floating
+--------ITER START------------
+pblocks:  [('z', 1), ('i', 1), ('yq', 1), ('xnjwkbplst', 1)]
+floating: [('o', 1), ('d', 1)]
+Locked: {'o', 'd'}
+Evaluating z
+Head matches: 0
+Locking z
+No head matches for z; floating
+--------ITER START------------
+pblocks:  [('i', 1), ('yq', 1), ('xnjwkbplst', 1)]
+floating: [('o', 1), ('d', 1), ('z', 1)]
+Locked: {'o', 'z', 'd'}
+Evaluating i
+Head matches: 0
+Locking i
+No head matches for i; floating
+--------ITER START------------
+pblocks:  [('yq', 1), ('xnjwkbplst', 1)]
+floating: [('o', 1), ('d', 1), ('z', 1), ('i', 1)]
+Locked: {'o', 'z', 'd', 'i'}
+Evaluating yq
+Head matches: 0
+No head matches for yq; floating
+--------ITER START------------
+pblocks:  [('xnjwkbplst', 1)]
+floating: [('o', 1), ('d', 1), ('z', 1), ('i', 1), ('yq', 1)]
+Locked: {'o', 'z', 'd', 'i'}
+Evaluating xnjwkbplst
+Head matches: 0
+Locking xnjwkbplst
+No head matches for xnjwkbplst; floating
+Final pblocks: []
+Final floating: [('o', 1), ('d', 1), ('z', 1), ('i', 1), ('yq', 1), ('xnjwkbplst', 1)]
+Case #1: 720
+===========================main start=================
+['ex', 'rgy', 'j', 'r', 'ze', 'y', 'xuqr', 'yj']
+[('j', 1), ('y', 1), ('r', 1), ('ex', 1), ('rgy', 1), ('ze', 1), ('xuqr', 1), ('yj', 1)]
+--------ITER START------------
+pblocks:  [('j', 1), ('y', 1), ('r', 1), ('ex', 1), ('rgy', 1), ('ze', 1), ('xuqr', 1), ('yj', 1)]
+floating: []
+Locked: set()
+Evaluating j
+Head matches: 1
+--------ITER START------------
+pblocks:  [('y', 1), ('r', 1), ('ex', 1), ('rgy', 1), ('ze', 1), ('xuqr', 1), ('yj', 1), ('j', 1)]
+floating: []
+Locked: set()
+Evaluating y
+Extending y with yj
+New segment: yj
+--------ITER START------------
+pblocks:  [('r', 1), ('ex', 1), ('rgy', 1), ('ze', 1), ('xuqr', 1), ('j', 1), ('yj', 1)]
+floating: []
+Locked: set()
+Evaluating r
+Extending r with rgy
+New segment: rgy
+--------ITER START------------
+pblocks:  [('ex', 1), ('ze', 1), ('xuqr', 1), ('j', 1), ('yj', 1), ('rgy', 1)]
+floating: []
+Locked: set()
+Evaluating ex
+Extending ex with xuqr
+New segment: exxuqr
+Locking xxuq
+--------ITER START------------
+pblocks:  [('ze', 1), ('j', 1), ('yj', 1), ('rgy', 1), ('exxuqr', 1)]
+floating: []
+Locked: {'x', 'u', 'q'}
+Evaluating ze
+Extending ze with exxuqr
+New segment: zeexxuqr
+Locking eexxuq
+--------ITER START------------
+pblocks:  [('j', 1), ('yj', 1), ('rgy', 1), ('zeexxuqr', 1)]
+floating: []
+Locked: {'x', 'e', 'u', 'q'}
+Evaluating j
+Head matches: 1
+--------ITER START------------
+pblocks:  [('yj', 1), ('rgy', 1), ('zeexxuqr', 1), ('j', 1)]
+floating: []
+Locked: {'x', 'e', 'u', 'q'}
+Evaluating yj
+Merging j to yj
+Head matches: 1
+--------ITER START------------
+pblocks:  [('rgy', 1), ('zeexxuqr', 1), ('yj', 1)]
+floating: []
+Locked: {'x', 'e', 'u', 'q'}
+Evaluating rgy
+Extending rgy with yj
+New segment: rgyyj
+Locking gyy
+--------ITER START------------
+pblocks:  [('zeexxuqr', 1), ('rgyyj', 1)]
+floating: []
+Locked: {'e', 'x', 'g', 'y', 'u', 'q'}
+Evaluating zeexxuqr
+Extending zeexxuqr with rgyyj
+New segment: zeexxuqrrgyyj
+Locking eexxuqrrgyy
+--------ITER START------------
+pblocks:  [('zeexxuqrrgyyj', 1)]
+floating: []
+Locked: {'e', 'x', 'g', 'y', 'u', 'q', 'r'}
+Evaluating zeexxuqrrgyyj
+Head matches: 0
+Locking zeexxuqrrgyyj
+No head matches for zeexxuqrrgyyj; floating
+Final pblocks: []
+Final floating: [('zeexxuqrrgyyj', 1)]
+Case #2: 1
+===========================main start=================
+['upzkglyqaheros', 'm', 'm']
+[('m', 2), ('upzkglyqaheros', 1)]
+--------ITER START------------
+pblocks:  [('m', 2), ('upzkglyqaheros', 1)]
+floating: []
+Locked: set()
+Evaluating m
+Head matches: 0
+Locking m
+No head matches for m; floating
+--------ITER START------------
+pblocks:  [('upzkglyqaheros', 1)]
+floating: [('m', 2)]
+Locked: {'m'}
+Evaluating upzkglyqaheros
+Head matches: 0
+Locking upzkglyqaheros
+No head matches for upzkglyqaheros; floating
+Final pblocks: []
+Final floating: [('m', 2), ('upzkglyqaheros', 1)]
+Case #3: 4
+===========================main start=================
+['jft', 'ukpdg', 'wavbe', 'qj', 'tno', 'x', 'chyzi', 'rc', 'iq', 'slm']
+[('x', 1), ('jft', 1), ('ukpdg', 1), ('wavbe', 1), ('qj', 1), ('tno', 1), ('chyzi', 1), ('rc', 1), ('iq', 1), ('slm', 1)]
+--------ITER START------------
+pblocks:  [('x', 1), ('jft', 1), ('ukpdg', 1), ('wavbe', 1), ('qj', 1), ('tno', 1), ('chyzi', 1), ('rc', 1), ('iq', 1), ('slm', 1)]
+floating: []
+Locked: set()
+Evaluating x
+Head matches: 0
+Locking x
+No head matches for x; floating
+--------ITER START------------
+pblocks:  [('jft', 1), ('ukpdg', 1), ('wavbe', 1), ('qj', 1), ('tno', 1), ('chyzi', 1), ('rc', 1), ('iq', 1), ('slm', 1)]
+floating: [('x', 1)]
+Locked: {'x'}
+Evaluating jft
+Extending jft with tno
+New segment: jfttno
+Locking fttn
+--------ITER START------------
+pblocks:  [('ukpdg', 1), ('wavbe', 1), ('qj', 1), ('chyzi', 1), ('rc', 1), ('iq', 1), ('slm', 1), ('jfttno', 1)]
+floating: [('x', 1)]
+Locked: {'x', 'f', 'n', 't'}
+Evaluating ukpdg
+Head matches: 0
+Locking ukpdg
+No head matches for ukpdg; floating
+--------ITER START------------
+pblocks:  [('wavbe', 1), ('qj', 1), ('chyzi', 1), ('rc', 1), ('iq', 1), ('slm', 1), ('jfttno', 1)]
+floating: [('x', 1), ('ukpdg', 1)]
+Locked: {'d', 'n', 'x', 'g', 'f', 'p', 'u', 'k', 't'}
+Evaluating wavbe
+Head matches: 0
+Locking wavbe
+No head matches for wavbe; floating
+--------ITER START------------
+pblocks:  [('qj', 1), ('chyzi', 1), ('rc', 1), ('iq', 1), ('slm', 1), ('jfttno', 1)]
+floating: [('x', 1), ('ukpdg', 1), ('wavbe', 1)]
+Locked: {'e', 'd', 'n', 'x', 'g', 'f', 'p', 'a', 'b', 'u', 'v', 'k', 'w', 't'}
+Evaluating qj
+Extending qj with jfttno
+New segment: qjjfttno
+Locking jjfttn
+--------ITER START------------
+pblocks:  [('chyzi', 1), ('rc', 1), ('iq', 1), ('slm', 1), ('qjjfttno', 1)]
+floating: [('x', 1), ('ukpdg', 1), ('wavbe', 1)]
+Locked: {'e', 'd', 'n', 'j', 'x', 'g', 'f', 'p', 'a', 'b', 'u', 'v', 'k', 'w', 't'}
+Evaluating chyzi
+Extending chyzi with iq
+New segment: chyziiq
+Locking hyzii
+--------ITER START------------
+pblocks:  [('rc', 1), ('slm', 1), ('qjjfttno', 1), ('chyziiq', 1)]
+floating: [('x', 1), ('ukpdg', 1), ('wavbe', 1)]
+Locked: {'e', 'd', 'n', 'j', 'x', 'g', 'z', 'f', 'y', 'p', 'a', 'b', 'h', 'u', 'v', 'k', 'w', 't', 'i'}
+Evaluating rc
+Extending rc with chyziiq
+New segment: rcchyziiq
+Locking cchyzii
+--------ITER START------------
+pblocks:  [('slm', 1), ('qjjfttno', 1), ('rcchyziiq', 1)]
+floating: [('x', 1), ('ukpdg', 1), ('wavbe', 1)]
+Locked: {'e', 'd', 'n', 'j', 'x', 'g', 'z', 'f', 'y', 'p', 'a', 'b', 'h', 'u', 'v', 'k', 'w', 'c', 't', 'i'}
+Evaluating slm
+Head matches: 0
+Locking slm
+No head matches for slm; floating
+--------ITER START------------
+pblocks:  [('qjjfttno', 1), ('rcchyziiq', 1)]
+floating: [('x', 1), ('ukpdg', 1), ('wavbe', 1), ('slm', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'k', 't', 'g', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating qjjfttno
+Head matches: 1
+--------ITER START------------
+pblocks:  [('rcchyziiq', 1), ('qjjfttno', 1)]
+floating: [('x', 1), ('ukpdg', 1), ('wavbe', 1), ('slm', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'k', 't', 'g', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating rcchyziiq
+Extending rcchyziiq with qjjfttno
+New segment: rcchyziiqqjjfttno
+Locking cchyziiqqjjfttn
+--------ITER START------------
+pblocks:  [('rcchyziiqqjjfttno', 1)]
+floating: [('x', 1), ('ukpdg', 1), ('wavbe', 1), ('slm', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'g', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating rcchyziiqqjjfttno
+Head matches: 0
+Locking rcchyziiqqjjfttno
+No head matches for rcchyziiqqjjfttno; floating
+Final pblocks: []
+Final floating: [('x', 1), ('ukpdg', 1), ('wavbe', 1), ('slm', 1), ('rcchyziiqqjjfttno', 1)]
+Case #4: 120
+===========================main start=================
+['a', 'abc', 'ca', 'a']
+[('a', 2), ('abc', 1), ('ca', 1)]
+--------ITER START------------
+pblocks:  [('a', 2), ('abc', 1), ('ca', 1)]
+floating: []
+Locked: set()
+Evaluating a
+Extending a with abc
+New segment: abc
+--------ITER START------------
+pblocks:  [('ca', 1), ('abc', 2)]
+floating: []
+Locked: set()
+Evaluating ca
+Extending ca with abc
+New segment: caabc
+Locking aab
+--------ITER START------------
+pblocks:  [('caabc', 2)]
+floating: []
+Locked: {'b', 'a'}
+Evaluating caabc
+Head matches: 0
+Locking caabc
+No head matches for caabc; floating
+Final pblocks: []
+Final floating: [('caabc', 2)]
+Found illegal char c in floating
+Case #5: 0
+===========================main start=================
+['byhf', 'dn', 'fd']
+[('byhf', 1), ('dn', 1), ('fd', 1)]
+--------ITER START------------
+pblocks:  [('byhf', 1), ('dn', 1), ('fd', 1)]
+floating: []
+Locked: set()
+Evaluating byhf
+Extending byhf with fd
+New segment: byhffd
+Locking yhff
+--------ITER START------------
+pblocks:  [('dn', 1), ('byhffd', 1)]
+floating: []
+Locked: {'y', 'h', 'f'}
+Evaluating dn
+Head matches: 1
+--------ITER START------------
+pblocks:  [('byhffd', 1), ('dn', 1)]
+floating: []
+Locked: {'y', 'h', 'f'}
+Evaluating byhffd
+Extending byhffd with dn
+New segment: byhffddn
+Locking yhffdd
+--------ITER START------------
+pblocks:  [('byhffddn', 1)]
+floating: []
+Locked: {'d', 'y', 'h', 'f'}
+Evaluating byhffddn
+Head matches: 0
+Locking byhffddn
+No head matches for byhffddn; floating
+Final pblocks: []
+Final floating: [('byhffddn', 1)]
+Case #6: 1
+===========================main start=================
+['y', 'y', 'ye', 'y', 'e']
+[('e', 1), ('y', 6), ('ye', 1)]
+--------ITER START------------
+pblocks:  [('e', 1), ('y', 6), ('ye', 1)]
+floating: []
+Locked: set()
+Evaluating e
+Head matches: 1
+--------ITER START------------
+pblocks:  [('y', 6), ('ye', 1), ('e', 1)]
+floating: []
+Locked: set()
+Evaluating y
+Extending y with ye
+New segment: ye
+--------ITER START------------
+pblocks:  [('e', 1), ('ye', 6)]
+floating: []
+Locked: set()
+Evaluating e
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ye', 6), ('e', 1)]
+floating: []
+Locked: set()
+Evaluating ye
+Merging e to ye
+Head matches: 0
+No head matches for ye; floating
+Final pblocks: []
+Final floating: [('ye', 6)]
+Case #7: 6
+===========================main start=================
+['g', 'v', 'q', 'l', 'mxpba', 'oz', 'fw', 'cq', 'hynkjretc', 'isud']
+[('q', 1), ('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1), ('cq', 1), ('hynkjretc', 1), ('isud', 1)]
+--------ITER START------------
+pblocks:  [('q', 1), ('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1), ('cq', 1), ('hynkjretc', 1), ('isud', 1)]
+floating: []
+Locked: set()
+Evaluating q
+Head matches: 1
+--------ITER START------------
+pblocks:  [('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1), ('cq', 1), ('hynkjretc', 1), ('isud', 1), ('q', 1)]
+floating: []
+Locked: set()
+Evaluating g
+Head matches: 0
+Locking g
+No head matches for g; floating
+--------ITER START------------
+pblocks:  [('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1), ('cq', 1), ('hynkjretc', 1), ('isud', 1), ('q', 1)]
+floating: [('g', 1)]
+Locked: {'g'}
+Evaluating l
+Head matches: 0
+Locking l
+No head matches for l; floating
+--------ITER START------------
+pblocks:  [('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1), ('cq', 1), ('hynkjretc', 1), ('isud', 1), ('q', 1)]
+floating: [('g', 1), ('l', 1)]
+Locked: {'g', 'l'}
+Evaluating v
+Head matches: 0
+Locking v
+No head matches for v; floating
+--------ITER START------------
+pblocks:  [('mxpba', 1), ('oz', 1), ('fw', 1), ('cq', 1), ('hynkjretc', 1), ('isud', 1), ('q', 1)]
+floating: [('g', 1), ('l', 1), ('v', 1)]
+Locked: {'g', 'v', 'l'}
+Evaluating mxpba
+Head matches: 0
+Locking mxpba
+No head matches for mxpba; floating
+--------ITER START------------
+pblocks:  [('oz', 1), ('fw', 1), ('cq', 1), ('hynkjretc', 1), ('isud', 1), ('q', 1)]
+floating: [('g', 1), ('l', 1), ('v', 1), ('mxpba', 1)]
+Locked: {'x', 'g', 'p', 'a', 'b', 'm', 'l', 'v'}
+Evaluating oz
+Head matches: 0
+No head matches for oz; floating
+--------ITER START------------
+pblocks:  [('fw', 1), ('cq', 1), ('hynkjretc', 1), ('isud', 1), ('q', 1)]
+floating: [('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1)]
+Locked: {'x', 'g', 'p', 'a', 'b', 'm', 'l', 'v'}
+Evaluating fw
+Head matches: 0
+No head matches for fw; floating
+--------ITER START------------
+pblocks:  [('cq', 1), ('hynkjretc', 1), ('isud', 1), ('q', 1)]
+floating: [('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1)]
+Locked: {'x', 'g', 'p', 'a', 'b', 'm', 'l', 'v'}
+Evaluating cq
+Merging q to cq
+Head matches: 1
+--------ITER START------------
+pblocks:  [('hynkjretc', 1), ('isud', 1), ('cq', 1)]
+floating: [('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1)]
+Locked: {'x', 'g', 'p', 'a', 'b', 'm', 'l', 'v'}
+Evaluating hynkjretc
+Extending hynkjretc with cq
+New segment: hynkjretccq
+Locking ynkjretcc
+--------ITER START------------
+pblocks:  [('isud', 1), ('hynkjretccq', 1)]
+floating: [('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1)]
+Locked: {'e', 'n', 'j', 'x', 'g', 'y', 'p', 'a', 'b', 'm', 'l', 'v', 'k', 'r', 'c', 't'}
+Evaluating isud
+Head matches: 0
+Locking isud
+No head matches for isud; floating
+--------ITER START------------
+pblocks:  [('hynkjretccq', 1)]
+floating: [('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1), ('isud', 1)]
+Locked: {'e', 'd', 'n', 'j', 's', 'x', 'g', 'y', 'p', 'a', 'b', 'm', 'l', 'u', 'v', 'k', 'r', 'c', 't', 'i'}
+Evaluating hynkjretccq
+Head matches: 0
+Locking hynkjretccq
+No head matches for hynkjretccq; floating
+Final pblocks: []
+Final floating: [('g', 1), ('l', 1), ('v', 1), ('mxpba', 1), ('oz', 1), ('fw', 1), ('isud', 1), ('hynkjretccq', 1)]
+Case #8: 40320
+===========================main start=================
+['g', 'vdzsapyxth', 'ijwq', 'knfb']
+[('g', 1), ('vdzsapyxth', 1), ('ijwq', 1), ('knfb', 1)]
+--------ITER START------------
+pblocks:  [('g', 1), ('vdzsapyxth', 1), ('ijwq', 1), ('knfb', 1)]
+floating: []
+Locked: set()
+Evaluating g
+Head matches: 0
+Locking g
+No head matches for g; floating
+--------ITER START------------
+pblocks:  [('vdzsapyxth', 1), ('ijwq', 1), ('knfb', 1)]
+floating: [('g', 1)]
+Locked: {'g'}
+Evaluating vdzsapyxth
+Head matches: 0
+Locking vdzsapyxth
+No head matches for vdzsapyxth; floating
+--------ITER START------------
+pblocks:  [('ijwq', 1), ('knfb', 1)]
+floating: [('g', 1), ('vdzsapyxth', 1)]
+Locked: {'d', 's', 'x', 'g', 'z', 'y', 'a', 'p', 'h', 'v', 't'}
+Evaluating ijwq
+Head matches: 0
+Locking ijwq
+No head matches for ijwq; floating
+--------ITER START------------
+pblocks:  [('knfb', 1)]
+floating: [('g', 1), ('vdzsapyxth', 1), ('ijwq', 1)]
+Locked: {'d', 'j', 's', 'x', 'g', 'z', 'y', 'a', 'p', 'h', 'q', 'v', 'w', 't', 'i'}
+Evaluating knfb
+Head matches: 0
+Locking knfb
+No head matches for knfb; floating
+Final pblocks: []
+Final floating: [('g', 1), ('vdzsapyxth', 1), ('ijwq', 1), ('knfb', 1)]
+Case #9: 24
+===========================main start=================
+['z', 'z', 'i', 'i', 'iz', 'i']
+[('z', 2), ('i', 6), ('iz', 1)]
+--------ITER START------------
+pblocks:  [('z', 2), ('i', 6), ('iz', 1)]
+floating: []
+Locked: set()
+Evaluating z
+Head matches: 1
+--------ITER START------------
+pblocks:  [('i', 6), ('iz', 1), ('z', 2)]
+floating: []
+Locked: set()
+Evaluating i
+Extending i with iz
+New segment: iz
+--------ITER START------------
+pblocks:  [('z', 2), ('iz', 6)]
+floating: []
+Locked: set()
+Evaluating z
+Head matches: 1
+--------ITER START------------
+pblocks:  [('iz', 6), ('z', 2)]
+floating: []
+Locked: set()
+Evaluating iz
+Merging z to iz
+Head matches: 0
+No head matches for iz; floating
+Final pblocks: []
+Final floating: [('iz', 12)]
+Case #10: 12
+===========================main start=================
+['qmrh', 'lko', 'ty', 'sjfcgzadevnwxpuib']
+[('qmrh', 1), ('lko', 1), ('ty', 1), ('sjfcgzadevnwxpuib', 1)]
+--------ITER START------------
+pblocks:  [('qmrh', 1), ('lko', 1), ('ty', 1), ('sjfcgzadevnwxpuib', 1)]
+floating: []
+Locked: set()
+Evaluating qmrh
+Head matches: 0
+Locking qmrh
+No head matches for qmrh; floating
+--------ITER START------------
+pblocks:  [('lko', 1), ('ty', 1), ('sjfcgzadevnwxpuib', 1)]
+floating: [('qmrh', 1)]
+Locked: {'m', 'r', 'h', 'q'}
+Evaluating lko
+Head matches: 0
+Locking lko
+No head matches for lko; floating
+--------ITER START------------
+pblocks:  [('ty', 1), ('sjfcgzadevnwxpuib', 1)]
+floating: [('qmrh', 1), ('lko', 1)]
+Locked: {'o', 'm', 'h', 'q', 'l', 'k', 'r'}
+Evaluating ty
+Head matches: 0
+No head matches for ty; floating
+--------ITER START------------
+pblocks:  [('sjfcgzadevnwxpuib', 1)]
+floating: [('qmrh', 1), ('lko', 1), ('ty', 1)]
+Locked: {'o', 'm', 'h', 'q', 'l', 'k', 'r'}
+Evaluating sjfcgzadevnwxpuib
+Head matches: 0
+Locking sjfcgzadevnwxpuib
+No head matches for sjfcgzadevnwxpuib; floating
+Final pblocks: []
+Final floating: [('qmrh', 1), ('lko', 1), ('ty', 1), ('sjfcgzadevnwxpuib', 1)]
+Case #11: 24
+===========================main start=================
+['qlke', 'onq', 'ah', 'hdo', 'ga']
+[('qlke', 1), ('onq', 1), ('ah', 1), ('hdo', 1), ('ga', 1)]
+--------ITER START------------
+pblocks:  [('qlke', 1), ('onq', 1), ('ah', 1), ('hdo', 1), ('ga', 1)]
+floating: []
+Locked: set()
+Evaluating qlke
+Head matches: 1
+--------ITER START------------
+pblocks:  [('onq', 1), ('ah', 1), ('hdo', 1), ('ga', 1), ('qlke', 1)]
+floating: []
+Locked: set()
+Evaluating onq
+Extending onq with qlke
+New segment: onqqlke
+Locking nqqlk
+--------ITER START------------
+pblocks:  [('ah', 1), ('hdo', 1), ('ga', 1), ('onqqlke', 1)]
+floating: []
+Locked: {'k', 'n', 'q', 'l'}
+Evaluating ah
+Extending ah with hdo
+New segment: ahhdo
+Locking hhd
+--------ITER START------------
+pblocks:  [('ga', 1), ('onqqlke', 1), ('ahhdo', 1)]
+floating: []
+Locked: {'d', 'n', 'h', 'q', 'l', 'k'}
+Evaluating ga
+Extending ga with ahhdo
+New segment: gaahhdo
+Locking aahhd
+--------ITER START------------
+pblocks:  [('onqqlke', 1), ('gaahhdo', 1)]
+floating: []
+Locked: {'d', 'n', 'a', 'h', 'q', 'l', 'k'}
+Evaluating onqqlke
+Head matches: 1
+--------ITER START------------
+pblocks:  [('gaahhdo', 1), ('onqqlke', 1)]
+floating: []
+Locked: {'d', 'n', 'a', 'h', 'q', 'l', 'k'}
+Evaluating gaahhdo
+Extending gaahhdo with onqqlke
+New segment: gaahhdoonqqlke
+Locking aahhdoonqqlk
+--------ITER START------------
+pblocks:  [('gaahhdoonqqlke', 1)]
+floating: []
+Locked: {'o', 'd', 'n', 'a', 'h', 'q', 'l', 'k'}
+Evaluating gaahhdoonqqlke
+Head matches: 0
+Locking gaahhdoonqqlke
+No head matches for gaahhdoonqqlke; floating
+Final pblocks: []
+Final floating: [('gaahhdoonqqlke', 1)]
+Case #12: 1
+===========================main start=================
+['fu', 'pexisy', 'tdnj', 'jaf', 'u', 'u', 'u', 'bhlrvkcqgo']
+[('u', 6), ('fu', 1), ('pexisy', 1), ('tdnj', 1), ('jaf', 1), ('bhlrvkcqgo', 1)]
+--------ITER START------------
+pblocks:  [('u', 6), ('fu', 1), ('pexisy', 1), ('tdnj', 1), ('jaf', 1), ('bhlrvkcqgo', 1)]
+floating: []
+Locked: set()
+Evaluating u
+Head matches: 1
+--------ITER START------------
+pblocks:  [('fu', 1), ('pexisy', 1), ('tdnj', 1), ('jaf', 1), ('bhlrvkcqgo', 1), ('u', 6)]
+floating: []
+Locked: set()
+Evaluating fu
+Merging u to fu
+Head matches: 1
+--------ITER START------------
+pblocks:  [('pexisy', 1), ('tdnj', 1), ('jaf', 1), ('bhlrvkcqgo', 1), ('fu', 6)]
+floating: []
+Locked: set()
+Evaluating pexisy
+Head matches: 0
+Locking pexisy
+No head matches for pexisy; floating
+--------ITER START------------
+pblocks:  [('tdnj', 1), ('jaf', 1), ('bhlrvkcqgo', 1), ('fu', 6)]
+floating: [('pexisy', 1)]
+Locked: {'e', 's', 'x', 'y', 'p', 'i'}
+Evaluating tdnj
+Extending tdnj with jaf
+New segment: tdnjjaf
+Locking dnjja
+--------ITER START------------
+pblocks:  [('bhlrvkcqgo', 1), ('fu', 6), ('tdnjjaf', 1)]
+floating: [('pexisy', 1)]
+Locked: {'e', 'd', 'n', 'j', 's', 'x', 'y', 'p', 'a', 'i'}
+Evaluating bhlrvkcqgo
+Head matches: 0
+Locking bhlrvkcqgo
+No head matches for bhlrvkcqgo; floating
+--------ITER START------------
+pblocks:  [('fu', 6), ('tdnjjaf', 1)]
+floating: [('pexisy', 1), ('bhlrvkcqgo', 1)]
+Locked: {'o', 'e', 'd', 'n', 'j', 's', 'x', 'g', 'y', 'p', 'a', 'b', 'h', 'l', 'q', 'v', 'k', 'r', 'c', 'i'}
+Evaluating fu
+Head matches: 1
+--------ITER START------------
+pblocks:  [('tdnjjaf', 1), ('fu', 6)]
+floating: [('pexisy', 1), ('bhlrvkcqgo', 1)]
+Locked: {'o', 'e', 'd', 'n', 'j', 's', 'x', 'g', 'y', 'p', 'a', 'b', 'h', 'l', 'q', 'v', 'k', 'r', 'c', 'i'}
+Evaluating tdnjjaf
+Extending tdnjjaf with fu
+New segment: tdnjjaffu
+Locking dnjjaff
+--------ITER START------------
+pblocks:  [('tdnjjaffu', 6)]
+floating: [('pexisy', 1), ('bhlrvkcqgo', 1)]
+Locked: {'o', 'e', 'd', 'n', 'j', 's', 'x', 'g', 'y', 'f', 'p', 'a', 'b', 'h', 'l', 'q', 'v', 'k', 'r', 'c', 'i'}
+Evaluating tdnjjaffu
+Head matches: 0
+Locking tdnjjaffu
+No head matches for tdnjjaffu; floating
+Final pblocks: []
+Final floating: [('pexisy', 1), ('bhlrvkcqgo', 1), ('tdnjjaffu', 6)]
+Case #13: 36
+===========================main start=================
+['nmokvr', 'jphliqn', 'bj']
+[('nmokvr', 1), ('jphliqn', 1), ('bj', 1)]
+--------ITER START------------
+pblocks:  [('nmokvr', 1), ('jphliqn', 1), ('bj', 1)]
+floating: []
+Locked: set()
+Evaluating nmokvr
+Head matches: 1
+--------ITER START------------
+pblocks:  [('jphliqn', 1), ('bj', 1), ('nmokvr', 1)]
+floating: []
+Locked: set()
+Evaluating jphliqn
+Extending jphliqn with nmokvr
+New segment: jphliqnnmokvr
+Locking phliqnnmokv
+--------ITER START------------
+pblocks:  [('bj', 1), ('jphliqnnmokvr', 1)]
+floating: []
+Locked: {'o', 'n', 'p', 'm', 'h', 'q', 'l', 'v', 'k', 'i'}
+Evaluating bj
+Extending bj with jphliqnnmokvr
+New segment: bjjphliqnnmokvr
+Locking jjphliqnnmokv
+--------ITER START------------
+pblocks:  [('bjjphliqnnmokvr', 1)]
+floating: []
+Locked: {'o', 'n', 'j', 'p', 'm', 'h', 'q', 'l', 'v', 'k', 'i'}
+Evaluating bjjphliqnnmokvr
+Head matches: 0
+Locking bjjphliqnnmokvr
+No head matches for bjjphliqnnmokvr; floating
+Final pblocks: []
+Final floating: [('bjjphliqnnmokvr', 1)]
+Case #14: 1
+===========================main start=================
+['kzgha', 'ov', 'nt', 'l', 'c', 'f', 'ymusd', 'wr', 'q', 'bipxej']
+[('f', 1), ('q', 1), ('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+--------ITER START------------
+pblocks:  [('f', 1), ('q', 1), ('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+floating: []
+Locked: set()
+Evaluating f
+Head matches: 0
+Locking f
+No head matches for f; floating
+--------ITER START------------
+pblocks:  [('q', 1), ('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+floating: [('f', 1)]
+Locked: {'f'}
+Evaluating q
+Head matches: 0
+Locking q
+No head matches for q; floating
+--------ITER START------------
+pblocks:  [('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+floating: [('f', 1), ('q', 1)]
+Locked: {'f', 'q'}
+Evaluating l
+Head matches: 0
+Locking l
+No head matches for l; floating
+--------ITER START------------
+pblocks:  [('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+floating: [('f', 1), ('q', 1), ('l', 1)]
+Locked: {'f', 'q', 'l'}
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+floating: [('f', 1), ('q', 1), ('l', 1), ('c', 1)]
+Locked: {'f', 'c', 'q', 'l'}
+Evaluating kzgha
+Head matches: 0
+Locking kzgha
+No head matches for kzgha; floating
+--------ITER START------------
+pblocks:  [('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+floating: [('f', 1), ('q', 1), ('l', 1), ('c', 1), ('kzgha', 1)]
+Locked: {'z', 'g', 'f', 'a', 'h', 'q', 'l', 'k', 'c'}
+Evaluating ov
+Head matches: 0
+No head matches for ov; floating
+--------ITER START------------
+pblocks:  [('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+floating: [('f', 1), ('q', 1), ('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1)]
+Locked: {'z', 'g', 'f', 'a', 'h', 'q', 'l', 'k', 'c'}
+Evaluating nt
+Head matches: 0
+No head matches for nt; floating
+--------ITER START------------
+pblocks:  [('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+floating: [('f', 1), ('q', 1), ('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1)]
+Locked: {'z', 'g', 'f', 'a', 'h', 'q', 'l', 'k', 'c'}
+Evaluating ymusd
+Head matches: 0
+Locking ymusd
+No head matches for ymusd; floating
+--------ITER START------------
+pblocks:  [('wr', 1), ('bipxej', 1)]
+floating: [('f', 1), ('q', 1), ('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1)]
+Locked: {'d', 's', 'z', 'g', 'f', 'y', 'a', 'm', 'h', 'q', 'l', 'u', 'k', 'c'}
+Evaluating wr
+Head matches: 0
+No head matches for wr; floating
+--------ITER START------------
+pblocks:  [('bipxej', 1)]
+floating: [('f', 1), ('q', 1), ('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1)]
+Locked: {'d', 's', 'z', 'g', 'f', 'y', 'a', 'm', 'h', 'q', 'l', 'u', 'k', 'c'}
+Evaluating bipxej
+Head matches: 0
+Locking bipxej
+No head matches for bipxej; floating
+Final pblocks: []
+Final floating: [('f', 1), ('q', 1), ('l', 1), ('c', 1), ('kzgha', 1), ('ov', 1), ('nt', 1), ('ymusd', 1), ('wr', 1), ('bipxej', 1)]
+Case #15: 3628800
+===========================main start=================
+['c', 'w', 'wgtxnsaepzc', 'hfq']
+[('w', 1), ('c', 1), ('wgtxnsaepzc', 1), ('hfq', 1)]
+--------ITER START------------
+pblocks:  [('w', 1), ('c', 1), ('wgtxnsaepzc', 1), ('hfq', 1)]
+floating: []
+Locked: set()
+Evaluating w
+Extending w with wgtxnsaepzc
+New segment: wgtxnsaepzc
+Locking gtxnsaepz
+--------ITER START------------
+pblocks:  [('c', 1), ('hfq', 1), ('wgtxnsaepzc', 1)]
+floating: []
+Locked: {'e', 'n', 's', 'x', 'g', 'z', 'a', 'p', 't'}
+Evaluating c
+Head matches: 1
+--------ITER START------------
+pblocks:  [('hfq', 1), ('wgtxnsaepzc', 1), ('c', 1)]
+floating: []
+Locked: {'e', 'n', 's', 'x', 'g', 'z', 'a', 'p', 't'}
+Evaluating hfq
+Head matches: 0
+Locking hfq
+No head matches for hfq; floating
+--------ITER START------------
+pblocks:  [('wgtxnsaepzc', 1), ('c', 1)]
+floating: [('hfq', 1)]
+Locked: {'e', 'n', 's', 'x', 'g', 'z', 'f', 'a', 'p', 'h', 'q', 't'}
+Evaluating wgtxnsaepzc
+Merging c to wgtxnsaepzc
+Head matches: 0
+Locking wgtxnsaepzc
+No head matches for wgtxnsaepzc; floating
+Final pblocks: []
+Final floating: [('hfq', 1), ('wgtxnsaepzc', 1)]
+Case #16: 2
+===========================main start=================
+['r']
+[('r', 1)]
+--------ITER START------------
+pblocks:  [('r', 1)]
+floating: []
+Locked: set()
+Evaluating r
+Head matches: 0
+Locking r
+No head matches for r; floating
+Final pblocks: []
+Final floating: [('r', 1)]
+Case #17: 1
+===========================main start=================
+['ivmrzlopj', 'kfc', 'yx', 'jbd', 'cgnsqhuewai', 't']
+[('t', 1), ('ivmrzlopj', 1), ('kfc', 1), ('yx', 1), ('jbd', 1), ('cgnsqhuewai', 1)]
+--------ITER START------------
+pblocks:  [('t', 1), ('ivmrzlopj', 1), ('kfc', 1), ('yx', 1), ('jbd', 1), ('cgnsqhuewai', 1)]
+floating: []
+Locked: set()
+Evaluating t
+Head matches: 0
+Locking t
+No head matches for t; floating
+--------ITER START------------
+pblocks:  [('ivmrzlopj', 1), ('kfc', 1), ('yx', 1), ('jbd', 1), ('cgnsqhuewai', 1)]
+floating: [('t', 1)]
+Locked: {'t'}
+Evaluating ivmrzlopj
+Extending ivmrzlopj with jbd
+New segment: ivmrzlopjjbd
+Locking vmrzlopjjb
+--------ITER START------------
+pblocks:  [('kfc', 1), ('yx', 1), ('cgnsqhuewai', 1), ('ivmrzlopjjbd', 1)]
+floating: [('t', 1)]
+Locked: {'o', 'j', 'z', 'p', 'b', 'm', 'l', 'v', 'r', 't'}
+Evaluating kfc
+Extending kfc with cgnsqhuewai
+New segment: kfccgnsqhuewai
+Locking fccgnsqhuewa
+--------ITER START------------
+pblocks:  [('yx', 1), ('ivmrzlopjjbd', 1), ('kfccgnsqhuewai', 1)]
+floating: [('t', 1)]
+Locked: {'o', 'e', 'j', 'n', 's', 'z', 'g', 'f', 'p', 'a', 'b', 'm', 'h', 'l', 'q', 'u', 'v', 'w', 'r', 'c', 't'}
+Evaluating yx
+Head matches: 0
+No head matches for yx; floating
+--------ITER START------------
+pblocks:  [('ivmrzlopjjbd', 1), ('kfccgnsqhuewai', 1)]
+floating: [('t', 1), ('yx', 1)]
+Locked: {'o', 'e', 'j', 'n', 's', 'z', 'g', 'f', 'p', 'a', 'b', 'm', 'h', 'l', 'q', 'u', 'v', 'w', 'r', 'c', 't'}
+Evaluating ivmrzlopjjbd
+Head matches: 1
+--------ITER START------------
+pblocks:  [('kfccgnsqhuewai', 1), ('ivmrzlopjjbd', 1)]
+floating: [('t', 1), ('yx', 1)]
+Locked: {'o', 'e', 'j', 'n', 's', 'z', 'g', 'f', 'p', 'a', 'b', 'm', 'h', 'l', 'q', 'u', 'v', 'w', 'r', 'c', 't'}
+Evaluating kfccgnsqhuewai
+Extending kfccgnsqhuewai with ivmrzlopjjbd
+New segment: kfccgnsqhuewaiivmrzlopjjbd
+Locking fccgnsqhuewaiivmrzlopjjb
+--------ITER START------------
+pblocks:  [('kfccgnsqhuewaiivmrzlopjjbd', 1)]
+floating: [('t', 1), ('yx', 1)]
+Locked: {'e', 'f', 'a', 'h', 'q', 't', 'z', 'g', 'l', 'v', 'w', 'j', 'n', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating kfccgnsqhuewaiivmrzlopjjbd
+Head matches: 0
+Locking kfccgnsqhuewaiivmrzlopjjbd
+No head matches for kfccgnsqhuewaiivmrzlopjjbd; floating
+Final pblocks: []
+Final floating: [('t', 1), ('yx', 1), ('kfccgnsqhuewaiivmrzlopjjbd', 1)]
+Case #18: 6
+===========================main start=================
+['zqkhyr', 'ewmbtufdgavjoil', 'pe', 'c', 'lx', 'n', 'xsz']
+[('n', 1), ('c', 1), ('zqkhyr', 1), ('ewmbtufdgavjoil', 1), ('pe', 1), ('lx', 1), ('xsz', 1)]
+--------ITER START------------
+pblocks:  [('n', 1), ('c', 1), ('zqkhyr', 1), ('ewmbtufdgavjoil', 1), ('pe', 1), ('lx', 1), ('xsz', 1)]
+floating: []
+Locked: set()
+Evaluating n
+Head matches: 0
+Locking n
+No head matches for n; floating
+--------ITER START------------
+pblocks:  [('c', 1), ('zqkhyr', 1), ('ewmbtufdgavjoil', 1), ('pe', 1), ('lx', 1), ('xsz', 1)]
+floating: [('n', 1)]
+Locked: {'n'}
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('zqkhyr', 1), ('ewmbtufdgavjoil', 1), ('pe', 1), ('lx', 1), ('xsz', 1)]
+floating: [('n', 1), ('c', 1)]
+Locked: {'n', 'c'}
+Evaluating zqkhyr
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ewmbtufdgavjoil', 1), ('pe', 1), ('lx', 1), ('xsz', 1), ('zqkhyr', 1)]
+floating: [('n', 1), ('c', 1)]
+Locked: {'n', 'c'}
+Evaluating ewmbtufdgavjoil
+Extending ewmbtufdgavjoil with lx
+New segment: ewmbtufdgavjoillx
+Locking wmbtufdgavjoill
+--------ITER START------------
+pblocks:  [('pe', 1), ('xsz', 1), ('zqkhyr', 1), ('ewmbtufdgavjoillx', 1)]
+floating: [('n', 1), ('c', 1)]
+Locked: {'o', 'd', 'n', 'j', 'g', 'f', 'a', 'b', 'm', 'u', 'l', 'v', 'w', 'c', 't', 'i'}
+Evaluating pe
+Extending pe with ewmbtufdgavjoillx
+New segment: peewmbtufdgavjoillx
+Locking eewmbtufdgavjoill
+--------ITER START------------
+pblocks:  [('xsz', 1), ('zqkhyr', 1), ('peewmbtufdgavjoillx', 1)]
+floating: [('n', 1), ('c', 1)]
+Locked: {'o', 'e', 'd', 'n', 'j', 'g', 'f', 'a', 'b', 'm', 'u', 'l', 'v', 'w', 'c', 't', 'i'}
+Evaluating xsz
+Extending xsz with zqkhyr
+New segment: xszzqkhyr
+Locking szzqkhy
+--------ITER START------------
+pblocks:  [('peewmbtufdgavjoillx', 1), ('xszzqkhyr', 1)]
+floating: [('n', 1), ('c', 1)]
+Locked: {'e', 'd', 'f', 'a', 'h', 'q', 'k', 't', 'g', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'o', 's', 'm', 'u', 'c', 'i'}
+Evaluating peewmbtufdgavjoillx
+Extending peewmbtufdgavjoillx with xszzqkhyr
+New segment: peewmbtufdgavjoillxxszzqkhyr
+Locking eewmbtufdgavjoillxxszzqkhy
+--------ITER START------------
+pblocks:  [('peewmbtufdgavjoillxxszzqkhyr', 1)]
+floating: [('n', 1), ('c', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'g', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'o', 's', 'm', 'u', 'c', 'i'}
+Evaluating peewmbtufdgavjoillxxszzqkhyr
+Head matches: 0
+Locking peewmbtufdgavjoillxxszzqkhyr
+No head matches for peewmbtufdgavjoillxxszzqkhyr; floating
+Final pblocks: []
+Final floating: [('n', 1), ('c', 1), ('peewmbtufdgavjoillxxszzqkhyr', 1)]
+Case #19: 6
+===========================main start=================
+['zl', 'rgqmk', 'vpahfbj', 'uicwsxeyn', 'otd']
+[('zl', 1), ('rgqmk', 1), ('vpahfbj', 1), ('uicwsxeyn', 1), ('otd', 1)]
+--------ITER START------------
+pblocks:  [('zl', 1), ('rgqmk', 1), ('vpahfbj', 1), ('uicwsxeyn', 1), ('otd', 1)]
+floating: []
+Locked: set()
+Evaluating zl
+Head matches: 0
+No head matches for zl; floating
+--------ITER START------------
+pblocks:  [('rgqmk', 1), ('vpahfbj', 1), ('uicwsxeyn', 1), ('otd', 1)]
+floating: [('zl', 1)]
+Locked: set()
+Evaluating rgqmk
+Head matches: 0
+Locking rgqmk
+No head matches for rgqmk; floating
+--------ITER START------------
+pblocks:  [('vpahfbj', 1), ('uicwsxeyn', 1), ('otd', 1)]
+floating: [('zl', 1), ('rgqmk', 1)]
+Locked: {'g', 'm', 'r', 'k', 'q'}
+Evaluating vpahfbj
+Head matches: 0
+Locking vpahfbj
+No head matches for vpahfbj; floating
+--------ITER START------------
+pblocks:  [('uicwsxeyn', 1), ('otd', 1)]
+floating: [('zl', 1), ('rgqmk', 1), ('vpahfbj', 1)]
+Locked: {'j', 'g', 'f', 'p', 'a', 'b', 'm', 'h', 'q', 'v', 'k', 'r'}
+Evaluating uicwsxeyn
+Head matches: 0
+Locking uicwsxeyn
+No head matches for uicwsxeyn; floating
+--------ITER START------------
+pblocks:  [('otd', 1)]
+floating: [('zl', 1), ('rgqmk', 1), ('vpahfbj', 1), ('uicwsxeyn', 1)]
+Locked: {'e', 'j', 'n', 's', 'x', 'g', 'f', 'y', 'p', 'a', 'b', 'm', 'h', 'q', 'u', 'v', 'k', 'r', 'c', 'i', 'w'}
+Evaluating otd
+Head matches: 0
+Locking otd
+No head matches for otd; floating
+Final pblocks: []
+Final floating: [('zl', 1), ('rgqmk', 1), ('vpahfbj', 1), ('uicwsxeyn', 1), ('otd', 1)]
+Case #20: 120
+===========================main start=================
+['qwib', 'pco', 'o', 'njp', 'ftaylvzhds', 'bn', 'oe']
+[('o', 1), ('qwib', 1), ('pco', 1), ('njp', 1), ('ftaylvzhds', 1), ('bn', 1), ('oe', 1)]
+--------ITER START------------
+pblocks:  [('o', 1), ('qwib', 1), ('pco', 1), ('njp', 1), ('ftaylvzhds', 1), ('bn', 1), ('oe', 1)]
+floating: []
+Locked: set()
+Evaluating o
+Extending o with oe
+New segment: oe
+--------ITER START------------
+pblocks:  [('qwib', 1), ('pco', 1), ('njp', 1), ('ftaylvzhds', 1), ('bn', 1), ('oe', 1)]
+floating: []
+Locked: set()
+Evaluating qwib
+Extending qwib with bn
+New segment: qwibbn
+Locking wibb
+--------ITER START------------
+pblocks:  [('pco', 1), ('njp', 1), ('ftaylvzhds', 1), ('oe', 1), ('qwibbn', 1)]
+floating: []
+Locked: {'b', 'w', 'i'}
+Evaluating pco
+Extending pco with oe
+New segment: pcooe
+Locking coo
+--------ITER START------------
+pblocks:  [('njp', 1), ('ftaylvzhds', 1), ('qwibbn', 1), ('pcooe', 1)]
+floating: []
+Locked: {'b', 'o', 'w', 'c', 'i'}
+Evaluating njp
+Extending njp with pcooe
+New segment: njppcooe
+Locking jppcoo
+--------ITER START------------
+pblocks:  [('ftaylvzhds', 1), ('qwibbn', 1), ('njppcooe', 1)]
+floating: []
+Locked: {'o', 'j', 'p', 'b', 'w', 'c', 'i'}
+Evaluating ftaylvzhds
+Head matches: 0
+Locking ftaylvzhds
+No head matches for ftaylvzhds; floating
+--------ITER START------------
+pblocks:  [('qwibbn', 1), ('njppcooe', 1)]
+floating: [('ftaylvzhds', 1)]
+Locked: {'o', 'd', 'j', 's', 'z', 'f', 'y', 'p', 'a', 'b', 'h', 'l', 'v', 'w', 'c', 'i', 't'}
+Evaluating qwibbn
+Extending qwibbn with njppcooe
+New segment: qwibbnnjppcooe
+Locking wibbnnjppcoo
+--------ITER START------------
+pblocks:  [('qwibbnnjppcooe', 1)]
+floating: [('ftaylvzhds', 1)]
+Locked: {'o', 'd', 'j', 'n', 's', 'z', 'f', 'y', 'p', 'a', 'b', 'h', 'l', 'v', 'w', 'c', 'i', 't'}
+Evaluating qwibbnnjppcooe
+Head matches: 0
+Locking qwibbnnjppcooe
+No head matches for qwibbnnjppcooe; floating
+Final pblocks: []
+Final floating: [('ftaylvzhds', 1), ('qwibbnnjppcooe', 1)]
+Case #21: 2
+===========================main start=================
+['nmaufbprjv', 'z', 'iy']
+[('z', 1), ('nmaufbprjv', 1), ('iy', 1)]
+--------ITER START------------
+pblocks:  [('z', 1), ('nmaufbprjv', 1), ('iy', 1)]
+floating: []
+Locked: set()
+Evaluating z
+Head matches: 0
+Locking z
+No head matches for z; floating
+--------ITER START------------
+pblocks:  [('nmaufbprjv', 1), ('iy', 1)]
+floating: [('z', 1)]
+Locked: {'z'}
+Evaluating nmaufbprjv
+Head matches: 0
+Locking nmaufbprjv
+No head matches for nmaufbprjv; floating
+--------ITER START------------
+pblocks:  [('iy', 1)]
+floating: [('z', 1), ('nmaufbprjv', 1)]
+Locked: {'n', 'j', 'z', 'f', 'a', 'p', 'b', 'm', 'u', 'v', 'r'}
+Evaluating iy
+Head matches: 0
+No head matches for iy; floating
+Final pblocks: []
+Final floating: [('z', 1), ('nmaufbprjv', 1), ('iy', 1)]
+Case #22: 6
+===========================main start=================
+['krx', 'ldpvyt', 'xawhqjoes']
+[('krx', 1), ('ldpvyt', 1), ('xawhqjoes', 1)]
+--------ITER START------------
+pblocks:  [('krx', 1), ('ldpvyt', 1), ('xawhqjoes', 1)]
+floating: []
+Locked: set()
+Evaluating krx
+Extending krx with xawhqjoes
+New segment: krxxawhqjoes
+Locking rxxawhqjoe
+--------ITER START------------
+pblocks:  [('ldpvyt', 1), ('krxxawhqjoes', 1)]
+floating: []
+Locked: {'o', 'e', 'j', 'x', 'a', 'h', 'q', 'w', 'r'}
+Evaluating ldpvyt
+Head matches: 0
+Locking ldpvyt
+No head matches for ldpvyt; floating
+--------ITER START------------
+pblocks:  [('krxxawhqjoes', 1)]
+floating: [('ldpvyt', 1)]
+Locked: {'o', 'e', 'd', 'j', 'x', 'y', 'a', 'p', 'h', 'q', 'l', 'v', 'w', 'r', 't'}
+Evaluating krxxawhqjoes
+Head matches: 0
+Locking krxxawhqjoes
+No head matches for krxxawhqjoes; floating
+Final pblocks: []
+Final floating: [('ldpvyt', 1), ('krxxawhqjoes', 1)]
+Case #23: 2
+===========================main start=================
+['kh', 'dusjrycevlwxqznpmoiatgk']
+[('kh', 1), ('dusjrycevlwxqznpmoiatgk', 1)]
+--------ITER START------------
+pblocks:  [('kh', 1), ('dusjrycevlwxqznpmoiatgk', 1)]
+floating: []
+Locked: set()
+Evaluating kh
+Head matches: 1
+--------ITER START------------
+pblocks:  [('dusjrycevlwxqznpmoiatgk', 1), ('kh', 1)]
+floating: []
+Locked: set()
+Evaluating dusjrycevlwxqznpmoiatgk
+Extending dusjrycevlwxqznpmoiatgk with kh
+New segment: dusjrycevlwxqznpmoiatgkkh
+Locking usjrycevlwxqznpmoiatgkk
+--------ITER START------------
+pblocks:  [('dusjrycevlwxqznpmoiatgkkh', 1)]
+floating: []
+Locked: {'e', 'x', 'a', 'q', 'k', 't', 'z', 'g', 'l', 'v', 'w', 'j', 'n', 'y', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating dusjrycevlwxqznpmoiatgkkh
+Head matches: 0
+Locking dusjrycevlwxqznpmoiatgkkh
+No head matches for dusjrycevlwxqznpmoiatgkkh; floating
+Final pblocks: []
+Final floating: [('dusjrycevlwxqznpmoiatgkkh', 1)]
+Case #24: 1
+===========================main start=================
+['asxh', 'lk']
+[('asxh', 1), ('lk', 1)]
+--------ITER START------------
+pblocks:  [('asxh', 1), ('lk', 1)]
+floating: []
+Locked: set()
+Evaluating asxh
+Head matches: 0
+Locking asxh
+No head matches for asxh; floating
+--------ITER START------------
+pblocks:  [('lk', 1)]
+floating: [('asxh', 1)]
+Locked: {'x', 'h', 'a', 's'}
+Evaluating lk
+Head matches: 0
+No head matches for lk; floating
+Final pblocks: []
+Final floating: [('asxh', 1), ('lk', 1)]
+Case #25: 2
+===========================main start=================
+['uhiltdoxkvrfzwaegj', 'c', 'pmnsb', 'yq']
+[('c', 1), ('uhiltdoxkvrfzwaegj', 1), ('pmnsb', 1), ('yq', 1)]
+--------ITER START------------
+pblocks:  [('c', 1), ('uhiltdoxkvrfzwaegj', 1), ('pmnsb', 1), ('yq', 1)]
+floating: []
+Locked: set()
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('uhiltdoxkvrfzwaegj', 1), ('pmnsb', 1), ('yq', 1)]
+floating: [('c', 1)]
+Locked: {'c'}
+Evaluating uhiltdoxkvrfzwaegj
+Head matches: 0
+Locking uhiltdoxkvrfzwaegj
+No head matches for uhiltdoxkvrfzwaegj; floating
+--------ITER START------------
+pblocks:  [('pmnsb', 1), ('yq', 1)]
+floating: [('c', 1), ('uhiltdoxkvrfzwaegj', 1)]
+Locked: {'w', 'o', 'e', 'd', 'j', 'x', 'z', 'g', 'f', 'a', 'h', 'l', 'u', 'v', 'k', 'r', 'c', 'i', 't'}
+Evaluating pmnsb
+Head matches: 0
+Locking pmnsb
+No head matches for pmnsb; floating
+--------ITER START------------
+pblocks:  [('yq', 1)]
+floating: [('c', 1), ('uhiltdoxkvrfzwaegj', 1), ('pmnsb', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'k', 't', 'z', 'g', 'l', 'v', 'w', 'j', 'n', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating yq
+Head matches: 0
+No head matches for yq; floating
+Final pblocks: []
+Final floating: [('c', 1), ('uhiltdoxkvrfzwaegj', 1), ('pmnsb', 1), ('yq', 1)]
+Case #26: 24
+===========================main start=================
+['badsponhtkrxmfzg', 'cleijb']
+[('badsponhtkrxmfzg', 1), ('cleijb', 1)]
+--------ITER START------------
+pblocks:  [('badsponhtkrxmfzg', 1), ('cleijb', 1)]
+floating: []
+Locked: set()
+Evaluating badsponhtkrxmfzg
+Head matches: 1
+--------ITER START------------
+pblocks:  [('cleijb', 1), ('badsponhtkrxmfzg', 1)]
+floating: []
+Locked: set()
+Evaluating cleijb
+Extending cleijb with badsponhtkrxmfzg
+New segment: cleijbbadsponhtkrxmfzg
+Locking leijbbadsponhtkrxmfz
+--------ITER START------------
+pblocks:  [('cleijbbadsponhtkrxmfzg', 1)]
+floating: []
+Locked: {'o', 'e', 'd', 'j', 'n', 's', 'x', 'z', 'f', 'a', 'p', 'b', 'm', 'h', 'l', 'k', 'r', 'i', 't'}
+Evaluating cleijbbadsponhtkrxmfzg
+Head matches: 0
+Locking cleijbbadsponhtkrxmfzg
+No head matches for cleijbbadsponhtkrxmfzg; floating
+Final pblocks: []
+Final floating: [('cleijbbadsponhtkrxmfzg', 1)]
+Case #27: 1
+===========================main start=================
+['m', 'aj', 'izw', 'u', 'w', 'fxgktqoe', 'dpscybnl', 'r', 'v', 'h']
+[('h', 1), ('v', 1), ('w', 1), ('r', 1), ('m', 1), ('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1)]
+--------ITER START------------
+pblocks:  [('h', 1), ('v', 1), ('w', 1), ('r', 1), ('m', 1), ('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1)]
+floating: []
+Locked: set()
+Evaluating h
+Head matches: 0
+Locking h
+No head matches for h; floating
+--------ITER START------------
+pblocks:  [('v', 1), ('w', 1), ('r', 1), ('m', 1), ('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1)]
+floating: [('h', 1)]
+Locked: {'h'}
+Evaluating v
+Head matches: 0
+Locking v
+No head matches for v; floating
+--------ITER START------------
+pblocks:  [('w', 1), ('r', 1), ('m', 1), ('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1)]
+floating: [('h', 1), ('v', 1)]
+Locked: {'v', 'h'}
+Evaluating w
+Head matches: 1
+--------ITER START------------
+pblocks:  [('r', 1), ('m', 1), ('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1), ('w', 1)]
+floating: [('h', 1), ('v', 1)]
+Locked: {'v', 'h'}
+Evaluating r
+Head matches: 0
+Locking r
+No head matches for r; floating
+--------ITER START------------
+pblocks:  [('m', 1), ('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1), ('w', 1)]
+floating: [('h', 1), ('v', 1), ('r', 1)]
+Locked: {'v', 'r', 'h'}
+Evaluating m
+Head matches: 0
+Locking m
+No head matches for m; floating
+--------ITER START------------
+pblocks:  [('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1), ('w', 1)]
+floating: [('h', 1), ('v', 1), ('r', 1), ('m', 1)]
+Locked: {'v', 'm', 'r', 'h'}
+Evaluating u
+Head matches: 0
+Locking u
+No head matches for u; floating
+--------ITER START------------
+pblocks:  [('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1), ('w', 1)]
+floating: [('h', 1), ('v', 1), ('r', 1), ('m', 1), ('u', 1)]
+Locked: {'v', 'm', 'r', 'h', 'u'}
+Evaluating aj
+Head matches: 0
+No head matches for aj; floating
+--------ITER START------------
+pblocks:  [('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1), ('w', 1)]
+floating: [('h', 1), ('v', 1), ('r', 1), ('m', 1), ('u', 1), ('aj', 1)]
+Locked: {'v', 'm', 'r', 'h', 'u'}
+Evaluating izw
+Merging w to izw
+Head matches: 0
+Locking izw
+No head matches for izw; floating
+--------ITER START------------
+pblocks:  [('fxgktqoe', 1), ('dpscybnl', 1)]
+floating: [('h', 1), ('v', 1), ('r', 1), ('m', 1), ('u', 1), ('aj', 1), ('izw', 1)]
+Locked: {'z', 'm', 'h', 'u', 'v', 'w', 'r', 'i'}
+Evaluating fxgktqoe
+Head matches: 0
+Locking fxgktqoe
+No head matches for fxgktqoe; floating
+--------ITER START------------
+pblocks:  [('dpscybnl', 1)]
+floating: [('h', 1), ('v', 1), ('r', 1), ('m', 1), ('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1)]
+Locked: {'o', 'e', 'x', 'z', 'g', 'f', 'm', 'h', 'u', 'q', 'v', 'w', 'r', 'k', 'i', 't'}
+Evaluating dpscybnl
+Head matches: 0
+Locking dpscybnl
+No head matches for dpscybnl; floating
+Final pblocks: []
+Final floating: [('h', 1), ('v', 1), ('r', 1), ('m', 1), ('u', 1), ('aj', 1), ('izw', 1), ('fxgktqoe', 1), ('dpscybnl', 1)]
+Case #28: 362880
+===========================main start=================
+['c', 'xipubfrac']
+[('c', 1), ('xipubfrac', 1)]
+--------ITER START------------
+pblocks:  [('c', 1), ('xipubfrac', 1)]
+floating: []
+Locked: set()
+Evaluating c
+Head matches: 1
+--------ITER START------------
+pblocks:  [('xipubfrac', 1), ('c', 1)]
+floating: []
+Locked: set()
+Evaluating xipubfrac
+Merging c to xipubfrac
+Head matches: 0
+Locking xipubfrac
+No head matches for xipubfrac; floating
+Final pblocks: []
+Final floating: [('xipubfrac', 1)]
+Case #29: 1
+===========================main start=================
+['gcfj', 'ipvhyxawrsmoutze', 'jnkqi']
+[('gcfj', 1), ('ipvhyxawrsmoutze', 1), ('jnkqi', 1)]
+--------ITER START------------
+pblocks:  [('gcfj', 1), ('ipvhyxawrsmoutze', 1), ('jnkqi', 1)]
+floating: []
+Locked: set()
+Evaluating gcfj
+Extending gcfj with jnkqi
+New segment: gcfjjnkqi
+Locking cfjjnkq
+--------ITER START------------
+pblocks:  [('ipvhyxawrsmoutze', 1), ('gcfjjnkqi', 1)]
+floating: []
+Locked: {'j', 'n', 'f', 'q', 'k', 'c'}
+Evaluating ipvhyxawrsmoutze
+Head matches: 1
+--------ITER START------------
+pblocks:  [('gcfjjnkqi', 1), ('ipvhyxawrsmoutze', 1)]
+floating: []
+Locked: {'j', 'n', 'f', 'q', 'k', 'c'}
+Evaluating gcfjjnkqi
+Extending gcfjjnkqi with ipvhyxawrsmoutze
+New segment: gcfjjnkqiipvhyxawrsmoutze
+Locking cfjjnkqiipvhyxawrsmoutz
+--------ITER START------------
+pblocks:  [('gcfjjnkqiipvhyxawrsmoutze', 1)]
+floating: []
+Locked: {'t', 'o', 'j', 'n', 's', 'x', 'z', 'f', 'y', 'p', 'a', 'm', 'h', 'q', 'u', 'v', 'k', 'w', 'c', 'i', 'r'}
+Evaluating gcfjjnkqiipvhyxawrsmoutze
+Head matches: 0
+Locking gcfjjnkqiipvhyxawrsmoutze
+No head matches for gcfjjnkqiipvhyxawrsmoutze; floating
+Final pblocks: []
+Final floating: [('gcfjjnkqiipvhyxawrsmoutze', 1)]
+Case #30: 1
+===========================main start=================
+['z', 'aovfnhtpwc', 's', 'xd', 'g', 'z', 'k', 'u', 'lbejyq', 'rmis']
+[('k', 1), ('z', 2), ('g', 1), ('s', 1), ('u', 1), ('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1), ('rmis', 1)]
+--------ITER START------------
+pblocks:  [('k', 1), ('z', 2), ('g', 1), ('s', 1), ('u', 1), ('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1), ('rmis', 1)]
+floating: []
+Locked: set()
+Evaluating k
+Head matches: 0
+Locking k
+No head matches for k; floating
+--------ITER START------------
+pblocks:  [('z', 2), ('g', 1), ('s', 1), ('u', 1), ('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1), ('rmis', 1)]
+floating: [('k', 1)]
+Locked: {'k'}
+Evaluating z
+Head matches: 0
+Locking z
+No head matches for z; floating
+--------ITER START------------
+pblocks:  [('g', 1), ('s', 1), ('u', 1), ('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1), ('rmis', 1)]
+floating: [('k', 1), ('z', 2)]
+Locked: {'z', 'k'}
+Evaluating g
+Head matches: 0
+Locking g
+No head matches for g; floating
+--------ITER START------------
+pblocks:  [('s', 1), ('u', 1), ('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1), ('rmis', 1)]
+floating: [('k', 1), ('z', 2), ('g', 1)]
+Locked: {'z', 'k', 'g'}
+Evaluating s
+Head matches: 1
+--------ITER START------------
+pblocks:  [('u', 1), ('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1), ('rmis', 1), ('s', 1)]
+floating: [('k', 1), ('z', 2), ('g', 1)]
+Locked: {'z', 'k', 'g'}
+Evaluating u
+Head matches: 0
+Locking u
+No head matches for u; floating
+--------ITER START------------
+pblocks:  [('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1), ('rmis', 1), ('s', 1)]
+floating: [('k', 1), ('z', 2), ('g', 1), ('u', 1)]
+Locked: {'z', 'k', 'g', 'u'}
+Evaluating aovfnhtpwc
+Head matches: 0
+Locking aovfnhtpwc
+No head matches for aovfnhtpwc; floating
+--------ITER START------------
+pblocks:  [('xd', 1), ('lbejyq', 1), ('rmis', 1), ('s', 1)]
+floating: [('k', 1), ('z', 2), ('g', 1), ('u', 1), ('aovfnhtpwc', 1)]
+Locked: {'o', 'n', 'z', 'g', 'f', 'a', 'p', 'h', 'u', 'v', 'k', 'w', 'c', 't'}
+Evaluating xd
+Head matches: 0
+No head matches for xd; floating
+--------ITER START------------
+pblocks:  [('lbejyq', 1), ('rmis', 1), ('s', 1)]
+floating: [('k', 1), ('z', 2), ('g', 1), ('u', 1), ('aovfnhtpwc', 1), ('xd', 1)]
+Locked: {'o', 'n', 'z', 'g', 'f', 'a', 'p', 'h', 'u', 'v', 'k', 'w', 'c', 't'}
+Evaluating lbejyq
+Head matches: 0
+Locking lbejyq
+No head matches for lbejyq; floating
+--------ITER START------------
+pblocks:  [('rmis', 1), ('s', 1)]
+floating: [('k', 1), ('z', 2), ('g', 1), ('u', 1), ('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1)]
+Locked: {'o', 'e', 'n', 'j', 'z', 'g', 'f', 'y', 'a', 'p', 'b', 'h', 'u', 'l', 'q', 'v', 'k', 'w', 'c', 't'}
+Evaluating rmis
+Merging s to rmis
+Head matches: 0
+Locking rmis
+No head matches for rmis; floating
+Final pblocks: []
+Final floating: [('k', 1), ('z', 2), ('g', 1), ('u', 1), ('aovfnhtpwc', 1), ('xd', 1), ('lbejyq', 1), ('rmis', 1)]
+Case #31: 80640
+===========================main start=================
+['u', 'gu', 'jwg', 'rqj', 'bhksx']
+[('u', 1), ('gu', 1), ('jwg', 1), ('rqj', 1), ('bhksx', 1)]
+--------ITER START------------
+pblocks:  [('u', 1), ('gu', 1), ('jwg', 1), ('rqj', 1), ('bhksx', 1)]
+floating: []
+Locked: set()
+Evaluating u
+Head matches: 1
+--------ITER START------------
+pblocks:  [('gu', 1), ('jwg', 1), ('rqj', 1), ('bhksx', 1), ('u', 1)]
+floating: []
+Locked: set()
+Evaluating gu
+Merging u to gu
+Head matches: 1
+--------ITER START------------
+pblocks:  [('jwg', 1), ('rqj', 1), ('bhksx', 1), ('gu', 1)]
+floating: []
+Locked: set()
+Evaluating jwg
+Extending jwg with gu
+New segment: jwggu
+Locking wgg
+--------ITER START------------
+pblocks:  [('rqj', 1), ('bhksx', 1), ('jwggu', 1)]
+floating: []
+Locked: {'g', 'w'}
+Evaluating rqj
+Extending rqj with jwggu
+New segment: rqjjwggu
+Locking qjjwgg
+--------ITER START------------
+pblocks:  [('bhksx', 1), ('rqjjwggu', 1)]
+floating: []
+Locked: {'g', 'w', 'j', 'q'}
+Evaluating bhksx
+Head matches: 0
+Locking bhksx
+No head matches for bhksx; floating
+--------ITER START------------
+pblocks:  [('rqjjwggu', 1)]
+floating: [('bhksx', 1)]
+Locked: {'j', 's', 'x', 'g', 'b', 'h', 'q', 'w', 'k'}
+Evaluating rqjjwggu
+Head matches: 0
+Locking rqjjwggu
+No head matches for rqjjwggu; floating
+Final pblocks: []
+Final floating: [('bhksx', 1), ('rqjjwggu', 1)]
+Case #32: 2
+===========================main start=================
+['uht', 'wfrip', 'cvlqm', 'ndb', 'kon', 'mg', 'sazjexc', 'ps', 'gyk']
+[('uht', 1), ('wfrip', 1), ('cvlqm', 1), ('ndb', 1), ('kon', 1), ('mg', 1), ('sazjexc', 1), ('ps', 1), ('gyk', 1)]
+--------ITER START------------
+pblocks:  [('uht', 1), ('wfrip', 1), ('cvlqm', 1), ('ndb', 1), ('kon', 1), ('mg', 1), ('sazjexc', 1), ('ps', 1), ('gyk', 1)]
+floating: []
+Locked: set()
+Evaluating uht
+Head matches: 0
+Locking uht
+No head matches for uht; floating
+--------ITER START------------
+pblocks:  [('wfrip', 1), ('cvlqm', 1), ('ndb', 1), ('kon', 1), ('mg', 1), ('sazjexc', 1), ('ps', 1), ('gyk', 1)]
+floating: [('uht', 1)]
+Locked: {'h', 'u', 't'}
+Evaluating wfrip
+Extending wfrip with ps
+New segment: wfripps
+Locking fripp
+--------ITER START------------
+pblocks:  [('cvlqm', 1), ('ndb', 1), ('kon', 1), ('mg', 1), ('sazjexc', 1), ('gyk', 1), ('wfripps', 1)]
+floating: [('uht', 1)]
+Locked: {'f', 'p', 'h', 'u', 'r', 'i', 't'}
+Evaluating cvlqm
+Extending cvlqm with mg
+New segment: cvlqmmg
+Locking vlqmm
+--------ITER START------------
+pblocks:  [('ndb', 1), ('kon', 1), ('sazjexc', 1), ('gyk', 1), ('wfripps', 1), ('cvlqmmg', 1)]
+floating: [('uht', 1)]
+Locked: {'f', 'p', 'm', 'h', 'u', 'l', 'q', 'v', 'r', 'i', 't'}
+Evaluating ndb
+Head matches: 1
+--------ITER START------------
+pblocks:  [('kon', 1), ('sazjexc', 1), ('gyk', 1), ('wfripps', 1), ('cvlqmmg', 1), ('ndb', 1)]
+floating: [('uht', 1)]
+Locked: {'f', 'p', 'm', 'h', 'u', 'l', 'q', 'v', 'r', 'i', 't'}
+Evaluating kon
+Extending kon with ndb
+New segment: konndb
+Locking onnd
+--------ITER START------------
+pblocks:  [('sazjexc', 1), ('gyk', 1), ('wfripps', 1), ('cvlqmmg', 1), ('konndb', 1)]
+floating: [('uht', 1)]
+Locked: {'o', 'd', 'n', 'f', 'p', 'm', 'h', 'u', 'l', 'q', 'v', 'r', 'i', 't'}
+Evaluating sazjexc
+Extending sazjexc with cvlqmmg
+New segment: sazjexccvlqmmg
+Locking azjexccvlqmm
+--------ITER START------------
+pblocks:  [('gyk', 1), ('wfripps', 1), ('konndb', 1), ('sazjexccvlqmmg', 1)]
+floating: [('uht', 1)]
+Locked: {'o', 'e', 'd', 'n', 'j', 'x', 'z', 'f', 'p', 'a', 'm', 'h', 'u', 'l', 'q', 'v', 'r', 'c', 'i', 't'}
+Evaluating gyk
+Extending gyk with konndb
+New segment: gykkonndb
+Locking ykkonnd
+--------ITER START------------
+pblocks:  [('wfripps', 1), ('sazjexccvlqmmg', 1), ('gykkonndb', 1)]
+floating: [('uht', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'l', 'v', 'n', 'j', 'y', 'r', 'o', 'p', 'm', 'u', 'c', 'i'}
+Evaluating wfripps
+Extending wfripps with sazjexccvlqmmg
+New segment: wfrippssazjexccvlqmmg
+Locking frippssazjexccvlqmm
+--------ITER START------------
+pblocks:  [('gykkonndb', 1), ('wfrippssazjexccvlqmmg', 1)]
+floating: [('uht', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'l', 'v', 'n', 'j', 'y', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating gykkonndb
+Head matches: 1
+--------ITER START------------
+pblocks:  [('wfrippssazjexccvlqmmg', 1), ('gykkonndb', 1)]
+floating: [('uht', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'l', 'v', 'n', 'j', 'y', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating wfrippssazjexccvlqmmg
+Extending wfrippssazjexccvlqmmg with gykkonndb
+New segment: wfrippssazjexccvlqmmggykkonndb
+Locking frippssazjexccvlqmmggykkonnd
+--------ITER START------------
+pblocks:  [('wfrippssazjexccvlqmmggykkonndb', 1)]
+floating: [('uht', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'g', 'l', 'v', 'n', 'j', 'y', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating wfrippssazjexccvlqmmggykkonndb
+Head matches: 0
+Locking wfrippssazjexccvlqmmggykkonndb
+No head matches for wfrippssazjexccvlqmmggykkonndb; floating
+Final pblocks: []
+Final floating: [('uht', 1), ('wfrippssazjexccvlqmmggykkonndb', 1)]
+Case #33: 2
+===========================main start=================
+['abcdefghijklmnopqrstuvwxyz']
+[('abcdefghijklmnopqrstuvwxyz', 1)]
+--------ITER START------------
+pblocks:  [('abcdefghijklmnopqrstuvwxyz', 1)]
+floating: []
+Locked: set()
+Evaluating abcdefghijklmnopqrstuvwxyz
+Head matches: 0
+Locking abcdefghijklmnopqrstuvwxyz
+No head matches for abcdefghijklmnopqrstuvwxyz; floating
+Final pblocks: []
+Final floating: [('abcdefghijklmnopqrstuvwxyz', 1)]
+Case #34: 1
+===========================main start=================
+['iwqftg', 'e', 'r', 'e', 'dopxkcj', 'v', 'z', 'n', 'y', 'bsuahml']
+[('e', 2), ('z', 1), ('v', 1), ('n', 1), ('y', 1), ('r', 1), ('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+--------ITER START------------
+pblocks:  [('e', 2), ('z', 1), ('v', 1), ('n', 1), ('y', 1), ('r', 1), ('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+floating: []
+Locked: set()
+Evaluating e
+Head matches: 0
+Locking e
+No head matches for e; floating
+--------ITER START------------
+pblocks:  [('z', 1), ('v', 1), ('n', 1), ('y', 1), ('r', 1), ('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+floating: [('e', 2)]
+Locked: {'e'}
+Evaluating z
+Head matches: 0
+Locking z
+No head matches for z; floating
+--------ITER START------------
+pblocks:  [('v', 1), ('n', 1), ('y', 1), ('r', 1), ('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+floating: [('e', 2), ('z', 1)]
+Locked: {'e', 'z'}
+Evaluating v
+Head matches: 0
+Locking v
+No head matches for v; floating
+--------ITER START------------
+pblocks:  [('n', 1), ('y', 1), ('r', 1), ('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+floating: [('e', 2), ('z', 1), ('v', 1)]
+Locked: {'e', 'z', 'v'}
+Evaluating n
+Head matches: 0
+Locking n
+No head matches for n; floating
+--------ITER START------------
+pblocks:  [('y', 1), ('r', 1), ('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+floating: [('e', 2), ('z', 1), ('v', 1), ('n', 1)]
+Locked: {'e', 'z', 'v', 'n'}
+Evaluating y
+Head matches: 0
+Locking y
+No head matches for y; floating
+--------ITER START------------
+pblocks:  [('r', 1), ('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+floating: [('e', 2), ('z', 1), ('v', 1), ('n', 1), ('y', 1)]
+Locked: {'e', 'z', 'v', 'n', 'y'}
+Evaluating r
+Head matches: 0
+Locking r
+No head matches for r; floating
+--------ITER START------------
+pblocks:  [('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+floating: [('e', 2), ('z', 1), ('v', 1), ('n', 1), ('y', 1), ('r', 1)]
+Locked: {'e', 'n', 'z', 'y', 'v', 'r'}
+Evaluating iwqftg
+Head matches: 0
+Locking iwqftg
+No head matches for iwqftg; floating
+--------ITER START------------
+pblocks:  [('dopxkcj', 1), ('bsuahml', 1)]
+floating: [('e', 2), ('z', 1), ('v', 1), ('n', 1), ('y', 1), ('r', 1), ('iwqftg', 1)]
+Locked: {'e', 'n', 'z', 'g', 'y', 'f', 'q', 'v', 'w', 'r', 'i', 't'}
+Evaluating dopxkcj
+Head matches: 0
+Locking dopxkcj
+No head matches for dopxkcj; floating
+--------ITER START------------
+pblocks:  [('bsuahml', 1)]
+floating: [('e', 2), ('z', 1), ('v', 1), ('n', 1), ('y', 1), ('r', 1), ('iwqftg', 1), ('dopxkcj', 1)]
+Locked: {'c', 'o', 'e', 'd', 'n', 'j', 'x', 'z', 'g', 'y', 'f', 'p', 'q', 'v', 'w', 'r', 'k', 'i', 't'}
+Evaluating bsuahml
+Head matches: 0
+Locking bsuahml
+No head matches for bsuahml; floating
+Final pblocks: []
+Final floating: [('e', 2), ('z', 1), ('v', 1), ('n', 1), ('y', 1), ('r', 1), ('iwqftg', 1), ('dopxkcj', 1), ('bsuahml', 1)]
+Case #35: 725760
+===========================main start=================
+['ldzs', 'mibu', 'xqa', 'h', 'he', 'vcwgnyor', 'ek', 'jtp', 'f']
+[('f', 1), ('h', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1), ('he', 1), ('vcwgnyor', 1), ('ek', 1), ('jtp', 1)]
+--------ITER START------------
+pblocks:  [('f', 1), ('h', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1), ('he', 1), ('vcwgnyor', 1), ('ek', 1), ('jtp', 1)]
+floating: []
+Locked: set()
+Evaluating f
+Head matches: 0
+Locking f
+No head matches for f; floating
+--------ITER START------------
+pblocks:  [('h', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1), ('he', 1), ('vcwgnyor', 1), ('ek', 1), ('jtp', 1)]
+floating: [('f', 1)]
+Locked: {'f'}
+Evaluating h
+Extending h with he
+New segment: he
+--------ITER START------------
+pblocks:  [('ldzs', 1), ('mibu', 1), ('xqa', 1), ('vcwgnyor', 1), ('ek', 1), ('jtp', 1), ('he', 1)]
+floating: [('f', 1)]
+Locked: {'f'}
+Evaluating ldzs
+Head matches: 0
+Locking ldzs
+No head matches for ldzs; floating
+--------ITER START------------
+pblocks:  [('mibu', 1), ('xqa', 1), ('vcwgnyor', 1), ('ek', 1), ('jtp', 1), ('he', 1)]
+floating: [('f', 1), ('ldzs', 1)]
+Locked: {'z', 'd', 'f', 'l', 's'}
+Evaluating mibu
+Head matches: 0
+Locking mibu
+No head matches for mibu; floating
+--------ITER START------------
+pblocks:  [('xqa', 1), ('vcwgnyor', 1), ('ek', 1), ('jtp', 1), ('he', 1)]
+floating: [('f', 1), ('ldzs', 1), ('mibu', 1)]
+Locked: {'d', 's', 'z', 'f', 'b', 'm', 'l', 'u', 'i'}
+Evaluating xqa
+Head matches: 0
+Locking xqa
+No head matches for xqa; floating
+--------ITER START------------
+pblocks:  [('vcwgnyor', 1), ('ek', 1), ('jtp', 1), ('he', 1)]
+floating: [('f', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1)]
+Locked: {'d', 's', 'x', 'z', 'f', 'a', 'b', 'm', 'l', 'u', 'q', 'i'}
+Evaluating vcwgnyor
+Head matches: 0
+Locking vcwgnyor
+No head matches for vcwgnyor; floating
+--------ITER START------------
+pblocks:  [('ek', 1), ('jtp', 1), ('he', 1)]
+floating: [('f', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1), ('vcwgnyor', 1)]
+Locked: {'o', 'd', 'n', 's', 'x', 'z', 'g', 'f', 'y', 'a', 'b', 'm', 'l', 'u', 'q', 'v', 'w', 'r', 'c', 'i'}
+Evaluating ek
+Head matches: 1
+--------ITER START------------
+pblocks:  [('jtp', 1), ('he', 1), ('ek', 1)]
+floating: [('f', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1), ('vcwgnyor', 1)]
+Locked: {'o', 'd', 'n', 's', 'x', 'z', 'g', 'f', 'y', 'a', 'b', 'm', 'l', 'u', 'q', 'v', 'w', 'r', 'c', 'i'}
+Evaluating jtp
+Head matches: 0
+Locking jtp
+No head matches for jtp; floating
+--------ITER START------------
+pblocks:  [('he', 1), ('ek', 1)]
+floating: [('f', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1), ('vcwgnyor', 1), ('jtp', 1)]
+Locked: {'d', 'x', 'f', 'a', 'q', 't', 'z', 'g', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating he
+Extending he with ek
+New segment: heek
+Locking ee
+--------ITER START------------
+pblocks:  [('heek', 1)]
+floating: [('f', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1), ('vcwgnyor', 1), ('jtp', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'q', 't', 'z', 'g', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating heek
+Head matches: 0
+Locking heek
+No head matches for heek; floating
+Final pblocks: []
+Final floating: [('f', 1), ('ldzs', 1), ('mibu', 1), ('xqa', 1), ('vcwgnyor', 1), ('jtp', 1), ('heek', 1)]
+Case #36: 5040
+===========================main start=================
+['abc', 'bcd']
+[('abc', 1), ('bcd', 1)]
+--------ITER START------------
+pblocks:  [('abc', 1), ('bcd', 1)]
+floating: []
+Locked: set()
+Evaluating abc
+Head matches: 0
+Locking abc
+No head matches for abc; floating
+--------ITER START------------
+pblocks:  [('bcd', 1)]
+floating: [('abc', 1)]
+Locked: {'b', 'c', 'a'}
+Evaluating bcd
+Head matches: 0
+Locking bcd
+No head matches for bcd; floating
+Final pblocks: []
+Final floating: [('abc', 1), ('bcd', 1)]
+Found illegal char b in floating
+Case #37: 0
+===========================main start=================
+['zy', 'yo', 'wg', 'b', 'f', 'rw', 'fiplb', 'gxhcz', 'bqe', 'ojf']
+[('f', 1), ('b', 1), ('zy', 1), ('yo', 1), ('wg', 1), ('rw', 1), ('fiplb', 1), ('gxhcz', 1), ('bqe', 1), ('ojf', 1)]
+--------ITER START------------
+pblocks:  [('f', 1), ('b', 1), ('zy', 1), ('yo', 1), ('wg', 1), ('rw', 1), ('fiplb', 1), ('gxhcz', 1), ('bqe', 1), ('ojf', 1)]
+floating: []
+Locked: set()
+Evaluating f
+Extending f with fiplb
+New segment: fiplb
+Locking ipl
+--------ITER START------------
+pblocks:  [('b', 1), ('zy', 1), ('yo', 1), ('wg', 1), ('rw', 1), ('gxhcz', 1), ('bqe', 1), ('ojf', 1), ('fiplb', 1)]
+floating: []
+Locked: {'l', 'i', 'p'}
+Evaluating b
+Extending b with bqe
+New segment: bqe
+--------ITER START------------
+pblocks:  [('zy', 1), ('yo', 1), ('wg', 1), ('rw', 1), ('gxhcz', 1), ('ojf', 1), ('fiplb', 1), ('bqe', 1)]
+floating: []
+Locked: {'l', 'i', 'p'}
+Evaluating zy
+Extending zy with yo
+New segment: zyyo
+Locking yy
+--------ITER START------------
+pblocks:  [('wg', 1), ('rw', 1), ('gxhcz', 1), ('ojf', 1), ('fiplb', 1), ('bqe', 1), ('zyyo', 1)]
+floating: []
+Locked: {'l', 'y', 'i', 'p'}
+Evaluating wg
+Extending wg with gxhcz
+New segment: wggxhcz
+Locking ggxhc
+--------ITER START------------
+pblocks:  [('rw', 1), ('ojf', 1), ('fiplb', 1), ('bqe', 1), ('zyyo', 1), ('wggxhcz', 1)]
+floating: []
+Locked: {'x', 'g', 'y', 'p', 'h', 'l', 'c', 'i'}
+Evaluating rw
+Extending rw with wggxhcz
+New segment: rwwggxhcz
+Locking wwggxhc
+--------ITER START------------
+pblocks:  [('ojf', 1), ('fiplb', 1), ('bqe', 1), ('zyyo', 1), ('rwwggxhcz', 1)]
+floating: []
+Locked: {'x', 'g', 'y', 'p', 'h', 'l', 'w', 'c', 'i'}
+Evaluating ojf
+Extending ojf with fiplb
+New segment: ojffiplb
+Locking jffipl
+--------ITER START------------
+pblocks:  [('bqe', 1), ('zyyo', 1), ('rwwggxhcz', 1), ('ojffiplb', 1)]
+floating: []
+Locked: {'j', 'x', 'g', 'y', 'f', 'p', 'h', 'l', 'w', 'c', 'i'}
+Evaluating bqe
+Head matches: 1
+--------ITER START------------
+pblocks:  [('zyyo', 1), ('rwwggxhcz', 1), ('ojffiplb', 1), ('bqe', 1)]
+floating: []
+Locked: {'j', 'x', 'g', 'y', 'f', 'p', 'h', 'l', 'w', 'c', 'i'}
+Evaluating zyyo
+Extending zyyo with ojffiplb
+New segment: zyyoojffiplb
+Locking yyoojffipl
+--------ITER START------------
+pblocks:  [('rwwggxhcz', 1), ('bqe', 1), ('zyyoojffiplb', 1)]
+floating: []
+Locked: {'o', 'j', 'x', 'g', 'y', 'f', 'p', 'h', 'l', 'w', 'c', 'i'}
+Evaluating rwwggxhcz
+Extending rwwggxhcz with zyyoojffiplb
+New segment: rwwggxhczzyyoojffiplb
+Locking wwggxhczzyyoojffipl
+--------ITER START------------
+pblocks:  [('bqe', 1), ('rwwggxhczzyyoojffiplb', 1)]
+floating: []
+Locked: {'o', 'j', 'x', 'g', 'z', 'y', 'f', 'p', 'h', 'l', 'w', 'c', 'i'}
+Evaluating bqe
+Head matches: 1
+--------ITER START------------
+pblocks:  [('rwwggxhczzyyoojffiplb', 1), ('bqe', 1)]
+floating: []
+Locked: {'o', 'j', 'x', 'g', 'z', 'y', 'f', 'p', 'h', 'l', 'w', 'c', 'i'}
+Evaluating rwwggxhczzyyoojffiplb
+Extending rwwggxhczzyyoojffiplb with bqe
+New segment: rwwggxhczzyyoojffiplbbqe
+Locking wwggxhczzyyoojffiplbbq
+--------ITER START------------
+pblocks:  [('rwwggxhczzyyoojffiplbbqe', 1)]
+floating: []
+Locked: {'o', 'j', 'x', 'g', 'z', 'y', 'f', 'p', 'b', 'h', 'l', 'q', 'w', 'c', 'i'}
+Evaluating rwwggxhczzyyoojffiplbbqe
+Head matches: 0
+Locking rwwggxhczzyyoojffiplbbqe
+No head matches for rwwggxhczzyyoojffiplbbqe; floating
+Final pblocks: []
+Final floating: [('rwwggxhczzyyoojffiplbbqe', 1)]
+Case #38: 1
+===========================main start=================
+['f', 'il', 'b', 'zs', 'p', 'x', 'd', 'g', 'ohyeawumnq', 'g']
+[('d', 1), ('x', 1), ('g', 2), ('f', 1), ('p', 1), ('b', 1), ('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+--------ITER START------------
+pblocks:  [('d', 1), ('x', 1), ('g', 2), ('f', 1), ('p', 1), ('b', 1), ('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+floating: []
+Locked: set()
+Evaluating d
+Head matches: 0
+Locking d
+No head matches for d; floating
+--------ITER START------------
+pblocks:  [('x', 1), ('g', 2), ('f', 1), ('p', 1), ('b', 1), ('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+floating: [('d', 1)]
+Locked: {'d'}
+Evaluating x
+Head matches: 0
+Locking x
+No head matches for x; floating
+--------ITER START------------
+pblocks:  [('g', 2), ('f', 1), ('p', 1), ('b', 1), ('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+floating: [('d', 1), ('x', 1)]
+Locked: {'x', 'd'}
+Evaluating g
+Head matches: 0
+Locking g
+No head matches for g; floating
+--------ITER START------------
+pblocks:  [('f', 1), ('p', 1), ('b', 1), ('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+floating: [('d', 1), ('x', 1), ('g', 2)]
+Locked: {'x', 'g', 'd'}
+Evaluating f
+Head matches: 0
+Locking f
+No head matches for f; floating
+--------ITER START------------
+pblocks:  [('p', 1), ('b', 1), ('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+floating: [('d', 1), ('x', 1), ('g', 2), ('f', 1)]
+Locked: {'x', 'g', 'd', 'f'}
+Evaluating p
+Head matches: 0
+Locking p
+No head matches for p; floating
+--------ITER START------------
+pblocks:  [('b', 1), ('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+floating: [('d', 1), ('x', 1), ('g', 2), ('f', 1), ('p', 1)]
+Locked: {'x', 'g', 'd', 'f', 'p'}
+Evaluating b
+Head matches: 0
+Locking b
+No head matches for b; floating
+--------ITER START------------
+pblocks:  [('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+floating: [('d', 1), ('x', 1), ('g', 2), ('f', 1), ('p', 1), ('b', 1)]
+Locked: {'d', 'x', 'g', 'f', 'p', 'b'}
+Evaluating il
+Head matches: 0
+No head matches for il; floating
+--------ITER START------------
+pblocks:  [('zs', 1), ('ohyeawumnq', 1)]
+floating: [('d', 1), ('x', 1), ('g', 2), ('f', 1), ('p', 1), ('b', 1), ('il', 1)]
+Locked: {'d', 'x', 'g', 'f', 'p', 'b'}
+Evaluating zs
+Head matches: 0
+No head matches for zs; floating
+--------ITER START------------
+pblocks:  [('ohyeawumnq', 1)]
+floating: [('d', 1), ('x', 1), ('g', 2), ('f', 1), ('p', 1), ('b', 1), ('il', 1), ('zs', 1)]
+Locked: {'d', 'x', 'g', 'f', 'p', 'b'}
+Evaluating ohyeawumnq
+Head matches: 0
+Locking ohyeawumnq
+No head matches for ohyeawumnq; floating
+Final pblocks: []
+Final floating: [('d', 1), ('x', 1), ('g', 2), ('f', 1), ('p', 1), ('b', 1), ('il', 1), ('zs', 1), ('ohyeawumnq', 1)]
+Case #39: 725760
+===========================main start=================
+['bha', 'igwytr']
+[('bha', 1), ('igwytr', 1)]
+--------ITER START------------
+pblocks:  [('bha', 1), ('igwytr', 1)]
+floating: []
+Locked: set()
+Evaluating bha
+Head matches: 0
+Locking bha
+No head matches for bha; floating
+--------ITER START------------
+pblocks:  [('igwytr', 1)]
+floating: [('bha', 1)]
+Locked: {'b', 'h', 'a'}
+Evaluating igwytr
+Head matches: 0
+Locking igwytr
+No head matches for igwytr; floating
+Final pblocks: []
+Final floating: [('bha', 1), ('igwytr', 1)]
+Case #40: 2
+===========================main start=================
+['dvmgesiuyhljkotqbn', 'r', 'r', 'r', 'r', 'r', 'cwxzap']
+[('r', 120), ('dvmgesiuyhljkotqbn', 1), ('cwxzap', 1)]
+--------ITER START------------
+pblocks:  [('r', 120), ('dvmgesiuyhljkotqbn', 1), ('cwxzap', 1)]
+floating: []
+Locked: set()
+Evaluating r
+Head matches: 0
+Locking r
+No head matches for r; floating
+--------ITER START------------
+pblocks:  [('dvmgesiuyhljkotqbn', 1), ('cwxzap', 1)]
+floating: [('r', 120)]
+Locked: {'r'}
+Evaluating dvmgesiuyhljkotqbn
+Head matches: 0
+Locking dvmgesiuyhljkotqbn
+No head matches for dvmgesiuyhljkotqbn; floating
+--------ITER START------------
+pblocks:  [('cwxzap', 1)]
+floating: [('r', 120), ('dvmgesiuyhljkotqbn', 1)]
+Locked: {'o', 'e', 'd', 'j', 'n', 's', 'g', 'y', 'b', 'm', 'h', 'u', 'l', 'q', 'v', 'k', 'r', 'i', 't'}
+Evaluating cwxzap
+Head matches: 0
+Locking cwxzap
+No head matches for cwxzap; floating
+Final pblocks: []
+Final floating: [('r', 120), ('dvmgesiuyhljkotqbn', 1), ('cwxzap', 1)]
+Case #41: 720
+===========================main start=================
+['r', 'r', 'x', 'pvikquhdmlscr', 'xbp']
+[('x', 1), ('r', 2), ('pvikquhdmlscr', 1), ('xbp', 1)]
+--------ITER START------------
+pblocks:  [('x', 1), ('r', 2), ('pvikquhdmlscr', 1), ('xbp', 1)]
+floating: []
+Locked: set()
+Evaluating x
+Extending x with xbp
+New segment: xbp
+--------ITER START------------
+pblocks:  [('r', 2), ('pvikquhdmlscr', 1), ('xbp', 1)]
+floating: []
+Locked: set()
+Evaluating r
+Head matches: 1
+--------ITER START------------
+pblocks:  [('pvikquhdmlscr', 1), ('xbp', 1), ('r', 2)]
+floating: []
+Locked: set()
+Evaluating pvikquhdmlscr
+Merging r to pvikquhdmlscr
+Head matches: 1
+--------ITER START------------
+pblocks:  [('xbp', 1), ('pvikquhdmlscr', 2)]
+floating: []
+Locked: set()
+Evaluating xbp
+Extending xbp with pvikquhdmlscr
+New segment: xbppvikquhdmlscr
+Locking bppvikquhdmlsc
+--------ITER START------------
+pblocks:  [('xbppvikquhdmlscr', 2)]
+floating: []
+Locked: {'d', 's', 'p', 'b', 'm', 'h', 'q', 'u', 'l', 'v', 'k', 'c', 'i'}
+Evaluating xbppvikquhdmlscr
+Head matches: 0
+Locking xbppvikquhdmlscr
+No head matches for xbppvikquhdmlscr; floating
+Final pblocks: []
+Final floating: [('xbppvikquhdmlscr', 2)]
+Case #42: 2
+===========================main start=================
+['ydjzambxesihptflrg', 'v', 'v', 'v', 'o', 'kn', 'v', 'v']
+[('v', 120), ('o', 1), ('ydjzambxesihptflrg', 1), ('kn', 1)]
+--------ITER START------------
+pblocks:  [('v', 120), ('o', 1), ('ydjzambxesihptflrg', 1), ('kn', 1)]
+floating: []
+Locked: set()
+Evaluating v
+Head matches: 0
+Locking v
+No head matches for v; floating
+--------ITER START------------
+pblocks:  [('o', 1), ('ydjzambxesihptflrg', 1), ('kn', 1)]
+floating: [('v', 120)]
+Locked: {'v'}
+Evaluating o
+Head matches: 0
+Locking o
+No head matches for o; floating
+--------ITER START------------
+pblocks:  [('ydjzambxesihptflrg', 1), ('kn', 1)]
+floating: [('v', 120), ('o', 1)]
+Locked: {'o', 'v'}
+Evaluating ydjzambxesihptflrg
+Head matches: 0
+Locking ydjzambxesihptflrg
+No head matches for ydjzambxesihptflrg; floating
+--------ITER START------------
+pblocks:  [('kn', 1)]
+floating: [('v', 120), ('o', 1), ('ydjzambxesihptflrg', 1)]
+Locked: {'o', 'e', 'd', 'j', 's', 'x', 'z', 'g', 'y', 'f', 'a', 'p', 'b', 'm', 'h', 'l', 'v', 'r', 'i', 't'}
+Evaluating kn
+Head matches: 0
+No head matches for kn; floating
+Final pblocks: []
+Final floating: [('v', 120), ('o', 1), ('ydjzambxesihptflrg', 1), ('kn', 1)]
+Case #43: 2880
+===========================main start=================
+['medovbupywq', 'calzt', 'hsr', 'rnif', 'fgkj']
+[('medovbupywq', 1), ('calzt', 1), ('hsr', 1), ('rnif', 1), ('fgkj', 1)]
+--------ITER START------------
+pblocks:  [('medovbupywq', 1), ('calzt', 1), ('hsr', 1), ('rnif', 1), ('fgkj', 1)]
+floating: []
+Locked: set()
+Evaluating medovbupywq
+Head matches: 0
+Locking medovbupywq
+No head matches for medovbupywq; floating
+--------ITER START------------
+pblocks:  [('calzt', 1), ('hsr', 1), ('rnif', 1), ('fgkj', 1)]
+floating: [('medovbupywq', 1)]
+Locked: {'o', 'e', 'd', 'y', 'p', 'b', 'm', 'u', 'q', 'v', 'w'}
+Evaluating calzt
+Head matches: 0
+Locking calzt
+No head matches for calzt; floating
+--------ITER START------------
+pblocks:  [('hsr', 1), ('rnif', 1), ('fgkj', 1)]
+floating: [('medovbupywq', 1), ('calzt', 1)]
+Locked: {'o', 'e', 'd', 'z', 'y', 'p', 'a', 'b', 'm', 'u', 'q', 'l', 'v', 'w', 'c', 't'}
+Evaluating hsr
+Extending hsr with rnif
+New segment: hsrrnif
+Locking srrni
+--------ITER START------------
+pblocks:  [('fgkj', 1), ('hsrrnif', 1)]
+floating: [('medovbupywq', 1), ('calzt', 1)]
+Locked: {'o', 'e', 'd', 'n', 's', 'z', 'y', 'p', 'a', 'b', 'm', 'u', 'q', 'l', 'v', 'w', 'r', 'c', 't', 'i'}
+Evaluating fgkj
+Head matches: 1
+--------ITER START------------
+pblocks:  [('hsrrnif', 1), ('fgkj', 1)]
+floating: [('medovbupywq', 1), ('calzt', 1)]
+Locked: {'o', 'e', 'd', 'n', 's', 'z', 'y', 'p', 'a', 'b', 'm', 'u', 'q', 'l', 'v', 'w', 'r', 'c', 't', 'i'}
+Evaluating hsrrnif
+Extending hsrrnif with fgkj
+New segment: hsrrniffgkj
+Locking srrniffgk
+--------ITER START------------
+pblocks:  [('hsrrniffgkj', 1)]
+floating: [('medovbupywq', 1), ('calzt', 1)]
+Locked: {'e', 'd', 'f', 'a', 'q', 'k', 't', 'z', 'g', 'l', 'v', 'w', 'n', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating hsrrniffgkj
+Head matches: 0
+Locking hsrrniffgkj
+No head matches for hsrrniffgkj; floating
+Final pblocks: []
+Final floating: [('medovbupywq', 1), ('calzt', 1), ('hsrrniffgkj', 1)]
+Case #44: 6
+===========================main start=================
+['ihlzemqpfrytb', 'i']
+[('i', 1), ('ihlzemqpfrytb', 1)]
+--------ITER START------------
+pblocks:  [('i', 1), ('ihlzemqpfrytb', 1)]
+floating: []
+Locked: set()
+Evaluating i
+Extending i with ihlzemqpfrytb
+New segment: ihlzemqpfrytb
+Locking hlzemqpfryt
+--------ITER START------------
+pblocks:  [('ihlzemqpfrytb', 1)]
+floating: []
+Locked: {'e', 'z', 'f', 'y', 'p', 'm', 'h', 'l', 'q', 'r', 't'}
+Evaluating ihlzemqpfrytb
+Head matches: 0
+Locking ihlzemqpfrytb
+No head matches for ihlzemqpfrytb; floating
+Final pblocks: []
+Final floating: [('ihlzemqpfrytb', 1)]
+Case #45: 1
+===========================main start=================
+['ia', 'ay', 'lg', 'gi', 'io']
+[('ia', 1), ('ay', 1), ('lg', 1), ('gi', 1), ('io', 1)]
+--------ITER START------------
+pblocks:  [('ia', 1), ('ay', 1), ('lg', 1), ('gi', 1), ('io', 1)]
+floating: []
+Locked: set()
+Evaluating ia
+Extending ia with ay
+New segment: iaay
+Locking aa
+--------ITER START------------
+pblocks:  [('lg', 1), ('gi', 1), ('io', 1), ('iaay', 1)]
+floating: []
+Locked: {'a'}
+Evaluating lg
+Extending lg with gi
+New segment: lggi
+Locking gg
+--------ITER START------------
+pblocks:  [('io', 1), ('iaay', 1), ('lggi', 1)]
+floating: []
+Locked: {'g', 'a'}
+Evaluating io
+Head matches: 1
+--------ITER START------------
+pblocks:  [('iaay', 1), ('lggi', 1), ('io', 1)]
+floating: []
+Locked: {'g', 'a'}
+Evaluating iaay
+Head matches: 1
+--------ITER START------------
+pblocks:  [('lggi', 1), ('io', 1), ('iaay', 1)]
+floating: []
+Locked: {'g', 'a'}
+Evaluating lggi
+Extending lggi with io
+New segment: lggiio
+Double match!
+Final pblocks: [('io', 1), ('iaay', 1)]
+Final floating: []
+Case #46: 0
+===========================main start=================
+['y', 'y', 'mvoldksiqxartwjfbpngezh', 'y', 'y', 'y', 'y', 'u', 'y', 'c']
+[('y', 5040), ('u', 1), ('c', 1), ('mvoldksiqxartwjfbpngezh', 1)]
+--------ITER START------------
+pblocks:  [('y', 5040), ('u', 1), ('c', 1), ('mvoldksiqxartwjfbpngezh', 1)]
+floating: []
+Locked: set()
+Evaluating y
+Head matches: 0
+Locking y
+No head matches for y; floating
+--------ITER START------------
+pblocks:  [('u', 1), ('c', 1), ('mvoldksiqxartwjfbpngezh', 1)]
+floating: [('y', 5040)]
+Locked: {'y'}
+Evaluating u
+Head matches: 0
+Locking u
+No head matches for u; floating
+--------ITER START------------
+pblocks:  [('c', 1), ('mvoldksiqxartwjfbpngezh', 1)]
+floating: [('y', 5040), ('u', 1)]
+Locked: {'y', 'u'}
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('mvoldksiqxartwjfbpngezh', 1)]
+floating: [('y', 5040), ('u', 1), ('c', 1)]
+Locked: {'y', 'c', 'u'}
+Evaluating mvoldksiqxartwjfbpngezh
+Head matches: 0
+Locking mvoldksiqxartwjfbpngezh
+No head matches for mvoldksiqxartwjfbpngezh; floating
+Final pblocks: []
+Final floating: [('y', 5040), ('u', 1), ('c', 1), ('mvoldksiqxartwjfbpngezh', 1)]
+Case #47: 120960
+===========================main start=================
+['zjufysaqrp', 'k', 'x', 'wl', 'b', 'mvcn', 'it', 'geo']
+[('x', 1), ('k', 1), ('b', 1), ('zjufysaqrp', 1), ('wl', 1), ('mvcn', 1), ('it', 1), ('geo', 1)]
+--------ITER START------------
+pblocks:  [('x', 1), ('k', 1), ('b', 1), ('zjufysaqrp', 1), ('wl', 1), ('mvcn', 1), ('it', 1), ('geo', 1)]
+floating: []
+Locked: set()
+Evaluating x
+Head matches: 0
+Locking x
+No head matches for x; floating
+--------ITER START------------
+pblocks:  [('k', 1), ('b', 1), ('zjufysaqrp', 1), ('wl', 1), ('mvcn', 1), ('it', 1), ('geo', 1)]
+floating: [('x', 1)]
+Locked: {'x'}
+Evaluating k
+Head matches: 0
+Locking k
+No head matches for k; floating
+--------ITER START------------
+pblocks:  [('b', 1), ('zjufysaqrp', 1), ('wl', 1), ('mvcn', 1), ('it', 1), ('geo', 1)]
+floating: [('x', 1), ('k', 1)]
+Locked: {'x', 'k'}
+Evaluating b
+Head matches: 0
+Locking b
+No head matches for b; floating
+--------ITER START------------
+pblocks:  [('zjufysaqrp', 1), ('wl', 1), ('mvcn', 1), ('it', 1), ('geo', 1)]
+floating: [('x', 1), ('k', 1), ('b', 1)]
+Locked: {'x', 'b', 'k'}
+Evaluating zjufysaqrp
+Head matches: 0
+Locking zjufysaqrp
+No head matches for zjufysaqrp; floating
+--------ITER START------------
+pblocks:  [('wl', 1), ('mvcn', 1), ('it', 1), ('geo', 1)]
+floating: [('x', 1), ('k', 1), ('b', 1), ('zjufysaqrp', 1)]
+Locked: {'j', 's', 'x', 'z', 'f', 'y', 'a', 'p', 'b', 'u', 'q', 'k', 'r'}
+Evaluating wl
+Head matches: 0
+No head matches for wl; floating
+--------ITER START------------
+pblocks:  [('mvcn', 1), ('it', 1), ('geo', 1)]
+floating: [('x', 1), ('k', 1), ('b', 1), ('zjufysaqrp', 1), ('wl', 1)]
+Locked: {'j', 's', 'x', 'z', 'f', 'y', 'a', 'p', 'b', 'u', 'q', 'k', 'r'}
+Evaluating mvcn
+Head matches: 0
+Locking mvcn
+No head matches for mvcn; floating
+--------ITER START------------
+pblocks:  [('it', 1), ('geo', 1)]
+floating: [('x', 1), ('k', 1), ('b', 1), ('zjufysaqrp', 1), ('wl', 1), ('mvcn', 1)]
+Locked: {'j', 'n', 's', 'x', 'z', 'f', 'y', 'a', 'p', 'b', 'm', 'u', 'q', 'v', 'k', 'r', 'c'}
+Evaluating it
+Head matches: 0
+No head matches for it; floating
+--------ITER START------------
+pblocks:  [('geo', 1)]
+floating: [('x', 1), ('k', 1), ('b', 1), ('zjufysaqrp', 1), ('wl', 1), ('mvcn', 1), ('it', 1)]
+Locked: {'j', 'n', 's', 'x', 'z', 'f', 'y', 'a', 'p', 'b', 'm', 'u', 'q', 'v', 'k', 'r', 'c'}
+Evaluating geo
+Head matches: 0
+Locking geo
+No head matches for geo; floating
+Final pblocks: []
+Final floating: [('x', 1), ('k', 1), ('b', 1), ('zjufysaqrp', 1), ('wl', 1), ('mvcn', 1), ('it', 1), ('geo', 1)]
+Case #48: 40320
+===========================main start=================
+['c', 'd', 'oavw', 'd', 'jfo', 'wg', 'dc', 'mqzj']
+[('d', 2), ('c', 1), ('oavw', 1), ('jfo', 1), ('wg', 1), ('dc', 1), ('mqzj', 1)]
+--------ITER START------------
+pblocks:  [('d', 2), ('c', 1), ('oavw', 1), ('jfo', 1), ('wg', 1), ('dc', 1), ('mqzj', 1)]
+floating: []
+Locked: set()
+Evaluating d
+Extending d with dc
+New segment: dc
+--------ITER START------------
+pblocks:  [('c', 1), ('oavw', 1), ('jfo', 1), ('wg', 1), ('mqzj', 1), ('dc', 2)]
+floating: []
+Locked: set()
+Evaluating c
+Head matches: 1
+--------ITER START------------
+pblocks:  [('oavw', 1), ('jfo', 1), ('wg', 1), ('mqzj', 1), ('dc', 2), ('c', 1)]
+floating: []
+Locked: set()
+Evaluating oavw
+Extending oavw with wg
+New segment: oavwwg
+Locking avww
+--------ITER START------------
+pblocks:  [('jfo', 1), ('mqzj', 1), ('dc', 2), ('c', 1), ('oavwwg', 1)]
+floating: []
+Locked: {'v', 'w', 'a'}
+Evaluating jfo
+Extending jfo with oavwwg
+New segment: jfooavwwg
+Locking fooavww
+--------ITER START------------
+pblocks:  [('mqzj', 1), ('dc', 2), ('c', 1), ('jfooavwwg', 1)]
+floating: []
+Locked: {'o', 'v', 'w', 'f', 'a'}
+Evaluating mqzj
+Extending mqzj with jfooavwwg
+New segment: mqzjjfooavwwg
+Locking qzjjfooavww
+--------ITER START------------
+pblocks:  [('dc', 2), ('c', 1), ('mqzjjfooavwwg', 1)]
+floating: []
+Locked: {'o', 'j', 'z', 'f', 'a', 'q', 'v', 'w'}
+Evaluating dc
+Merging c to dc
+Head matches: 0
+No head matches for dc; floating
+--------ITER START------------
+pblocks:  [('mqzjjfooavwwg', 1)]
+floating: [('dc', 2)]
+Locked: {'o', 'j', 'z', 'f', 'a', 'q', 'v', 'w'}
+Evaluating mqzjjfooavwwg
+Head matches: 0
+Locking mqzjjfooavwwg
+No head matches for mqzjjfooavwwg; floating
+Final pblocks: []
+Final floating: [('dc', 2), ('mqzjjfooavwwg', 1)]
+Case #49: 4
+===========================main start=================
+['jkqvi', 'hpdmw', 'c', 'wzrony', 'f']
+[('f', 1), ('c', 1), ('jkqvi', 1), ('hpdmw', 1), ('wzrony', 1)]
+--------ITER START------------
+pblocks:  [('f', 1), ('c', 1), ('jkqvi', 1), ('hpdmw', 1), ('wzrony', 1)]
+floating: []
+Locked: set()
+Evaluating f
+Head matches: 0
+Locking f
+No head matches for f; floating
+--------ITER START------------
+pblocks:  [('c', 1), ('jkqvi', 1), ('hpdmw', 1), ('wzrony', 1)]
+floating: [('f', 1)]
+Locked: {'f'}
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('jkqvi', 1), ('hpdmw', 1), ('wzrony', 1)]
+floating: [('f', 1), ('c', 1)]
+Locked: {'f', 'c'}
+Evaluating jkqvi
+Head matches: 0
+Locking jkqvi
+No head matches for jkqvi; floating
+--------ITER START------------
+pblocks:  [('hpdmw', 1), ('wzrony', 1)]
+floating: [('f', 1), ('c', 1), ('jkqvi', 1)]
+Locked: {'j', 'f', 'q', 'v', 'k', 'c', 'i'}
+Evaluating hpdmw
+Extending hpdmw with wzrony
+New segment: hpdmwwzrony
+Locking pdmwwzron
+--------ITER START------------
+pblocks:  [('hpdmwwzrony', 1)]
+floating: [('f', 1), ('c', 1), ('jkqvi', 1)]
+Locked: {'o', 'd', 'j', 'n', 'z', 'f', 'p', 'm', 'q', 'v', 'k', 'w', 'c', 'i', 'r'}
+Evaluating hpdmwwzrony
+Head matches: 0
+Locking hpdmwwzrony
+No head matches for hpdmwwzrony; floating
+Final pblocks: []
+Final floating: [('f', 1), ('c', 1), ('jkqvi', 1), ('hpdmwwzrony', 1)]
+Case #50: 24
+===========================main start=================
+['rizcfuciqpgmstcdnfcnaoduvzptjavxkhytfxushbqjucnxjngbtlsfnipwliqxoavftfgusurmotzpomhcrfimrvkguwn']
+[('rizcfuciqpgmstcdnfcnaoduvzptjavxkhytfxushbqjucnxjngbtlsfnipwliqxoavftfgusurmotzpomhcrfimrvkguwn', 1)]
+--------ITER START------------
+pblocks:  [('rizcfuciqpgmstcdnfcnaoduvzptjavxkhytfxushbqjucnxjngbtlsfnipwliqxoavftfgusurmotzpomhcrfimrvkguwn', 1)]
+floating: []
+Locked: set()
+Evaluating rizcfuciqpgmstcdnfcnaoduvzptjavxkhytfxushbqjucnxjngbtlsfnipwliqxoavftfgusurmotzpomhcrfimrvkguwn
+Head matches: 0
+Locking rizcfuciqpgmstcdnfcnaoduvzptjavxkhytfxushbqjucnxjngbtlsfnipwliqxoavftfgusurmotzpomhcrfimrvkguwn
+No head matches for rizcfuciqpgmstcdnfcnaoduvzptjavxkhytfxushbqjucnxjngbtlsfnipwliqxoavftfgusurmotzpomhcrfimrvkguwn; floating
+Final pblocks: []
+Final floating: [('rizcfuciqpgmstcdnfcnaoduvzptjavxkhytfxushbqjucnxjngbtlsfnipwliqxoavftfgusurmotzpomhcrfimrvkguwn', 1)]
+Found illegal char c in floating
+Case #51: 0
+===========================main start=================
+['id', 'dkp', 'jtfb', 'pmsj']
+[('id', 1), ('dkp', 1), ('jtfb', 1), ('pmsj', 1)]
+--------ITER START------------
+pblocks:  [('id', 1), ('dkp', 1), ('jtfb', 1), ('pmsj', 1)]
+floating: []
+Locked: set()
+Evaluating id
+Extending id with dkp
+New segment: iddkp
+Locking ddk
+--------ITER START------------
+pblocks:  [('jtfb', 1), ('pmsj', 1), ('iddkp', 1)]
+floating: []
+Locked: {'d', 'k'}
+Evaluating jtfb
+Head matches: 1
+--------ITER START------------
+pblocks:  [('pmsj', 1), ('iddkp', 1), ('jtfb', 1)]
+floating: []
+Locked: {'d', 'k'}
+Evaluating pmsj
+Extending pmsj with jtfb
+New segment: pmsjjtfb
+Locking msjjtf
+--------ITER START------------
+pblocks:  [('iddkp', 1), ('pmsjjtfb', 1)]
+floating: []
+Locked: {'d', 'j', 's', 'f', 'm', 'k', 't'}
+Evaluating iddkp
+Extending iddkp with pmsjjtfb
+New segment: iddkppmsjjtfb
+Locking ddkppmsjjtf
+--------ITER START------------
+pblocks:  [('iddkppmsjjtfb', 1)]
+floating: []
+Locked: {'d', 'j', 's', 'f', 'p', 'm', 'k', 't'}
+Evaluating iddkppmsjjtfb
+Head matches: 0
+Locking iddkppmsjjtfb
+No head matches for iddkppmsjjtfb; floating
+Final pblocks: []
+Final floating: [('iddkppmsjjtfb', 1)]
+Case #52: 1
+===========================main start=================
+['poel', 'rkxzh', 'wjmgbp', 'unca']
+[('poel', 1), ('rkxzh', 1), ('wjmgbp', 1), ('unca', 1)]
+--------ITER START------------
+pblocks:  [('poel', 1), ('rkxzh', 1), ('wjmgbp', 1), ('unca', 1)]
+floating: []
+Locked: set()
+Evaluating poel
+Head matches: 1
+--------ITER START------------
+pblocks:  [('rkxzh', 1), ('wjmgbp', 1), ('unca', 1), ('poel', 1)]
+floating: []
+Locked: set()
+Evaluating rkxzh
+Head matches: 0
+Locking rkxzh
+No head matches for rkxzh; floating
+--------ITER START------------
+pblocks:  [('wjmgbp', 1), ('unca', 1), ('poel', 1)]
+floating: [('rkxzh', 1)]
+Locked: {'x', 'z', 'k', 'r', 'h'}
+Evaluating wjmgbp
+Extending wjmgbp with poel
+New segment: wjmgbppoel
+Locking jmgbppoe
+--------ITER START------------
+pblocks:  [('unca', 1), ('wjmgbppoel', 1)]
+floating: [('rkxzh', 1)]
+Locked: {'o', 'e', 'j', 'x', 'z', 'g', 'p', 'b', 'm', 'h', 'k', 'r'}
+Evaluating unca
+Head matches: 0
+Locking unca
+No head matches for unca; floating
+--------ITER START------------
+pblocks:  [('wjmgbppoel', 1)]
+floating: [('rkxzh', 1), ('unca', 1)]
+Locked: {'o', 'e', 'j', 'n', 'x', 'z', 'g', 'p', 'a', 'b', 'm', 'h', 'u', 'k', 'r', 'c'}
+Evaluating wjmgbppoel
+Head matches: 0
+Locking wjmgbppoel
+No head matches for wjmgbppoel; floating
+Final pblocks: []
+Final floating: [('rkxzh', 1), ('unca', 1), ('wjmgbppoel', 1)]
+Case #53: 6
+===========================main start=================
+['otw', 'm', 'km', 'bo', 'wfulpsg']
+[('m', 1), ('otw', 1), ('km', 1), ('bo', 1), ('wfulpsg', 1)]
+--------ITER START------------
+pblocks:  [('m', 1), ('otw', 1), ('km', 1), ('bo', 1), ('wfulpsg', 1)]
+floating: []
+Locked: set()
+Evaluating m
+Head matches: 1
+--------ITER START------------
+pblocks:  [('otw', 1), ('km', 1), ('bo', 1), ('wfulpsg', 1), ('m', 1)]
+floating: []
+Locked: set()
+Evaluating otw
+Extending otw with wfulpsg
+New segment: otwwfulpsg
+Locking twwfulps
+--------ITER START------------
+pblocks:  [('km', 1), ('bo', 1), ('m', 1), ('otwwfulpsg', 1)]
+floating: []
+Locked: {'s', 'f', 'p', 'l', 'u', 'w', 't'}
+Evaluating km
+Merging m to km
+Head matches: 0
+No head matches for km; floating
+--------ITER START------------
+pblocks:  [('bo', 1), ('otwwfulpsg', 1)]
+floating: [('km', 1)]
+Locked: {'s', 'f', 'p', 'l', 'u', 'w', 't'}
+Evaluating bo
+Extending bo with otwwfulpsg
+New segment: bootwwfulpsg
+Locking ootwwfulps
+--------ITER START------------
+pblocks:  [('bootwwfulpsg', 1)]
+floating: [('km', 1)]
+Locked: {'o', 's', 'f', 'p', 'l', 'u', 'w', 't'}
+Evaluating bootwwfulpsg
+Head matches: 0
+Locking bootwwfulpsg
+No head matches for bootwwfulpsg; floating
+Final pblocks: []
+Final floating: [('km', 1), ('bootwwfulpsg', 1)]
+Case #54: 2
+===========================main start=================
+['ve', 'b', 'hsi', 'n', 'nzh', 'gcxymutdkwarlj', 'i', 'o', 'f', 'qp']
+[('f', 1), ('n', 1), ('b', 1), ('o', 1), ('i', 1), ('ve', 1), ('hsi', 1), ('nzh', 1), ('gcxymutdkwarlj', 1), ('qp', 1)]
+--------ITER START------------
+pblocks:  [('f', 1), ('n', 1), ('b', 1), ('o', 1), ('i', 1), ('ve', 1), ('hsi', 1), ('nzh', 1), ('gcxymutdkwarlj', 1), ('qp', 1)]
+floating: []
+Locked: set()
+Evaluating f
+Head matches: 0
+Locking f
+No head matches for f; floating
+--------ITER START------------
+pblocks:  [('n', 1), ('b', 1), ('o', 1), ('i', 1), ('ve', 1), ('hsi', 1), ('nzh', 1), ('gcxymutdkwarlj', 1), ('qp', 1)]
+floating: [('f', 1)]
+Locked: {'f'}
+Evaluating n
+Extending n with nzh
+New segment: nzh
+--------ITER START------------
+pblocks:  [('b', 1), ('o', 1), ('i', 1), ('ve', 1), ('hsi', 1), ('gcxymutdkwarlj', 1), ('qp', 1), ('nzh', 1)]
+floating: [('f', 1)]
+Locked: {'f'}
+Evaluating b
+Head matches: 0
+Locking b
+No head matches for b; floating
+--------ITER START------------
+pblocks:  [('o', 1), ('i', 1), ('ve', 1), ('hsi', 1), ('gcxymutdkwarlj', 1), ('qp', 1), ('nzh', 1)]
+floating: [('f', 1), ('b', 1)]
+Locked: {'b', 'f'}
+Evaluating o
+Head matches: 0
+Locking o
+No head matches for o; floating
+--------ITER START------------
+pblocks:  [('i', 1), ('ve', 1), ('hsi', 1), ('gcxymutdkwarlj', 1), ('qp', 1), ('nzh', 1)]
+floating: [('f', 1), ('b', 1), ('o', 1)]
+Locked: {'b', 'o', 'f'}
+Evaluating i
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ve', 1), ('hsi', 1), ('gcxymutdkwarlj', 1), ('qp', 1), ('nzh', 1), ('i', 1)]
+floating: [('f', 1), ('b', 1), ('o', 1)]
+Locked: {'b', 'o', 'f'}
+Evaluating ve
+Head matches: 0
+No head matches for ve; floating
+--------ITER START------------
+pblocks:  [('hsi', 1), ('gcxymutdkwarlj', 1), ('qp', 1), ('nzh', 1), ('i', 1)]
+floating: [('f', 1), ('b', 1), ('o', 1), ('ve', 1)]
+Locked: {'b', 'o', 'f'}
+Evaluating hsi
+Merging i to hsi
+Head matches: 1
+--------ITER START------------
+pblocks:  [('gcxymutdkwarlj', 1), ('qp', 1), ('nzh', 1), ('hsi', 1)]
+floating: [('f', 1), ('b', 1), ('o', 1), ('ve', 1)]
+Locked: {'b', 'o', 'f'}
+Evaluating gcxymutdkwarlj
+Head matches: 0
+Locking gcxymutdkwarlj
+No head matches for gcxymutdkwarlj; floating
+--------ITER START------------
+pblocks:  [('qp', 1), ('nzh', 1), ('hsi', 1)]
+floating: [('f', 1), ('b', 1), ('o', 1), ('ve', 1), ('gcxymutdkwarlj', 1)]
+Locked: {'o', 'd', 'j', 'x', 'g', 'f', 'y', 'a', 'b', 'm', 'u', 'l', 'k', 'w', 'c', 't', 'r'}
+Evaluating qp
+Head matches: 0
+No head matches for qp; floating
+--------ITER START------------
+pblocks:  [('nzh', 1), ('hsi', 1)]
+floating: [('f', 1), ('b', 1), ('o', 1), ('ve', 1), ('gcxymutdkwarlj', 1), ('qp', 1)]
+Locked: {'o', 'd', 'j', 'x', 'g', 'f', 'y', 'a', 'b', 'm', 'u', 'l', 'k', 'w', 'c', 't', 'r'}
+Evaluating nzh
+Extending nzh with hsi
+New segment: nzhhsi
+Locking zhhs
+--------ITER START------------
+pblocks:  [('nzhhsi', 1)]
+floating: [('f', 1), ('b', 1), ('o', 1), ('ve', 1), ('gcxymutdkwarlj', 1), ('qp', 1)]
+Locked: {'o', 'd', 'j', 's', 'x', 'g', 'z', 'f', 'y', 'a', 'b', 'm', 'h', 'u', 'l', 'k', 'w', 'c', 't', 'r'}
+Evaluating nzhhsi
+Head matches: 0
+Locking nzhhsi
+No head matches for nzhhsi; floating
+Final pblocks: []
+Final floating: [('f', 1), ('b', 1), ('o', 1), ('ve', 1), ('gcxymutdkwarlj', 1), ('qp', 1), ('nzhhsi', 1)]
+Case #55: 5040
+===========================main start=================
+['fhzx', 'bjm', 'pv', 'ydcgiwraeslkonq', 'ut', 't']
+[('t', 1), ('fhzx', 1), ('bjm', 1), ('pv', 1), ('ydcgiwraeslkonq', 1), ('ut', 1)]
+--------ITER START------------
+pblocks:  [('t', 1), ('fhzx', 1), ('bjm', 1), ('pv', 1), ('ydcgiwraeslkonq', 1), ('ut', 1)]
+floating: []
+Locked: set()
+Evaluating t
+Head matches: 1
+--------ITER START------------
+pblocks:  [('fhzx', 1), ('bjm', 1), ('pv', 1), ('ydcgiwraeslkonq', 1), ('ut', 1), ('t', 1)]
+floating: []
+Locked: set()
+Evaluating fhzx
+Head matches: 0
+Locking fhzx
+No head matches for fhzx; floating
+--------ITER START------------
+pblocks:  [('bjm', 1), ('pv', 1), ('ydcgiwraeslkonq', 1), ('ut', 1), ('t', 1)]
+floating: [('fhzx', 1)]
+Locked: {'x', 'z', 'f', 'h'}
+Evaluating bjm
+Head matches: 0
+Locking bjm
+No head matches for bjm; floating
+--------ITER START------------
+pblocks:  [('pv', 1), ('ydcgiwraeslkonq', 1), ('ut', 1), ('t', 1)]
+floating: [('fhzx', 1), ('bjm', 1)]
+Locked: {'j', 'x', 'z', 'f', 'b', 'm', 'h'}
+Evaluating pv
+Head matches: 0
+No head matches for pv; floating
+--------ITER START------------
+pblocks:  [('ydcgiwraeslkonq', 1), ('ut', 1), ('t', 1)]
+floating: [('fhzx', 1), ('bjm', 1), ('pv', 1)]
+Locked: {'j', 'x', 'z', 'f', 'b', 'm', 'h'}
+Evaluating ydcgiwraeslkonq
+Head matches: 0
+Locking ydcgiwraeslkonq
+No head matches for ydcgiwraeslkonq; floating
+--------ITER START------------
+pblocks:  [('ut', 1), ('t', 1)]
+floating: [('fhzx', 1), ('bjm', 1), ('pv', 1), ('ydcgiwraeslkonq', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 'z', 'g', 'l', 'w', 'j', 'n', 'y', 'b', 'r', 'o', 's', 'm', 'c', 'i'}
+Evaluating ut
+Merging t to ut
+Head matches: 0
+No head matches for ut; floating
+Final pblocks: []
+Final floating: [('fhzx', 1), ('bjm', 1), ('pv', 1), ('ydcgiwraeslkonq', 1), ('ut', 1)]
+Case #56: 120
+===========================main start=================
+['cqw', 'ksdlyzexmnfjbrphova', 'itc', 'wg', 'g', 'u']
+[('g', 1), ('u', 1), ('cqw', 1), ('ksdlyzexmnfjbrphova', 1), ('itc', 1), ('wg', 1)]
+--------ITER START------------
+pblocks:  [('g', 1), ('u', 1), ('cqw', 1), ('ksdlyzexmnfjbrphova', 1), ('itc', 1), ('wg', 1)]
+floating: []
+Locked: set()
+Evaluating g
+Head matches: 1
+--------ITER START------------
+pblocks:  [('u', 1), ('cqw', 1), ('ksdlyzexmnfjbrphova', 1), ('itc', 1), ('wg', 1), ('g', 1)]
+floating: []
+Locked: set()
+Evaluating u
+Head matches: 0
+Locking u
+No head matches for u; floating
+--------ITER START------------
+pblocks:  [('cqw', 1), ('ksdlyzexmnfjbrphova', 1), ('itc', 1), ('wg', 1), ('g', 1)]
+floating: [('u', 1)]
+Locked: {'u'}
+Evaluating cqw
+Extending cqw with wg
+New segment: cqwwg
+Locking qww
+--------ITER START------------
+pblocks:  [('ksdlyzexmnfjbrphova', 1), ('itc', 1), ('g', 1), ('cqwwg', 1)]
+floating: [('u', 1)]
+Locked: {'w', 'u', 'q'}
+Evaluating ksdlyzexmnfjbrphova
+Head matches: 0
+Locking ksdlyzexmnfjbrphova
+No head matches for ksdlyzexmnfjbrphova; floating
+--------ITER START------------
+pblocks:  [('itc', 1), ('g', 1), ('cqwwg', 1)]
+floating: [('u', 1), ('ksdlyzexmnfjbrphova', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'u'}
+Evaluating itc
+Extending itc with cqwwg
+New segment: itccqwwg
+Locking tccqww
+--------ITER START------------
+pblocks:  [('g', 1), ('itccqwwg', 1)]
+floating: [('u', 1), ('ksdlyzexmnfjbrphova', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'c'}
+Evaluating g
+Head matches: 1
+--------ITER START------------
+pblocks:  [('itccqwwg', 1), ('g', 1)]
+floating: [('u', 1), ('ksdlyzexmnfjbrphova', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'c'}
+Evaluating itccqwwg
+Merging g to itccqwwg
+Head matches: 0
+Locking itccqwwg
+No head matches for itccqwwg; floating
+Final pblocks: []
+Final floating: [('u', 1), ('ksdlyzexmnfjbrphova', 1), ('itccqwwg', 1)]
+Case #57: 6
+===========================main start=================
+['gc', 'dw', 'tn', 'd', 'w', 'byqmhfajlekivuxrozsp', 'd']
+[('d', 2), ('w', 1), ('gc', 1), ('dw', 1), ('tn', 1), ('byqmhfajlekivuxrozsp', 1)]
+--------ITER START------------
+pblocks:  [('d', 2), ('w', 1), ('gc', 1), ('dw', 1), ('tn', 1), ('byqmhfajlekivuxrozsp', 1)]
+floating: []
+Locked: set()
+Evaluating d
+Extending d with dw
+New segment: dw
+--------ITER START------------
+pblocks:  [('w', 1), ('gc', 1), ('tn', 1), ('byqmhfajlekivuxrozsp', 1), ('dw', 2)]
+floating: []
+Locked: set()
+Evaluating w
+Head matches: 1
+--------ITER START------------
+pblocks:  [('gc', 1), ('tn', 1), ('byqmhfajlekivuxrozsp', 1), ('dw', 2), ('w', 1)]
+floating: []
+Locked: set()
+Evaluating gc
+Head matches: 0
+No head matches for gc; floating
+--------ITER START------------
+pblocks:  [('tn', 1), ('byqmhfajlekivuxrozsp', 1), ('dw', 2), ('w', 1)]
+floating: [('gc', 1)]
+Locked: set()
+Evaluating tn
+Head matches: 0
+No head matches for tn; floating
+--------ITER START------------
+pblocks:  [('byqmhfajlekivuxrozsp', 1), ('dw', 2), ('w', 1)]
+floating: [('gc', 1), ('tn', 1)]
+Locked: set()
+Evaluating byqmhfajlekivuxrozsp
+Head matches: 0
+Locking byqmhfajlekivuxrozsp
+No head matches for byqmhfajlekivuxrozsp; floating
+--------ITER START------------
+pblocks:  [('dw', 2), ('w', 1)]
+floating: [('gc', 1), ('tn', 1), ('byqmhfajlekivuxrozsp', 1)]
+Locked: {'o', 'e', 'j', 's', 'x', 'z', 'y', 'f', 'a', 'p', 'b', 'm', 'h', 'q', 'l', 'u', 'v', 'k', 'r', 'i'}
+Evaluating dw
+Merging w to dw
+Head matches: 0
+No head matches for dw; floating
+Final pblocks: []
+Final floating: [('gc', 1), ('tn', 1), ('byqmhfajlekivuxrozsp', 1), ('dw', 2)]
+Case #58: 48
+===========================main start=================
+['i', 'abzow', 'i', 'yl', 'i', 'wqvy', 'i', 'ug', 'i']
+[('i', 120), ('abzow', 1), ('yl', 1), ('wqvy', 1), ('ug', 1)]
+--------ITER START------------
+pblocks:  [('i', 120), ('abzow', 1), ('yl', 1), ('wqvy', 1), ('ug', 1)]
+floating: []
+Locked: set()
+Evaluating i
+Head matches: 0
+Locking i
+No head matches for i; floating
+--------ITER START------------
+pblocks:  [('abzow', 1), ('yl', 1), ('wqvy', 1), ('ug', 1)]
+floating: [('i', 120)]
+Locked: {'i'}
+Evaluating abzow
+Extending abzow with wqvy
+New segment: abzowwqvy
+Locking bzowwqv
+--------ITER START------------
+pblocks:  [('yl', 1), ('ug', 1), ('abzowwqvy', 1)]
+floating: [('i', 120)]
+Locked: {'o', 'z', 'b', 'q', 'v', 'w', 'i'}
+Evaluating yl
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ug', 1), ('abzowwqvy', 1), ('yl', 1)]
+floating: [('i', 120)]
+Locked: {'o', 'z', 'b', 'q', 'v', 'w', 'i'}
+Evaluating ug
+Head matches: 0
+No head matches for ug; floating
+--------ITER START------------
+pblocks:  [('abzowwqvy', 1), ('yl', 1)]
+floating: [('i', 120), ('ug', 1)]
+Locked: {'o', 'z', 'b', 'q', 'v', 'w', 'i'}
+Evaluating abzowwqvy
+Extending abzowwqvy with yl
+New segment: abzowwqvyyl
+Locking bzowwqvyy
+--------ITER START------------
+pblocks:  [('abzowwqvyyl', 1)]
+floating: [('i', 120), ('ug', 1)]
+Locked: {'o', 'z', 'y', 'b', 'q', 'v', 'w', 'i'}
+Evaluating abzowwqvyyl
+Head matches: 0
+Locking abzowwqvyyl
+No head matches for abzowwqvyyl; floating
+Final pblocks: []
+Final floating: [('i', 120), ('ug', 1), ('abzowwqvyyl', 1)]
+Case #59: 720
+===========================main start=================
+['lqmshrzwktyxapeo', 'jdifcn', 'b', 'uvg']
+[('b', 1), ('lqmshrzwktyxapeo', 1), ('jdifcn', 1), ('uvg', 1)]
+--------ITER START------------
+pblocks:  [('b', 1), ('lqmshrzwktyxapeo', 1), ('jdifcn', 1), ('uvg', 1)]
+floating: []
+Locked: set()
+Evaluating b
+Head matches: 0
+Locking b
+No head matches for b; floating
+--------ITER START------------
+pblocks:  [('lqmshrzwktyxapeo', 1), ('jdifcn', 1), ('uvg', 1)]
+floating: [('b', 1)]
+Locked: {'b'}
+Evaluating lqmshrzwktyxapeo
+Head matches: 0
+Locking lqmshrzwktyxapeo
+No head matches for lqmshrzwktyxapeo; floating
+--------ITER START------------
+pblocks:  [('jdifcn', 1), ('uvg', 1)]
+floating: [('b', 1), ('lqmshrzwktyxapeo', 1)]
+Locked: {'o', 'e', 's', 'x', 'z', 'y', 'a', 'p', 'b', 'm', 'h', 'l', 'q', 'w', 'r', 'k', 't'}
+Evaluating jdifcn
+Head matches: 0
+Locking jdifcn
+No head matches for jdifcn; floating
+--------ITER START------------
+pblocks:  [('uvg', 1)]
+floating: [('b', 1), ('lqmshrzwktyxapeo', 1), ('jdifcn', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'l', 'w', 'j', 'n', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'c', 'i'}
+Evaluating uvg
+Head matches: 0
+Locking uvg
+No head matches for uvg; floating
+Final pblocks: []
+Final floating: [('b', 1), ('lqmshrzwktyxapeo', 1), ('jdifcn', 1), ('uvg', 1)]
+Case #60: 24
+===========================main start=================
+['doasbujhi', 'ie']
+[('doasbujhi', 1), ('ie', 1)]
+--------ITER START------------
+pblocks:  [('doasbujhi', 1), ('ie', 1)]
+floating: []
+Locked: set()
+Evaluating doasbujhi
+Extending doasbujhi with ie
+New segment: doasbujhiie
+Locking oasbujhii
+--------ITER START------------
+pblocks:  [('doasbujhiie', 1)]
+floating: []
+Locked: {'o', 'j', 's', 'a', 'b', 'h', 'u', 'i'}
+Evaluating doasbujhiie
+Head matches: 0
+Locking doasbujhiie
+No head matches for doasbujhiie; floating
+Final pblocks: []
+Final floating: [('doasbujhiie', 1)]
+Case #61: 1
+===========================main start=================
+['nwhlcfboaqevrgypm', 'jki', 'dt', 'tszj']
+[('nwhlcfboaqevrgypm', 1), ('jki', 1), ('dt', 1), ('tszj', 1)]
+--------ITER START------------
+pblocks:  [('nwhlcfboaqevrgypm', 1), ('jki', 1), ('dt', 1), ('tszj', 1)]
+floating: []
+Locked: set()
+Evaluating nwhlcfboaqevrgypm
+Head matches: 0
+Locking nwhlcfboaqevrgypm
+No head matches for nwhlcfboaqevrgypm; floating
+--------ITER START------------
+pblocks:  [('jki', 1), ('dt', 1), ('tszj', 1)]
+floating: [('nwhlcfboaqevrgypm', 1)]
+Locked: {'o', 'e', 'n', 'g', 'f', 'y', 'a', 'p', 'b', 'm', 'h', 'l', 'q', 'v', 'w', 'r', 'c'}
+Evaluating jki
+Head matches: 1
+--------ITER START------------
+pblocks:  [('dt', 1), ('tszj', 1), ('jki', 1)]
+floating: [('nwhlcfboaqevrgypm', 1)]
+Locked: {'o', 'e', 'n', 'g', 'f', 'y', 'a', 'p', 'b', 'm', 'h', 'l', 'q', 'v', 'w', 'r', 'c'}
+Evaluating dt
+Extending dt with tszj
+New segment: dttszj
+Locking ttsz
+--------ITER START------------
+pblocks:  [('jki', 1), ('dttszj', 1)]
+floating: [('nwhlcfboaqevrgypm', 1)]
+Locked: {'o', 'e', 'n', 's', 'g', 'z', 'f', 'y', 'a', 'p', 'b', 'm', 'h', 'l', 'q', 'v', 'w', 'r', 'c', 't'}
+Evaluating jki
+Head matches: 1
+--------ITER START------------
+pblocks:  [('dttszj', 1), ('jki', 1)]
+floating: [('nwhlcfboaqevrgypm', 1)]
+Locked: {'o', 'e', 'n', 's', 'g', 'z', 'f', 'y', 'a', 'p', 'b', 'm', 'h', 'l', 'q', 'v', 'w', 'r', 'c', 't'}
+Evaluating dttszj
+Extending dttszj with jki
+New segment: dttszjjki
+Locking ttszjjk
+--------ITER START------------
+pblocks:  [('dttszjjki', 1)]
+floating: [('nwhlcfboaqevrgypm', 1)]
+Locked: {'e', 'f', 'a', 'h', 'q', 'k', 't', 'g', 'z', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'c'}
+Evaluating dttszjjki
+Head matches: 0
+Locking dttszjjki
+No head matches for dttszjjki; floating
+Final pblocks: []
+Final floating: [('nwhlcfboaqevrgypm', 1), ('dttszjjki', 1)]
+Case #62: 2
+===========================main start=================
+['trnus', 'kg', 'g', 'd', 'ek', 'g', 'je', 'gcd', 'j', 'lj']
+[('d', 1), ('j', 1), ('g', 2), ('trnus', 1), ('kg', 1), ('ek', 1), ('je', 1), ('gcd', 1), ('lj', 1)]
+--------ITER START------------
+pblocks:  [('d', 1), ('j', 1), ('g', 2), ('trnus', 1), ('kg', 1), ('ek', 1), ('je', 1), ('gcd', 1), ('lj', 1)]
+floating: []
+Locked: set()
+Evaluating d
+Head matches: 1
+--------ITER START------------
+pblocks:  [('j', 1), ('g', 2), ('trnus', 1), ('kg', 1), ('ek', 1), ('je', 1), ('gcd', 1), ('lj', 1), ('d', 1)]
+floating: []
+Locked: set()
+Evaluating j
+Extending j with je
+New segment: je
+--------ITER START------------
+pblocks:  [('g', 2), ('trnus', 1), ('kg', 1), ('ek', 1), ('gcd', 1), ('lj', 1), ('d', 1), ('je', 1)]
+floating: []
+Locked: set()
+Evaluating g
+Extending g with gcd
+New segment: gcd
+--------ITER START------------
+pblocks:  [('trnus', 1), ('kg', 1), ('ek', 1), ('lj', 1), ('d', 1), ('je', 1), ('gcd', 2)]
+floating: []
+Locked: set()
+Evaluating trnus
+Head matches: 0
+Locking trnus
+No head matches for trnus; floating
+--------ITER START------------
+pblocks:  [('kg', 1), ('ek', 1), ('lj', 1), ('d', 1), ('je', 1), ('gcd', 2)]
+floating: [('trnus', 1)]
+Locked: {'s', 'r', 'n', 't', 'u'}
+Evaluating kg
+Extending kg with gcd
+New segment: kggcd
+Locking ggc
+--------ITER START------------
+pblocks:  [('ek', 1), ('lj', 1), ('d', 1), ('je', 1), ('kggcd', 2)]
+floating: [('trnus', 1)]
+Locked: {'n', 's', 'g', 'u', 'r', 'c', 't'}
+Evaluating ek
+Extending ek with kggcd
+New segment: ekkggcd
+Locking kkggc
+--------ITER START------------
+pblocks:  [('lj', 1), ('d', 1), ('je', 1), ('ekkggcd', 2)]
+floating: [('trnus', 1)]
+Locked: {'n', 's', 'g', 'u', 'k', 'r', 'c', 't'}
+Evaluating lj
+Extending lj with je
+New segment: ljje
+Locking jj
+--------ITER START------------
+pblocks:  [('d', 1), ('ekkggcd', 2), ('ljje', 1)]
+floating: [('trnus', 1)]
+Locked: {'n', 'j', 's', 'g', 'u', 'k', 'r', 'c', 't'}
+Evaluating d
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ekkggcd', 2), ('ljje', 1), ('d', 1)]
+floating: [('trnus', 1)]
+Locked: {'n', 'j', 's', 'g', 'u', 'k', 'r', 'c', 't'}
+Evaluating ekkggcd
+Merging d to ekkggcd
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ljje', 1), ('ekkggcd', 2)]
+floating: [('trnus', 1)]
+Locked: {'n', 'j', 's', 'g', 'u', 'k', 'r', 'c', 't'}
+Evaluating ljje
+Extending ljje with ekkggcd
+New segment: ljjeekkggcd
+Locking jjeekkggc
+--------ITER START------------
+pblocks:  [('ljjeekkggcd', 2)]
+floating: [('trnus', 1)]
+Locked: {'e', 'n', 'j', 's', 'g', 'u', 'k', 'r', 'c', 't'}
+Evaluating ljjeekkggcd
+Head matches: 0
+Locking ljjeekkggcd
+No head matches for ljjeekkggcd; floating
+Final pblocks: []
+Final floating: [('trnus', 1), ('ljjeekkggcd', 2)]
+Case #63: 4
+===========================main start=================
+['rdi', 'k', 'g', 'iog', 'i', 'uvbm']
+[('g', 1), ('k', 1), ('i', 1), ('rdi', 1), ('iog', 1), ('uvbm', 1)]
+--------ITER START------------
+pblocks:  [('g', 1), ('k', 1), ('i', 1), ('rdi', 1), ('iog', 1), ('uvbm', 1)]
+floating: []
+Locked: set()
+Evaluating g
+Head matches: 1
+--------ITER START------------
+pblocks:  [('k', 1), ('i', 1), ('rdi', 1), ('iog', 1), ('uvbm', 1), ('g', 1)]
+floating: []
+Locked: set()
+Evaluating k
+Head matches: 0
+Locking k
+No head matches for k; floating
+--------ITER START------------
+pblocks:  [('i', 1), ('rdi', 1), ('iog', 1), ('uvbm', 1), ('g', 1)]
+floating: [('k', 1)]
+Locked: {'k'}
+Evaluating i
+Extending i with iog
+New segment: iog
+--------ITER START------------
+pblocks:  [('rdi', 1), ('uvbm', 1), ('g', 1), ('iog', 1)]
+floating: [('k', 1)]
+Locked: {'k'}
+Evaluating rdi
+Extending rdi with iog
+New segment: rdiiog
+Locking diio
+--------ITER START------------
+pblocks:  [('uvbm', 1), ('g', 1), ('rdiiog', 1)]
+floating: [('k', 1)]
+Locked: {'o', 'k', 'd', 'i'}
+Evaluating uvbm
+Head matches: 0
+Locking uvbm
+No head matches for uvbm; floating
+--------ITER START------------
+pblocks:  [('g', 1), ('rdiiog', 1)]
+floating: [('k', 1), ('uvbm', 1)]
+Locked: {'o', 'd', 'b', 'm', 'u', 'v', 'k', 'i'}
+Evaluating g
+Head matches: 1
+--------ITER START------------
+pblocks:  [('rdiiog', 1), ('g', 1)]
+floating: [('k', 1), ('uvbm', 1)]
+Locked: {'o', 'd', 'b', 'm', 'u', 'v', 'k', 'i'}
+Evaluating rdiiog
+Merging g to rdiiog
+Head matches: 0
+Locking rdiiog
+No head matches for rdiiog; floating
+Final pblocks: []
+Final floating: [('k', 1), ('uvbm', 1), ('rdiiog', 1)]
+Case #64: 6
+===========================main start=================
+['vphesa', 'nbxzgjrqdi', 'kywftcn', 'ou', 'l', 'im']
+[('l', 1), ('vphesa', 1), ('nbxzgjrqdi', 1), ('kywftcn', 1), ('ou', 1), ('im', 1)]
+--------ITER START------------
+pblocks:  [('l', 1), ('vphesa', 1), ('nbxzgjrqdi', 1), ('kywftcn', 1), ('ou', 1), ('im', 1)]
+floating: []
+Locked: set()
+Evaluating l
+Head matches: 0
+Locking l
+No head matches for l; floating
+--------ITER START------------
+pblocks:  [('vphesa', 1), ('nbxzgjrqdi', 1), ('kywftcn', 1), ('ou', 1), ('im', 1)]
+floating: [('l', 1)]
+Locked: {'l'}
+Evaluating vphesa
+Head matches: 0
+Locking vphesa
+No head matches for vphesa; floating
+--------ITER START------------
+pblocks:  [('nbxzgjrqdi', 1), ('kywftcn', 1), ('ou', 1), ('im', 1)]
+floating: [('l', 1), ('vphesa', 1)]
+Locked: {'e', 's', 'p', 'a', 'h', 'l', 'v'}
+Evaluating nbxzgjrqdi
+Extending nbxzgjrqdi with im
+New segment: nbxzgjrqdiim
+Locking bxzgjrqdii
+--------ITER START------------
+pblocks:  [('kywftcn', 1), ('ou', 1), ('nbxzgjrqdiim', 1)]
+floating: [('l', 1), ('vphesa', 1)]
+Locked: {'e', 'd', 'j', 's', 'x', 'z', 'g', 'p', 'a', 'b', 'h', 'l', 'q', 'v', 'r', 'i'}
+Evaluating kywftcn
+Extending kywftcn with nbxzgjrqdiim
+New segment: kywftcnnbxzgjrqdiim
+Locking ywftcnnbxzgjrqdii
+--------ITER START------------
+pblocks:  [('ou', 1), ('kywftcnnbxzgjrqdiim', 1)]
+floating: [('l', 1), ('vphesa', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 't', 'z', 'g', 'l', 'v', 'w', 'j', 'n', 'y', 'b', 'r', 's', 'p', 'c', 'i'}
+Evaluating ou
+Head matches: 0
+No head matches for ou; floating
+--------ITER START------------
+pblocks:  [('kywftcnnbxzgjrqdiim', 1)]
+floating: [('l', 1), ('vphesa', 1), ('ou', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 't', 'z', 'g', 'l', 'v', 'w', 'j', 'n', 'y', 'b', 'r', 's', 'p', 'c', 'i'}
+Evaluating kywftcnnbxzgjrqdiim
+Head matches: 0
+Locking kywftcnnbxzgjrqdiim
+No head matches for kywftcnnbxzgjrqdiim; floating
+Final pblocks: []
+Final floating: [('l', 1), ('vphesa', 1), ('ou', 1), ('kywftcnnbxzgjrqdiim', 1)]
+Case #65: 24
+===========================main start=================
+['ab', 'cd', 'bc']
+[('ab', 1), ('cd', 1), ('bc', 1)]
+--------ITER START------------
+pblocks:  [('ab', 1), ('cd', 1), ('bc', 1)]
+floating: []
+Locked: set()
+Evaluating ab
+Extending ab with bc
+New segment: abbc
+Locking bb
+--------ITER START------------
+pblocks:  [('cd', 1), ('abbc', 1)]
+floating: []
+Locked: {'b'}
+Evaluating cd
+Head matches: 1
+--------ITER START------------
+pblocks:  [('abbc', 1), ('cd', 1)]
+floating: []
+Locked: {'b'}
+Evaluating abbc
+Extending abbc with cd
+New segment: abbccd
+Locking bbcc
+--------ITER START------------
+pblocks:  [('abbccd', 1)]
+floating: []
+Locked: {'b', 'c'}
+Evaluating abbccd
+Head matches: 0
+Locking abbccd
+No head matches for abbccd; floating
+Final pblocks: []
+Final floating: [('abbccd', 1)]
+Case #66: 1
+===========================main start=================
+['vuzp', 'v', 'b', 'bhoeqv', 'lymxk', 'kfcgnj', 'p', 'irsdw', 'b', 'jtai']
+[('v', 1), ('b', 2), ('p', 1), ('vuzp', 1), ('bhoeqv', 1), ('lymxk', 1), ('kfcgnj', 1), ('irsdw', 1), ('jtai', 1)]
+--------ITER START------------
+pblocks:  [('v', 1), ('b', 2), ('p', 1), ('vuzp', 1), ('bhoeqv', 1), ('lymxk', 1), ('kfcgnj', 1), ('irsdw', 1), ('jtai', 1)]
+floating: []
+Locked: set()
+Evaluating v
+Extending v with vuzp
+New segment: vuzp
+Locking uz
+--------ITER START------------
+pblocks:  [('b', 2), ('p', 1), ('bhoeqv', 1), ('lymxk', 1), ('kfcgnj', 1), ('irsdw', 1), ('jtai', 1), ('vuzp', 1)]
+floating: []
+Locked: {'z', 'u'}
+Evaluating b
+Extending b with bhoeqv
+New segment: bhoeqv
+Locking hoeq
+--------ITER START------------
+pblocks:  [('p', 1), ('lymxk', 1), ('kfcgnj', 1), ('irsdw', 1), ('jtai', 1), ('vuzp', 1), ('bhoeqv', 2)]
+floating: []
+Locked: {'o', 'e', 'z', 'h', 'u', 'q'}
+Evaluating p
+Head matches: 1
+--------ITER START------------
+pblocks:  [('lymxk', 1), ('kfcgnj', 1), ('irsdw', 1), ('jtai', 1), ('vuzp', 1), ('bhoeqv', 2), ('p', 1)]
+floating: []
+Locked: {'o', 'e', 'z', 'h', 'u', 'q'}
+Evaluating lymxk
+Extending lymxk with kfcgnj
+New segment: lymxkkfcgnj
+Locking ymxkkfcgn
+--------ITER START------------
+pblocks:  [('irsdw', 1), ('jtai', 1), ('vuzp', 1), ('bhoeqv', 2), ('p', 1), ('lymxkkfcgnj', 1)]
+floating: []
+Locked: {'o', 'e', 'n', 'x', 'z', 'g', 'y', 'f', 'm', 'h', 'u', 'q', 'k', 'c'}
+Evaluating irsdw
+Head matches: 1
+--------ITER START------------
+pblocks:  [('jtai', 1), ('vuzp', 1), ('bhoeqv', 2), ('p', 1), ('lymxkkfcgnj', 1), ('irsdw', 1)]
+floating: []
+Locked: {'o', 'e', 'n', 'x', 'z', 'g', 'y', 'f', 'm', 'h', 'u', 'q', 'k', 'c'}
+Evaluating jtai
+Extending jtai with irsdw
+New segment: jtaiirsdw
+Locking taiirsd
+--------ITER START------------
+pblocks:  [('vuzp', 1), ('bhoeqv', 2), ('p', 1), ('lymxkkfcgnj', 1), ('jtaiirsdw', 1)]
+floating: []
+Locked: {'o', 'e', 'd', 'n', 's', 'x', 'z', 'g', 'y', 'f', 'a', 'm', 'h', 'u', 'q', 'k', 'r', 'c', 't', 'i'}
+Evaluating vuzp
+Merging p to vuzp
+Head matches: 1
+--------ITER START------------
+pblocks:  [('bhoeqv', 2), ('lymxkkfcgnj', 1), ('jtaiirsdw', 1), ('vuzp', 1)]
+floating: []
+Locked: {'o', 'e', 'd', 'n', 's', 'x', 'z', 'g', 'y', 'f', 'a', 'm', 'h', 'u', 'q', 'k', 'r', 'c', 't', 'i'}
+Evaluating bhoeqv
+Extending bhoeqv with vuzp
+New segment: bhoeqvvuzp
+Locking hoeqvvuz
+--------ITER START------------
+pblocks:  [('lymxkkfcgnj', 1), ('jtaiirsdw', 1), ('bhoeqvvuzp', 2)]
+floating: []
+Locked: {'o', 'e', 'd', 'n', 's', 'x', 'z', 'g', 'y', 'f', 'a', 'm', 'h', 'u', 'q', 'v', 'k', 'r', 'c', 't', 'i'}
+Evaluating lymxkkfcgnj
+Extending lymxkkfcgnj with jtaiirsdw
+New segment: lymxkkfcgnjjtaiirsdw
+Locking ymxkkfcgnjjtaiirsd
+--------ITER START------------
+pblocks:  [('bhoeqvvuzp', 2), ('lymxkkfcgnjjtaiirsdw', 1)]
+floating: []
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'g', 'v', 'n', 'j', 'y', 'r', 'o', 's', 'm', 'u', 'c', 'i'}
+Evaluating bhoeqvvuzp
+Head matches: 0
+Locking bhoeqvvuzp
+No head matches for bhoeqvvuzp; floating
+--------ITER START------------
+pblocks:  [('lymxkkfcgnjjtaiirsdw', 1)]
+floating: [('bhoeqvvuzp', 2)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'g', 'v', 'n', 'j', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'c', 'i'}
+Evaluating lymxkkfcgnjjtaiirsdw
+Head matches: 0
+Locking lymxkkfcgnjjtaiirsdw
+No head matches for lymxkkfcgnjjtaiirsdw; floating
+Final pblocks: []
+Final floating: [('bhoeqvvuzp', 2), ('lymxkkfcgnjjtaiirsdw', 1)]
+Case #67: 4
+===========================main start=================
+['dj', 'y', 'e', 'shrz', 'nqc', 'jlmui', 'kgd', 'itv']
+[('e', 1), ('y', 1), ('dj', 1), ('shrz', 1), ('nqc', 1), ('jlmui', 1), ('kgd', 1), ('itv', 1)]
+--------ITER START------------
+pblocks:  [('e', 1), ('y', 1), ('dj', 1), ('shrz', 1), ('nqc', 1), ('jlmui', 1), ('kgd', 1), ('itv', 1)]
+floating: []
+Locked: set()
+Evaluating e
+Head matches: 0
+Locking e
+No head matches for e; floating
+--------ITER START------------
+pblocks:  [('y', 1), ('dj', 1), ('shrz', 1), ('nqc', 1), ('jlmui', 1), ('kgd', 1), ('itv', 1)]
+floating: [('e', 1)]
+Locked: {'e'}
+Evaluating y
+Head matches: 0
+Locking y
+No head matches for y; floating
+--------ITER START------------
+pblocks:  [('dj', 1), ('shrz', 1), ('nqc', 1), ('jlmui', 1), ('kgd', 1), ('itv', 1)]
+floating: [('e', 1), ('y', 1)]
+Locked: {'e', 'y'}
+Evaluating dj
+Extending dj with jlmui
+New segment: djjlmui
+Locking jjlmu
+--------ITER START------------
+pblocks:  [('shrz', 1), ('nqc', 1), ('kgd', 1), ('itv', 1), ('djjlmui', 1)]
+floating: [('e', 1), ('y', 1)]
+Locked: {'e', 'j', 'y', 'm', 'l', 'u'}
+Evaluating shrz
+Head matches: 0
+Locking shrz
+No head matches for shrz; floating
+--------ITER START------------
+pblocks:  [('nqc', 1), ('kgd', 1), ('itv', 1), ('djjlmui', 1)]
+floating: [('e', 1), ('y', 1), ('shrz', 1)]
+Locked: {'e', 'j', 's', 'z', 'y', 'm', 'h', 'l', 'u', 'r'}
+Evaluating nqc
+Head matches: 0
+Locking nqc
+No head matches for nqc; floating
+--------ITER START------------
+pblocks:  [('kgd', 1), ('itv', 1), ('djjlmui', 1)]
+floating: [('e', 1), ('y', 1), ('shrz', 1), ('nqc', 1)]
+Locked: {'e', 'j', 'n', 's', 'z', 'y', 'm', 'h', 'l', 'u', 'q', 'r', 'c'}
+Evaluating kgd
+Extending kgd with djjlmui
+New segment: kgddjjlmui
+Locking gddjjlmu
+--------ITER START------------
+pblocks:  [('itv', 1), ('kgddjjlmui', 1)]
+floating: [('e', 1), ('y', 1), ('shrz', 1), ('nqc', 1)]
+Locked: {'e', 'd', 'j', 'n', 's', 'z', 'g', 'y', 'm', 'h', 'l', 'u', 'q', 'r', 'c'}
+Evaluating itv
+Head matches: 1
+--------ITER START------------
+pblocks:  [('kgddjjlmui', 1), ('itv', 1)]
+floating: [('e', 1), ('y', 1), ('shrz', 1), ('nqc', 1)]
+Locked: {'e', 'd', 'j', 'n', 's', 'z', 'g', 'y', 'm', 'h', 'l', 'u', 'q', 'r', 'c'}
+Evaluating kgddjjlmui
+Extending kgddjjlmui with itv
+New segment: kgddjjlmuiitv
+Locking gddjjlmuiit
+--------ITER START------------
+pblocks:  [('kgddjjlmuiitv', 1)]
+floating: [('e', 1), ('y', 1), ('shrz', 1), ('nqc', 1)]
+Locked: {'e', 'd', 'j', 'n', 's', 'z', 'g', 'y', 'm', 'h', 'l', 'u', 'q', 'r', 'c', 'i', 't'}
+Evaluating kgddjjlmuiitv
+Head matches: 0
+Locking kgddjjlmuiitv
+No head matches for kgddjjlmuiitv; floating
+Final pblocks: []
+Final floating: [('e', 1), ('y', 1), ('shrz', 1), ('nqc', 1), ('kgddjjlmuiitv', 1)]
+Case #68: 120
+===========================main start=================
+['chyz', 'xr', 'giqombc', 'kd', 't', 'e', 'lv', 'j', 'sf']
+[('e', 1), ('j', 1), ('t', 1), ('chyz', 1), ('xr', 1), ('giqombc', 1), ('kd', 1), ('lv', 1), ('sf', 1)]
+--------ITER START------------
+pblocks:  [('e', 1), ('j', 1), ('t', 1), ('chyz', 1), ('xr', 1), ('giqombc', 1), ('kd', 1), ('lv', 1), ('sf', 1)]
+floating: []
+Locked: set()
+Evaluating e
+Head matches: 0
+Locking e
+No head matches for e; floating
+--------ITER START------------
+pblocks:  [('j', 1), ('t', 1), ('chyz', 1), ('xr', 1), ('giqombc', 1), ('kd', 1), ('lv', 1), ('sf', 1)]
+floating: [('e', 1)]
+Locked: {'e'}
+Evaluating j
+Head matches: 0
+Locking j
+No head matches for j; floating
+--------ITER START------------
+pblocks:  [('t', 1), ('chyz', 1), ('xr', 1), ('giqombc', 1), ('kd', 1), ('lv', 1), ('sf', 1)]
+floating: [('e', 1), ('j', 1)]
+Locked: {'e', 'j'}
+Evaluating t
+Head matches: 0
+Locking t
+No head matches for t; floating
+--------ITER START------------
+pblocks:  [('chyz', 1), ('xr', 1), ('giqombc', 1), ('kd', 1), ('lv', 1), ('sf', 1)]
+floating: [('e', 1), ('j', 1), ('t', 1)]
+Locked: {'e', 'j', 't'}
+Evaluating chyz
+Head matches: 1
+--------ITER START------------
+pblocks:  [('xr', 1), ('giqombc', 1), ('kd', 1), ('lv', 1), ('sf', 1), ('chyz', 1)]
+floating: [('e', 1), ('j', 1), ('t', 1)]
+Locked: {'e', 'j', 't'}
+Evaluating xr
+Head matches: 0
+No head matches for xr; floating
+--------ITER START------------
+pblocks:  [('giqombc', 1), ('kd', 1), ('lv', 1), ('sf', 1), ('chyz', 1)]
+floating: [('e', 1), ('j', 1), ('t', 1), ('xr', 1)]
+Locked: {'e', 'j', 't'}
+Evaluating giqombc
+Extending giqombc with chyz
+New segment: giqombcchyz
+Locking iqombcchy
+--------ITER START------------
+pblocks:  [('kd', 1), ('lv', 1), ('sf', 1), ('giqombcchyz', 1)]
+floating: [('e', 1), ('j', 1), ('t', 1), ('xr', 1)]
+Locked: {'o', 'e', 'j', 'y', 'b', 'm', 'h', 'q', 'c', 't', 'i'}
+Evaluating kd
+Head matches: 0
+No head matches for kd; floating
+--------ITER START------------
+pblocks:  [('lv', 1), ('sf', 1), ('giqombcchyz', 1)]
+floating: [('e', 1), ('j', 1), ('t', 1), ('xr', 1), ('kd', 1)]
+Locked: {'o', 'e', 'j', 'y', 'b', 'm', 'h', 'q', 'c', 't', 'i'}
+Evaluating lv
+Head matches: 0
+No head matches for lv; floating
+--------ITER START------------
+pblocks:  [('sf', 1), ('giqombcchyz', 1)]
+floating: [('e', 1), ('j', 1), ('t', 1), ('xr', 1), ('kd', 1), ('lv', 1)]
+Locked: {'o', 'e', 'j', 'y', 'b', 'm', 'h', 'q', 'c', 't', 'i'}
+Evaluating sf
+Head matches: 0
+No head matches for sf; floating
+--------ITER START------------
+pblocks:  [('giqombcchyz', 1)]
+floating: [('e', 1), ('j', 1), ('t', 1), ('xr', 1), ('kd', 1), ('lv', 1), ('sf', 1)]
+Locked: {'o', 'e', 'j', 'y', 'b', 'm', 'h', 'q', 'c', 't', 'i'}
+Evaluating giqombcchyz
+Head matches: 0
+Locking giqombcchyz
+No head matches for giqombcchyz; floating
+Final pblocks: []
+Final floating: [('e', 1), ('j', 1), ('t', 1), ('xr', 1), ('kd', 1), ('lv', 1), ('sf', 1), ('giqombcchyz', 1)]
+Case #69: 40320
+===========================main start=================
+['ozihxd', 'dlk', 'vfcnqerm', 'k']
+[('k', 1), ('ozihxd', 1), ('dlk', 1), ('vfcnqerm', 1)]
+--------ITER START------------
+pblocks:  [('k', 1), ('ozihxd', 1), ('dlk', 1), ('vfcnqerm', 1)]
+floating: []
+Locked: set()
+Evaluating k
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ozihxd', 1), ('dlk', 1), ('vfcnqerm', 1), ('k', 1)]
+floating: []
+Locked: set()
+Evaluating ozihxd
+Extending ozihxd with dlk
+New segment: ozihxddlk
+Locking zihxddl
+--------ITER START------------
+pblocks:  [('vfcnqerm', 1), ('k', 1), ('ozihxddlk', 1)]
+floating: []
+Locked: {'d', 'x', 'z', 'h', 'l', 'i'}
+Evaluating vfcnqerm
+Head matches: 0
+Locking vfcnqerm
+No head matches for vfcnqerm; floating
+--------ITER START------------
+pblocks:  [('k', 1), ('ozihxddlk', 1)]
+floating: [('vfcnqerm', 1)]
+Locked: {'e', 'd', 'n', 'x', 'z', 'f', 'm', 'h', 'l', 'q', 'v', 'r', 'c', 'i'}
+Evaluating k
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ozihxddlk', 1), ('k', 1)]
+floating: [('vfcnqerm', 1)]
+Locked: {'e', 'd', 'n', 'x', 'z', 'f', 'm', 'h', 'l', 'q', 'v', 'r', 'c', 'i'}
+Evaluating ozihxddlk
+Merging k to ozihxddlk
+Head matches: 0
+Locking ozihxddlk
+No head matches for ozihxddlk; floating
+Final pblocks: []
+Final floating: [('vfcnqerm', 1), ('ozihxddlk', 1)]
+Case #70: 2
+===========================main start=================
+['ki', 'ij', 'jw']
+[('ki', 1), ('ij', 1), ('jw', 1)]
+--------ITER START------------
+pblocks:  [('ki', 1), ('ij', 1), ('jw', 1)]
+floating: []
+Locked: set()
+Evaluating ki
+Extending ki with ij
+New segment: kiij
+Locking ii
+--------ITER START------------
+pblocks:  [('jw', 1), ('kiij', 1)]
+floating: []
+Locked: {'i'}
+Evaluating jw
+Head matches: 1
+--------ITER START------------
+pblocks:  [('kiij', 1), ('jw', 1)]
+floating: []
+Locked: {'i'}
+Evaluating kiij
+Extending kiij with jw
+New segment: kiijjw
+Locking iijj
+--------ITER START------------
+pblocks:  [('kiijjw', 1)]
+floating: []
+Locked: {'j', 'i'}
+Evaluating kiijjw
+Head matches: 0
+Locking kiijjw
+No head matches for kiijjw; floating
+Final pblocks: []
+Final floating: [('kiijjw', 1)]
+Case #71: 1
+===========================main start=================
+['y', 'y', 'y', 'y', 'y']
+[('y', 120)]
+--------ITER START------------
+pblocks:  [('y', 120)]
+floating: []
+Locked: set()
+Evaluating y
+Head matches: 0
+Locking y
+No head matches for y; floating
+Final pblocks: []
+Final floating: [('y', 120)]
+Case #72: 120
+===========================main start=================
+['w', 'pnbkjtxfuy', 'a', 'w', 'w', 'slgco', 'w', 'zq', 'w', 'w']
+[('a', 1), ('w', 720), ('pnbkjtxfuy', 1), ('slgco', 1), ('zq', 1)]
+--------ITER START------------
+pblocks:  [('a', 1), ('w', 720), ('pnbkjtxfuy', 1), ('slgco', 1), ('zq', 1)]
+floating: []
+Locked: set()
+Evaluating a
+Head matches: 0
+Locking a
+No head matches for a; floating
+--------ITER START------------
+pblocks:  [('w', 720), ('pnbkjtxfuy', 1), ('slgco', 1), ('zq', 1)]
+floating: [('a', 1)]
+Locked: {'a'}
+Evaluating w
+Head matches: 0
+Locking w
+No head matches for w; floating
+--------ITER START------------
+pblocks:  [('pnbkjtxfuy', 1), ('slgco', 1), ('zq', 1)]
+floating: [('a', 1), ('w', 720)]
+Locked: {'w', 'a'}
+Evaluating pnbkjtxfuy
+Head matches: 0
+Locking pnbkjtxfuy
+No head matches for pnbkjtxfuy; floating
+--------ITER START------------
+pblocks:  [('slgco', 1), ('zq', 1)]
+floating: [('a', 1), ('w', 720), ('pnbkjtxfuy', 1)]
+Locked: {'n', 'j', 'x', 'f', 'y', 'a', 'p', 'b', 'u', 'w', 'k', 't'}
+Evaluating slgco
+Head matches: 0
+Locking slgco
+No head matches for slgco; floating
+--------ITER START------------
+pblocks:  [('zq', 1)]
+floating: [('a', 1), ('w', 720), ('pnbkjtxfuy', 1), ('slgco', 1)]
+Locked: {'o', 'n', 'j', 's', 'x', 'g', 'f', 'y', 'a', 'p', 'b', 'u', 'l', 'w', 'k', 'c', 't'}
+Evaluating zq
+Head matches: 0
+No head matches for zq; floating
+Final pblocks: []
+Final floating: [('a', 1), ('w', 720), ('pnbkjtxfuy', 1), ('slgco', 1), ('zq', 1)]
+Case #73: 86400
+===========================main start=================
+['zytubgprwc', 'q', 'jadok', 'z', 'liesnmhxvf']
+[('q', 1), ('z', 1), ('zytubgprwc', 1), ('jadok', 1), ('liesnmhxvf', 1)]
+--------ITER START------------
+pblocks:  [('q', 1), ('z', 1), ('zytubgprwc', 1), ('jadok', 1), ('liesnmhxvf', 1)]
+floating: []
+Locked: set()
+Evaluating q
+Head matches: 0
+Locking q
+No head matches for q; floating
+--------ITER START------------
+pblocks:  [('z', 1), ('zytubgprwc', 1), ('jadok', 1), ('liesnmhxvf', 1)]
+floating: [('q', 1)]
+Locked: {'q'}
+Evaluating z
+Extending z with zytubgprwc
+New segment: zytubgprwc
+Locking ytubgprw
+--------ITER START------------
+pblocks:  [('jadok', 1), ('liesnmhxvf', 1), ('zytubgprwc', 1)]
+floating: [('q', 1)]
+Locked: {'g', 'y', 'p', 'b', 'u', 'q', 'w', 'r', 't'}
+Evaluating jadok
+Head matches: 0
+Locking jadok
+No head matches for jadok; floating
+--------ITER START------------
+pblocks:  [('liesnmhxvf', 1), ('zytubgprwc', 1)]
+floating: [('q', 1), ('jadok', 1)]
+Locked: {'o', 'd', 'j', 'g', 'y', 'p', 'a', 'b', 'u', 'q', 'w', 'r', 'k', 't'}
+Evaluating liesnmhxvf
+Head matches: 0
+Locking liesnmhxvf
+No head matches for liesnmhxvf; floating
+--------ITER START------------
+pblocks:  [('zytubgprwc', 1)]
+floating: [('q', 1), ('jadok', 1), ('liesnmhxvf', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'g', 'l', 'v', 'w', 'j', 'n', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'u', 'i'}
+Evaluating zytubgprwc
+Head matches: 0
+Locking zytubgprwc
+No head matches for zytubgprwc; floating
+Final pblocks: []
+Final floating: [('q', 1), ('jadok', 1), ('liesnmhxvf', 1), ('zytubgprwc', 1)]
+Case #74: 24
+===========================main start=================
+['vfamehiz', 'nc', 'co', 'o', 'xdlprgktjy', 'bwn']
+[('o', 1), ('vfamehiz', 1), ('nc', 1), ('co', 1), ('xdlprgktjy', 1), ('bwn', 1)]
+--------ITER START------------
+pblocks:  [('o', 1), ('vfamehiz', 1), ('nc', 1), ('co', 1), ('xdlprgktjy', 1), ('bwn', 1)]
+floating: []
+Locked: set()
+Evaluating o
+Head matches: 1
+--------ITER START------------
+pblocks:  [('vfamehiz', 1), ('nc', 1), ('co', 1), ('xdlprgktjy', 1), ('bwn', 1), ('o', 1)]
+floating: []
+Locked: set()
+Evaluating vfamehiz
+Head matches: 0
+Locking vfamehiz
+No head matches for vfamehiz; floating
+--------ITER START------------
+pblocks:  [('nc', 1), ('co', 1), ('xdlprgktjy', 1), ('bwn', 1), ('o', 1)]
+floating: [('vfamehiz', 1)]
+Locked: {'e', 'z', 'f', 'a', 'm', 'h', 'v', 'i'}
+Evaluating nc
+Extending nc with co
+New segment: ncco
+Locking cc
+--------ITER START------------
+pblocks:  [('xdlprgktjy', 1), ('bwn', 1), ('o', 1), ('ncco', 1)]
+floating: [('vfamehiz', 1)]
+Locked: {'e', 'z', 'f', 'a', 'm', 'h', 'v', 'c', 'i'}
+Evaluating xdlprgktjy
+Head matches: 0
+Locking xdlprgktjy
+No head matches for xdlprgktjy; floating
+--------ITER START------------
+pblocks:  [('bwn', 1), ('o', 1), ('ncco', 1)]
+floating: [('vfamehiz', 1), ('xdlprgktjy', 1)]
+Locked: {'e', 'd', 'j', 'x', 'z', 'g', 'f', 'y', 'a', 'p', 'm', 'h', 'l', 'v', 'k', 'r', 'c', 'i', 't'}
+Evaluating bwn
+Extending bwn with ncco
+New segment: bwnncco
+Locking wnncc
+--------ITER START------------
+pblocks:  [('o', 1), ('bwnncco', 1)]
+floating: [('vfamehiz', 1), ('xdlprgktjy', 1)]
+Locked: {'w', 'e', 'd', 'j', 'n', 'x', 'z', 'g', 'f', 'y', 'a', 'p', 'm', 'h', 'l', 'v', 'k', 'r', 'c', 'i', 't'}
+Evaluating o
+Head matches: 1
+--------ITER START------------
+pblocks:  [('bwnncco', 1), ('o', 1)]
+floating: [('vfamehiz', 1), ('xdlprgktjy', 1)]
+Locked: {'w', 'e', 'd', 'j', 'n', 'x', 'z', 'g', 'f', 'y', 'a', 'p', 'm', 'h', 'l', 'v', 'k', 'r', 'c', 'i', 't'}
+Evaluating bwnncco
+Merging o to bwnncco
+Head matches: 0
+Locking bwnncco
+No head matches for bwnncco; floating
+Final pblocks: []
+Final floating: [('vfamehiz', 1), ('xdlprgktjy', 1), ('bwnncco', 1)]
+Case #75: 6
+===========================main start=================
+['g', 'n', 'hslvewmrbx', 'n', 'n', 'n', 'cyfkdiqtpa', 'o', 'uz']
+[('g', 1), ('n', 24), ('o', 1), ('hslvewmrbx', 1), ('cyfkdiqtpa', 1), ('uz', 1)]
+--------ITER START------------
+pblocks:  [('g', 1), ('n', 24), ('o', 1), ('hslvewmrbx', 1), ('cyfkdiqtpa', 1), ('uz', 1)]
+floating: []
+Locked: set()
+Evaluating g
+Head matches: 0
+Locking g
+No head matches for g; floating
+--------ITER START------------
+pblocks:  [('n', 24), ('o', 1), ('hslvewmrbx', 1), ('cyfkdiqtpa', 1), ('uz', 1)]
+floating: [('g', 1)]
+Locked: {'g'}
+Evaluating n
+Head matches: 0
+Locking n
+No head matches for n; floating
+--------ITER START------------
+pblocks:  [('o', 1), ('hslvewmrbx', 1), ('cyfkdiqtpa', 1), ('uz', 1)]
+floating: [('g', 1), ('n', 24)]
+Locked: {'g', 'n'}
+Evaluating o
+Head matches: 0
+Locking o
+No head matches for o; floating
+--------ITER START------------
+pblocks:  [('hslvewmrbx', 1), ('cyfkdiqtpa', 1), ('uz', 1)]
+floating: [('g', 1), ('n', 24), ('o', 1)]
+Locked: {'o', 'g', 'n'}
+Evaluating hslvewmrbx
+Head matches: 0
+Locking hslvewmrbx
+No head matches for hslvewmrbx; floating
+--------ITER START------------
+pblocks:  [('cyfkdiqtpa', 1), ('uz', 1)]
+floating: [('g', 1), ('n', 24), ('o', 1), ('hslvewmrbx', 1)]
+Locked: {'o', 'e', 'n', 's', 'x', 'g', 'b', 'm', 'h', 'l', 'v', 'w', 'r'}
+Evaluating cyfkdiqtpa
+Head matches: 0
+Locking cyfkdiqtpa
+No head matches for cyfkdiqtpa; floating
+--------ITER START------------
+pblocks:  [('uz', 1)]
+floating: [('g', 1), ('n', 24), ('o', 1), ('hslvewmrbx', 1), ('cyfkdiqtpa', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'g', 'l', 'v', 'w', 'n', 'y', 'b', 'r', 'o', 's', 'p', 'm', 'c', 'i'}
+Evaluating uz
+Head matches: 0
+No head matches for uz; floating
+Final pblocks: []
+Final floating: [('g', 1), ('n', 24), ('o', 1), ('hslvewmrbx', 1), ('cyfkdiqtpa', 1), ('uz', 1)]
+Case #76: 17280
+===========================main start=================
+['mivxogszel', 'rd', 'fp', 'pntj', 'c', 'y', 'jc', 'ya', 'ky']
+[('y', 1), ('c', 1), ('mivxogszel', 1), ('rd', 1), ('fp', 1), ('pntj', 1), ('jc', 1), ('ya', 1), ('ky', 1)]
+--------ITER START------------
+pblocks:  [('y', 1), ('c', 1), ('mivxogszel', 1), ('rd', 1), ('fp', 1), ('pntj', 1), ('jc', 1), ('ya', 1), ('ky', 1)]
+floating: []
+Locked: set()
+Evaluating y
+Extending y with ya
+New segment: ya
+--------ITER START------------
+pblocks:  [('c', 1), ('mivxogszel', 1), ('rd', 1), ('fp', 1), ('pntj', 1), ('jc', 1), ('ky', 1), ('ya', 1)]
+floating: []
+Locked: set()
+Evaluating c
+Head matches: 1
+--------ITER START------------
+pblocks:  [('mivxogszel', 1), ('rd', 1), ('fp', 1), ('pntj', 1), ('jc', 1), ('ky', 1), ('ya', 1), ('c', 1)]
+floating: []
+Locked: set()
+Evaluating mivxogszel
+Head matches: 0
+Locking mivxogszel
+No head matches for mivxogszel; floating
+--------ITER START------------
+pblocks:  [('rd', 1), ('fp', 1), ('pntj', 1), ('jc', 1), ('ky', 1), ('ya', 1), ('c', 1)]
+floating: [('mivxogszel', 1)]
+Locked: {'o', 'e', 's', 'x', 'g', 'z', 'm', 'l', 'v', 'i'}
+Evaluating rd
+Head matches: 0
+No head matches for rd; floating
+--------ITER START------------
+pblocks:  [('fp', 1), ('pntj', 1), ('jc', 1), ('ky', 1), ('ya', 1), ('c', 1)]
+floating: [('mivxogszel', 1), ('rd', 1)]
+Locked: {'o', 'e', 's', 'x', 'g', 'z', 'm', 'l', 'v', 'i'}
+Evaluating fp
+Extending fp with pntj
+New segment: fppntj
+Locking ppnt
+--------ITER START------------
+pblocks:  [('jc', 1), ('ky', 1), ('ya', 1), ('c', 1), ('fppntj', 1)]
+floating: [('mivxogszel', 1), ('rd', 1)]
+Locked: {'o', 'e', 'n', 's', 'x', 'g', 'z', 'p', 'm', 'l', 'v', 'i', 't'}
+Evaluating jc
+Merging c to jc
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ky', 1), ('ya', 1), ('fppntj', 1), ('jc', 1)]
+floating: [('mivxogszel', 1), ('rd', 1)]
+Locked: {'o', 'e', 'n', 's', 'x', 'g', 'z', 'p', 'm', 'l', 'v', 'i', 't'}
+Evaluating ky
+Extending ky with ya
+New segment: kyya
+Locking yy
+--------ITER START------------
+pblocks:  [('fppntj', 1), ('jc', 1), ('kyya', 1)]
+floating: [('mivxogszel', 1), ('rd', 1)]
+Locked: {'o', 'e', 'n', 's', 'x', 'g', 'z', 'y', 'p', 'm', 'l', 'v', 'i', 't'}
+Evaluating fppntj
+Extending fppntj with jc
+New segment: fppntjjc
+Locking ppntjj
+--------ITER START------------
+pblocks:  [('kyya', 1), ('fppntjjc', 1)]
+floating: [('mivxogszel', 1), ('rd', 1)]
+Locked: {'o', 'e', 'n', 'j', 's', 'x', 'g', 'z', 'y', 'p', 'm', 'l', 'v', 'i', 't'}
+Evaluating kyya
+Head matches: 0
+Locking kyya
+No head matches for kyya; floating
+--------ITER START------------
+pblocks:  [('fppntjjc', 1)]
+floating: [('mivxogszel', 1), ('rd', 1), ('kyya', 1)]
+Locked: {'o', 'e', 'n', 'j', 's', 'x', 'g', 'z', 'y', 'p', 'a', 'm', 'l', 'v', 'k', 'i', 't'}
+Evaluating fppntjjc
+Head matches: 0
+Locking fppntjjc
+No head matches for fppntjjc; floating
+Final pblocks: []
+Final floating: [('mivxogszel', 1), ('rd', 1), ('kyya', 1), ('fppntjjc', 1)]
+Case #77: 24
+===========================main start=================
+['ab', 'ab']
+[('ab', 1), ('ab', 1)]
+--------ITER START------------
+pblocks:  [('ab', 1), ('ab', 1)]
+floating: []
+Locked: set()
+Evaluating ab
+Head matches: 0
+No head matches for ab; floating
+--------ITER START------------
+pblocks:  [('ab', 1)]
+floating: [('ab', 1)]
+Locked: set()
+Evaluating ab
+Head matches: 0
+No head matches for ab; floating
+Final pblocks: []
+Final floating: [('ab', 1), ('ab', 1)]
+Found illegal char a in floating
+Case #78: 0
+===========================main start=================
+['abcdefghijklmnopqrstuvwxza']
+[('abcdefghijklmnopqrstuvwxza', 1)]
+--------ITER START------------
+pblocks:  [('abcdefghijklmnopqrstuvwxza', 1)]
+floating: []
+Locked: set()
+Evaluating abcdefghijklmnopqrstuvwxza
+Head matches: 0
+Locking abcdefghijklmnopqrstuvwxza
+No head matches for abcdefghijklmnopqrstuvwxza; floating
+Final pblocks: []
+Final floating: [('abcdefghijklmnopqrstuvwxza', 1)]
+Found illegal char a in floating
+Case #79: 0
+===========================main start=================
+['s', 's', 's', 's', 'ts', 's', 't', 'riyhbmocqfzp', 't']
+[('s', 120), ('t', 2), ('ts', 1), ('riyhbmocqfzp', 1)]
+--------ITER START------------
+pblocks:  [('s', 120), ('t', 2), ('ts', 1), ('riyhbmocqfzp', 1)]
+floating: []
+Locked: set()
+Evaluating s
+Head matches: 1
+--------ITER START------------
+pblocks:  [('t', 2), ('ts', 1), ('riyhbmocqfzp', 1), ('s', 120)]
+floating: []
+Locked: set()
+Evaluating t
+Extending t with ts
+New segment: ts
+--------ITER START------------
+pblocks:  [('riyhbmocqfzp', 1), ('s', 120), ('ts', 2)]
+floating: []
+Locked: set()
+Evaluating riyhbmocqfzp
+Head matches: 0
+Locking riyhbmocqfzp
+No head matches for riyhbmocqfzp; floating
+--------ITER START------------
+pblocks:  [('s', 120), ('ts', 2)]
+floating: [('riyhbmocqfzp', 1)]
+Locked: {'o', 'z', 'y', 'f', 'p', 'b', 'm', 'h', 'q', 'r', 'c', 'i'}
+Evaluating s
+Head matches: 1
+--------ITER START------------
+pblocks:  [('ts', 2), ('s', 120)]
+floating: [('riyhbmocqfzp', 1)]
+Locked: {'o', 'z', 'y', 'f', 'p', 'b', 'm', 'h', 'q', 'r', 'c', 'i'}
+Evaluating ts
+Merging s to ts
+Head matches: 0
+No head matches for ts; floating
+Final pblocks: []
+Final floating: [('riyhbmocqfzp', 1), ('ts', 240)]
+Case #80: 480
+===========================main start=================
+['tciauvynkzpo', 'smhjxwfegt']
+[('tciauvynkzpo', 1), ('smhjxwfegt', 1)]
+--------ITER START------------
+pblocks:  [('tciauvynkzpo', 1), ('smhjxwfegt', 1)]
+floating: []
+Locked: set()
+Evaluating tciauvynkzpo
+Head matches: 1
+--------ITER START------------
+pblocks:  [('smhjxwfegt', 1), ('tciauvynkzpo', 1)]
+floating: []
+Locked: set()
+Evaluating smhjxwfegt
+Extending smhjxwfegt with tciauvynkzpo
+New segment: smhjxwfegttciauvynkzpo
+Locking mhjxwfegttciauvynkzp
+--------ITER START------------
+pblocks:  [('smhjxwfegttciauvynkzpo', 1)]
+floating: []
+Locked: {'e', 'j', 'n', 'x', 'g', 'z', 'f', 'y', 'a', 'p', 'm', 'h', 'u', 'v', 'w', 'k', 'c', 't', 'i'}
+Evaluating smhjxwfegttciauvynkzpo
+Head matches: 0
+Locking smhjxwfegttciauvynkzpo
+No head matches for smhjxwfegttciauvynkzpo; floating
+Final pblocks: []
+Final floating: [('smhjxwfegttciauvynkzpo', 1)]
+Case #81: 1
+===========================main start=================
+['br', 'z', 'sf', 'eocnivyql', 'lus', 'fhgwxakptb', 'd', 'jm']
+[('d', 1), ('z', 1), ('br', 1), ('sf', 1), ('eocnivyql', 1), ('lus', 1), ('fhgwxakptb', 1), ('jm', 1)]
+--------ITER START------------
+pblocks:  [('d', 1), ('z', 1), ('br', 1), ('sf', 1), ('eocnivyql', 1), ('lus', 1), ('fhgwxakptb', 1), ('jm', 1)]
+floating: []
+Locked: set()
+Evaluating d
+Head matches: 0
+Locking d
+No head matches for d; floating
+--------ITER START------------
+pblocks:  [('z', 1), ('br', 1), ('sf', 1), ('eocnivyql', 1), ('lus', 1), ('fhgwxakptb', 1), ('jm', 1)]
+floating: [('d', 1)]
+Locked: {'d'}
+Evaluating z
+Head matches: 0
+Locking z
+No head matches for z; floating
+--------ITER START------------
+pblocks:  [('br', 1), ('sf', 1), ('eocnivyql', 1), ('lus', 1), ('fhgwxakptb', 1), ('jm', 1)]
+floating: [('d', 1), ('z', 1)]
+Locked: {'z', 'd'}
+Evaluating br
+Head matches: 1
+--------ITER START------------
+pblocks:  [('sf', 1), ('eocnivyql', 1), ('lus', 1), ('fhgwxakptb', 1), ('jm', 1), ('br', 1)]
+floating: [('d', 1), ('z', 1)]
+Locked: {'z', 'd'}
+Evaluating sf
+Extending sf with fhgwxakptb
+New segment: sffhgwxakptb
+Locking ffhgwxakpt
+--------ITER START------------
+pblocks:  [('eocnivyql', 1), ('lus', 1), ('jm', 1), ('br', 1), ('sffhgwxakptb', 1)]
+floating: [('d', 1), ('z', 1)]
+Locked: {'d', 'x', 'z', 'g', 'f', 'a', 'p', 'h', 'w', 'k', 't'}
+Evaluating eocnivyql
+Extending eocnivyql with lus
+New segment: eocnivyqllus
+Locking ocnivyqllu
+--------ITER START------------
+pblocks:  [('jm', 1), ('br', 1), ('sffhgwxakptb', 1), ('eocnivyqllus', 1)]
+floating: [('d', 1), ('z', 1)]
+Locked: {'o', 'd', 'n', 'x', 'z', 'g', 'f', 'y', 'a', 'p', 'h', 'q', 'l', 'u', 'v', 'w', 'k', 'c', 't', 'i'}
+Evaluating jm
+Head matches: 0
+No head matches for jm; floating
+--------ITER START------------
+pblocks:  [('br', 1), ('sffhgwxakptb', 1), ('eocnivyqllus', 1)]
+floating: [('d', 1), ('z', 1), ('jm', 1)]
+Locked: {'o', 'd', 'n', 'x', 'z', 'g', 'f', 'y', 'a', 'p', 'h', 'q', 'l', 'u', 'v', 'w', 'k', 'c', 't', 'i'}
+Evaluating br
+Head matches: 1
+--------ITER START------------
+pblocks:  [('sffhgwxakptb', 1), ('eocnivyqllus', 1), ('br', 1)]
+floating: [('d', 1), ('z', 1), ('jm', 1)]
+Locked: {'o', 'd', 'n', 'x', 'z', 'g', 'f', 'y', 'a', 'p', 'h', 'q', 'l', 'u', 'v', 'w', 'k', 'c', 't', 'i'}
+Evaluating sffhgwxakptb
+Extending sffhgwxakptb with br
+New segment: sffhgwxakptbbr
+Locking ffhgwxakptbb
+--------ITER START------------
+pblocks:  [('eocnivyqllus', 1), ('sffhgwxakptbbr', 1)]
+floating: [('d', 1), ('z', 1), ('jm', 1)]
+Locked: {'o', 'd', 'n', 'x', 'z', 'g', 'f', 'y', 'a', 'p', 'b', 'h', 'q', 'l', 'u', 'v', 'w', 'k', 'c', 't', 'i'}
+Evaluating eocnivyqllus
+Extending eocnivyqllus with sffhgwxakptbbr
+New segment: eocnivyqllussffhgwxakptbbr
+Locking ocnivyqllussffhgwxakptbb
+--------ITER START------------
+pblocks:  [('eocnivyqllussffhgwxakptbbr', 1)]
+floating: [('d', 1), ('z', 1), ('jm', 1)]
+Locked: {'d', 'x', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'g', 'l', 'v', 'w', 'n', 'y', 'b', 'o', 's', 'p', 'u', 'c', 'i'}
+Evaluating eocnivyqllussffhgwxakptbbr
+Head matches: 0
+Locking eocnivyqllussffhgwxakptbbr
+No head matches for eocnivyqllussffhgwxakptbbr; floating
+Final pblocks: []
+Final floating: [('d', 1), ('z', 1), ('jm', 1), ('eocnivyqllussffhgwxakptbbr', 1)]
+Case #82: 24
+===========================main start=================
+['ozhbtqklvinwc', 'aeyg', 'rdmjuf', 'p', 'psx']
+[('p', 1), ('ozhbtqklvinwc', 1), ('aeyg', 1), ('rdmjuf', 1), ('psx', 1)]
+--------ITER START------------
+pblocks:  [('p', 1), ('ozhbtqklvinwc', 1), ('aeyg', 1), ('rdmjuf', 1), ('psx', 1)]
+floating: []
+Locked: set()
+Evaluating p
+Extending p with psx
+New segment: psx
+--------ITER START------------
+pblocks:  [('ozhbtqklvinwc', 1), ('aeyg', 1), ('rdmjuf', 1), ('psx', 1)]
+floating: []
+Locked: set()
+Evaluating ozhbtqklvinwc
+Head matches: 0
+Locking ozhbtqklvinwc
+No head matches for ozhbtqklvinwc; floating
+--------ITER START------------
+pblocks:  [('aeyg', 1), ('rdmjuf', 1), ('psx', 1)]
+floating: [('ozhbtqklvinwc', 1)]
+Locked: {'o', 'n', 'z', 'b', 'h', 'q', 'l', 'v', 'k', 'w', 'c', 't', 'i'}
+Evaluating aeyg
+Head matches: 0
+Locking aeyg
+No head matches for aeyg; floating
+--------ITER START------------
+pblocks:  [('rdmjuf', 1), ('psx', 1)]
+floating: [('ozhbtqklvinwc', 1), ('aeyg', 1)]
+Locked: {'o', 'e', 'n', 'z', 'g', 'y', 'a', 'b', 'h', 'q', 'l', 'v', 'k', 'w', 'c', 't', 'i'}
+Evaluating rdmjuf
+Head matches: 0
+Locking rdmjuf
+No head matches for rdmjuf; floating
+--------ITER START------------
+pblocks:  [('psx', 1)]
+floating: [('ozhbtqklvinwc', 1), ('aeyg', 1), ('rdmjuf', 1)]
+Locked: {'e', 'd', 'f', 'a', 'h', 'q', 'k', 't', 'z', 'g', 'l', 'v', 'w', 'n', 'j', 'y', 'b', 'r', 'o', 'm', 'u', 'c', 'i'}
+Evaluating psx
+Head matches: 0
+Locking psx
+No head matches for psx; floating
+Final pblocks: []
+Final floating: [('ozhbtqklvinwc', 1), ('aeyg', 1), ('rdmjuf', 1), ('psx', 1)]
+Case #83: 24
+===========================main start=================
+['phglzw', 'y', 'f', 'v', 'b', 'mda', 'xiuqkjnrts', 'a']
+[('f', 1), ('a', 1), ('v', 1), ('y', 1), ('b', 1), ('phglzw', 1), ('mda', 1), ('xiuqkjnrts', 1)]
+--------ITER START------------
+pblocks:  [('f', 1), ('a', 1), ('v', 1), ('y', 1), ('b', 1), ('phglzw', 1), ('mda', 1), ('xiuqkjnrts', 1)]
+floating: []
+Locked: set()
+Evaluating f
+Head matches: 0
+Locking f
+No head matches for f; floating
+--------ITER START------------
+pblocks:  [('a', 1), ('v', 1), ('y', 1), ('b', 1), ('phglzw', 1), ('mda', 1), ('xiuqkjnrts', 1)]
+floating: [('f', 1)]
+Locked: {'f'}
+Evaluating a
+Head matches: 1
+--------ITER START------------
+pblocks:  [('v', 1), ('y', 1), ('b', 1), ('phglzw', 1), ('mda', 1), ('xiuqkjnrts', 1), ('a', 1)]
+floating: [('f', 1)]
+Locked: {'f'}
+Evaluating v
+Head matches: 0
+Locking v
+No head matches for v; floating
+--------ITER START------------
+pblocks:  [('y', 1), ('b', 1), ('phglzw', 1), ('mda', 1), ('xiuqkjnrts', 1), ('a', 1)]
+floating: [('f', 1), ('v', 1)]
+Locked: {'v', 'f'}
+Evaluating y
+Head matches: 0
+Locking y
+No head matches for y; floating
+--------ITER START------------
+pblocks:  [('b', 1), ('phglzw', 1), ('mda', 1), ('xiuqkjnrts', 1), ('a', 1)]
+floating: [('f', 1), ('v', 1), ('y', 1)]
+Locked: {'v', 'f', 'y'}
+Evaluating b
+Head matches: 0
+Locking b
+No head matches for b; floating
+--------ITER START------------
+pblocks:  [('phglzw', 1), ('mda', 1), ('xiuqkjnrts', 1), ('a', 1)]
+floating: [('f', 1), ('v', 1), ('y', 1), ('b', 1)]
+Locked: {'b', 'v', 'f', 'y'}
+Evaluating phglzw
+Head matches: 0
+Locking phglzw
+No head matches for phglzw; floating
+--------ITER START------------
+pblocks:  [('mda', 1), ('xiuqkjnrts', 1), ('a', 1)]
+floating: [('f', 1), ('v', 1), ('y', 1), ('b', 1), ('phglzw', 1)]
+Locked: {'g', 'z', 'f', 'y', 'p', 'b', 'h', 'l', 'v', 'w'}
+Evaluating mda
+Merging a to mda
+Head matches: 0
+Locking mda
+No head matches for mda; floating
+--------ITER START------------
+pblocks:  [('xiuqkjnrts', 1)]
+floating: [('f', 1), ('v', 1), ('y', 1), ('b', 1), ('phglzw', 1), ('mda', 1)]
+Locked: {'d', 'g', 'z', 'f', 'y', 'p', 'a', 'b', 'm', 'h', 'l', 'v', 'w'}
+Evaluating xiuqkjnrts
+Head matches: 0
+Locking xiuqkjnrts
+No head matches for xiuqkjnrts; floating
+Final pblocks: []
+Final floating: [('f', 1), ('v', 1), ('y', 1), ('b', 1), ('phglzw', 1), ('mda', 1), ('xiuqkjnrts', 1)]
+Case #84: 5040
+===========================main start=================
+['wgfhkjpnsz', 'vycm', 'liuxadb', 'qv']
+[('wgfhkjpnsz', 1), ('vycm', 1), ('liuxadb', 1), ('qv', 1)]
+--------ITER START------------
+pblocks:  [('wgfhkjpnsz', 1), ('vycm', 1), ('liuxadb', 1), ('qv', 1)]
+floating: []
+Locked: set()
+Evaluating wgfhkjpnsz
+Head matches: 0
+Locking wgfhkjpnsz
+No head matches for wgfhkjpnsz; floating
+--------ITER START------------
+pblocks:  [('vycm', 1), ('liuxadb', 1), ('qv', 1)]
+floating: [('wgfhkjpnsz', 1)]
+Locked: {'j', 'n', 's', 'g', 'z', 'f', 'p', 'h', 'w', 'k'}
+Evaluating vycm
+Head matches: 1
+--------ITER START------------
+pblocks:  [('liuxadb', 1), ('qv', 1), ('vycm', 1)]
+floating: [('wgfhkjpnsz', 1)]
+Locked: {'j', 'n', 's', 'g', 'z', 'f', 'p', 'h', 'w', 'k'}
+Evaluating liuxadb
+Head matches: 0
+Locking liuxadb
+No head matches for liuxadb; floating
+--------ITER START------------
+pblocks:  [('qv', 1), ('vycm', 1)]
+floating: [('wgfhkjpnsz', 1), ('liuxadb', 1)]
+Locked: {'d', 'j', 'n', 's', 'x', 'g', 'z', 'f', 'p', 'a', 'b', 'h', 'l', 'u', 'w', 'k', 'i'}
+Evaluating qv
+Extending qv with vycm
+New segment: qvvycm
+Locking vvyc
+--------ITER START------------
+pblocks:  [('qvvycm', 1)]
+floating: [('wgfhkjpnsz', 1), ('liuxadb', 1)]
+Locked: {'d', 'j', 'n', 's', 'x', 'g', 'z', 'f', 'y', 'p', 'a', 'b', 'h', 'l', 'u', 'v', 'w', 'k', 'c', 'i'}
+Evaluating qvvycm
+Head matches: 0
+Locking qvvycm
+No head matches for qvvycm; floating
+Final pblocks: []
+Final floating: [('wgfhkjpnsz', 1), ('liuxadb', 1), ('qvvycm', 1)]
+Case #85: 6
+===========================main start=================
+['d', 'u', 'c', 'c', 'oewbytfzih', 'ar', 'lxpkm', 'c', 'd', 'qn']
+[('d', 2), ('u', 1), ('c', 6), ('oewbytfzih', 1), ('ar', 1), ('lxpkm', 1), ('qn', 1)]
+--------ITER START------------
+pblocks:  [('d', 2), ('u', 1), ('c', 6), ('oewbytfzih', 1), ('ar', 1), ('lxpkm', 1), ('qn', 1)]
+floating: []
+Locked: set()
+Evaluating d
+Head matches: 0
+Locking d
+No head matches for d; floating
+--------ITER START------------
+pblocks:  [('u', 1), ('c', 6), ('oewbytfzih', 1), ('ar', 1), ('lxpkm', 1), ('qn', 1)]
+floating: [('d', 2)]
+Locked: {'d'}
+Evaluating u
+Head matches: 0
+Locking u
+No head matches for u; floating
+--------ITER START------------
+pblocks:  [('c', 6), ('oewbytfzih', 1), ('ar', 1), ('lxpkm', 1), ('qn', 1)]
+floating: [('d', 2), ('u', 1)]
+Locked: {'d', 'u'}
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('oewbytfzih', 1), ('ar', 1), ('lxpkm', 1), ('qn', 1)]
+floating: [('d', 2), ('u', 1), ('c', 6)]
+Locked: {'d', 'c', 'u'}
+Evaluating oewbytfzih
+Head matches: 0
+Locking oewbytfzih
+No head matches for oewbytfzih; floating
+--------ITER START------------
+pblocks:  [('ar', 1), ('lxpkm', 1), ('qn', 1)]
+floating: [('d', 2), ('u', 1), ('c', 6), ('oewbytfzih', 1)]
+Locked: {'o', 'e', 'd', 'z', 'y', 'f', 'b', 'h', 'u', 'w', 'c', 't', 'i'}
+Evaluating ar
+Head matches: 0
+No head matches for ar; floating
+--------ITER START------------
+pblocks:  [('lxpkm', 1), ('qn', 1)]
+floating: [('d', 2), ('u', 1), ('c', 6), ('oewbytfzih', 1), ('ar', 1)]
+Locked: {'o', 'e', 'd', 'z', 'y', 'f', 'b', 'h', 'u', 'w', 'c', 't', 'i'}
+Evaluating lxpkm
+Head matches: 0
+Locking lxpkm
+No head matches for lxpkm; floating
+--------ITER START------------
+pblocks:  [('qn', 1)]
+floating: [('d', 2), ('u', 1), ('c', 6), ('oewbytfzih', 1), ('ar', 1), ('lxpkm', 1)]
+Locked: {'o', 'e', 'd', 'x', 'z', 'y', 'f', 'p', 'b', 'm', 'h', 'u', 'l', 'w', 'k', 'c', 't', 'i'}
+Evaluating qn
+Head matches: 0
+No head matches for qn; floating
+Final pblocks: []
+Final floating: [('d', 2), ('u', 1), ('c', 6), ('oewbytfzih', 1), ('ar', 1), ('lxpkm', 1), ('qn', 1)]
+Case #86: 60480
+===========================main start=================
+['apfensgkuxqwvbriymctoh', 'hd']
+[('apfensgkuxqwvbriymctoh', 1), ('hd', 1)]
+--------ITER START------------
+pblocks:  [('apfensgkuxqwvbriymctoh', 1), ('hd', 1)]
+floating: []
+Locked: set()
+Evaluating apfensgkuxqwvbriymctoh
+Extending apfensgkuxqwvbriymctoh with hd
+New segment: apfensgkuxqwvbriymctohhd
+Locking pfensgkuxqwvbriymctohh
+--------ITER START------------
+pblocks:  [('apfensgkuxqwvbriymctohhd', 1)]
+floating: []
+Locked: {'t', 'o', 'e', 'n', 's', 'x', 'g', 'f', 'y', 'p', 'b', 'm', 'h', 'u', 'q', 'v', 'k', 'w', 'r', 'i', 'c'}
+Evaluating apfensgkuxqwvbriymctohhd
+Head matches: 0
+Locking apfensgkuxqwvbriymctohhd
+No head matches for apfensgkuxqwvbriymctohhd; floating
+Final pblocks: []
+Final floating: [('apfensgkuxqwvbriymctohhd', 1)]
+Case #87: 1
+===========================main start=================
+['t', 'c', 'mlsjeifawo', 'p', 'hb', 'kxrd', 'q', 'v', 'u', 'z']
+[('q', 1), ('t', 1), ('z', 1), ('v', 1), ('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+--------ITER START------------
+pblocks:  [('q', 1), ('t', 1), ('z', 1), ('v', 1), ('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+floating: []
+Locked: set()
+Evaluating q
+Head matches: 0
+Locking q
+No head matches for q; floating
+--------ITER START------------
+pblocks:  [('t', 1), ('z', 1), ('v', 1), ('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+floating: [('q', 1)]
+Locked: {'q'}
+Evaluating t
+Head matches: 0
+Locking t
+No head matches for t; floating
+--------ITER START------------
+pblocks:  [('z', 1), ('v', 1), ('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+floating: [('q', 1), ('t', 1)]
+Locked: {'q', 't'}
+Evaluating z
+Head matches: 0
+Locking z
+No head matches for z; floating
+--------ITER START------------
+pblocks:  [('v', 1), ('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+floating: [('q', 1), ('t', 1), ('z', 1)]
+Locked: {'z', 'q', 't'}
+Evaluating v
+Head matches: 0
+Locking v
+No head matches for v; floating
+--------ITER START------------
+pblocks:  [('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+floating: [('q', 1), ('t', 1), ('z', 1), ('v', 1)]
+Locked: {'z', 'v', 'q', 't'}
+Evaluating p
+Head matches: 0
+Locking p
+No head matches for p; floating
+--------ITER START------------
+pblocks:  [('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+floating: [('q', 1), ('t', 1), ('z', 1), ('v', 1), ('p', 1)]
+Locked: {'p', 'z', 'v', 'q', 't'}
+Evaluating u
+Head matches: 0
+Locking u
+No head matches for u; floating
+--------ITER START------------
+pblocks:  [('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+floating: [('q', 1), ('t', 1), ('z', 1), ('v', 1), ('p', 1), ('u', 1)]
+Locked: {'z', 'p', 'u', 'q', 'v', 't'}
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+floating: [('q', 1), ('t', 1), ('z', 1), ('v', 1), ('p', 1), ('u', 1), ('c', 1)]
+Locked: {'z', 'p', 'u', 'q', 'v', 'c', 't'}
+Evaluating mlsjeifawo
+Head matches: 0
+Locking mlsjeifawo
+No head matches for mlsjeifawo; floating
+--------ITER START------------
+pblocks:  [('hb', 1), ('kxrd', 1)]
+floating: [('q', 1), ('t', 1), ('z', 1), ('v', 1), ('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1)]
+Locked: {'o', 'e', 'j', 's', 'z', 'f', 'p', 'a', 'm', 'u', 'q', 'l', 'v', 'w', 'c', 't', 'i'}
+Evaluating hb
+Head matches: 0
+No head matches for hb; floating
+--------ITER START------------
+pblocks:  [('kxrd', 1)]
+floating: [('q', 1), ('t', 1), ('z', 1), ('v', 1), ('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1)]
+Locked: {'o', 'e', 'j', 's', 'z', 'f', 'p', 'a', 'm', 'u', 'q', 'l', 'v', 'w', 'c', 't', 'i'}
+Evaluating kxrd
+Head matches: 0
+Locking kxrd
+No head matches for kxrd; floating
+Final pblocks: []
+Final floating: [('q', 1), ('t', 1), ('z', 1), ('v', 1), ('p', 1), ('u', 1), ('c', 1), ('mlsjeifawo', 1), ('hb', 1), ('kxrd', 1)]
+Case #88: 3628800
+===========================main start=================
+['abc']
+[('abc', 1)]
+--------ITER START------------
+pblocks:  [('abc', 1)]
+floating: []
+Locked: set()
+Evaluating abc
+Head matches: 0
+Locking abc
+No head matches for abc; floating
+Final pblocks: []
+Final floating: [('abc', 1)]
+Case #89: 1
+===========================main start=================
+['bcx', 'lk', 'xl', 'l', 'b', 'kp']
+[('b', 1), ('l', 1), ('bcx', 1), ('lk', 1), ('xl', 1), ('kp', 1)]
+--------ITER START------------
+pblocks:  [('b', 1), ('l', 1), ('bcx', 1), ('lk', 1), ('xl', 1), ('kp', 1)]
+floating: []
+Locked: set()
+Evaluating b
+Extending b with bcx
+New segment: bcx
+--------ITER START------------
+pblocks:  [('l', 1), ('lk', 1), ('xl', 1), ('kp', 1), ('bcx', 1)]
+floating: []
+Locked: set()
+Evaluating l
+Extending l with lk
+New segment: lk
+--------ITER START------------
+pblocks:  [('xl', 1), ('kp', 1), ('bcx', 1), ('lk', 1)]
+floating: []
+Locked: set()
+Evaluating xl
+Extending xl with lk
+New segment: xllk
+Locking ll
+--------ITER START------------
+pblocks:  [('kp', 1), ('bcx', 1), ('xllk', 1)]
+floating: []
+Locked: {'l'}
+Evaluating kp
+Head matches: 1
+--------ITER START------------
+pblocks:  [('bcx', 1), ('xllk', 1), ('kp', 1)]
+floating: []
+Locked: {'l'}
+Evaluating bcx
+Extending bcx with xllk
+New segment: bcxxllk
+Locking cxxll
+--------ITER START------------
+pblocks:  [('kp', 1), ('bcxxllk', 1)]
+floating: []
+Locked: {'x', 'c', 'l'}
+Evaluating kp
+Head matches: 1
+--------ITER START------------
+pblocks:  [('bcxxllk', 1), ('kp', 1)]
+floating: []
+Locked: {'x', 'c', 'l'}
+Evaluating bcxxllk
+Extending bcxxllk with kp
+New segment: bcxxllkkp
+Locking cxxllkk
+--------ITER START------------
+pblocks:  [('bcxxllkkp', 1)]
+floating: []
+Locked: {'x', 'k', 'c', 'l'}
+Evaluating bcxxllkkp
+Head matches: 0
+Locking bcxxllkkp
+No head matches for bcxxllkkp; floating
+Final pblocks: []
+Final floating: [('bcxxllkkp', 1)]
+Case #90: 1
+===========================main start=================
+['h', 'swarh', 'hxpblg']
+[('h', 1), ('swarh', 1), ('hxpblg', 1)]
+--------ITER START------------
+pblocks:  [('h', 1), ('swarh', 1), ('hxpblg', 1)]
+floating: []
+Locked: set()
+Evaluating h
+Extending h with hxpblg
+New segment: hxpblg
+Locking xpbl
+--------ITER START------------
+pblocks:  [('swarh', 1), ('hxpblg', 1)]
+floating: []
+Locked: {'x', 'b', 'p', 'l'}
+Evaluating swarh
+Extending swarh with hxpblg
+New segment: swarhhxpblg
+Locking warhhxpbl
+--------ITER START------------
+pblocks:  [('swarhhxpblg', 1)]
+floating: []
+Locked: {'x', 'a', 'p', 'b', 'h', 'l', 'w', 'r'}
+Evaluating swarhhxpblg
+Head matches: 0
+Locking swarhhxpblg
+No head matches for swarhhxpblg; floating
+Final pblocks: []
+Final floating: [('swarhhxpblg', 1)]
+Case #91: 1
+===========================main start=================
+['d', 's', 'raf', 'yotvikzpnx', 'b', 'geu', 'c', 'j', 'b']
+[('d', 1), ('j', 1), ('s', 1), ('b', 2), ('c', 1), ('raf', 1), ('yotvikzpnx', 1), ('geu', 1)]
+--------ITER START------------
+pblocks:  [('d', 1), ('j', 1), ('s', 1), ('b', 2), ('c', 1), ('raf', 1), ('yotvikzpnx', 1), ('geu', 1)]
+floating: []
+Locked: set()
+Evaluating d
+Head matches: 0
+Locking d
+No head matches for d; floating
+--------ITER START------------
+pblocks:  [('j', 1), ('s', 1), ('b', 2), ('c', 1), ('raf', 1), ('yotvikzpnx', 1), ('geu', 1)]
+floating: [('d', 1)]
+Locked: {'d'}
+Evaluating j
+Head matches: 0
+Locking j
+No head matches for j; floating
+--------ITER START------------
+pblocks:  [('s', 1), ('b', 2), ('c', 1), ('raf', 1), ('yotvikzpnx', 1), ('geu', 1)]
+floating: [('d', 1), ('j', 1)]
+Locked: {'d', 'j'}
+Evaluating s
+Head matches: 0
+Locking s
+No head matches for s; floating
+--------ITER START------------
+pblocks:  [('b', 2), ('c', 1), ('raf', 1), ('yotvikzpnx', 1), ('geu', 1)]
+floating: [('d', 1), ('j', 1), ('s', 1)]
+Locked: {'d', 'j', 's'}
+Evaluating b
+Head matches: 0
+Locking b
+No head matches for b; floating
+--------ITER START------------
+pblocks:  [('c', 1), ('raf', 1), ('yotvikzpnx', 1), ('geu', 1)]
+floating: [('d', 1), ('j', 1), ('s', 1), ('b', 2)]
+Locked: {'b', 'd', 'j', 's'}
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('raf', 1), ('yotvikzpnx', 1), ('geu', 1)]
+floating: [('d', 1), ('j', 1), ('s', 1), ('b', 2), ('c', 1)]
+Locked: {'b', 'd', 'j', 'c', 's'}
+Evaluating raf
+Head matches: 0
+Locking raf
+No head matches for raf; floating
+--------ITER START------------
+pblocks:  [('yotvikzpnx', 1), ('geu', 1)]
+floating: [('d', 1), ('j', 1), ('s', 1), ('b', 2), ('c', 1), ('raf', 1)]
+Locked: {'d', 'j', 's', 'f', 'a', 'b', 'r', 'c'}
+Evaluating yotvikzpnx
+Head matches: 0
+Locking yotvikzpnx
+No head matches for yotvikzpnx; floating
+--------ITER START------------
+pblocks:  [('geu', 1)]
+floating: [('d', 1), ('j', 1), ('s', 1), ('b', 2), ('c', 1), ('raf', 1), ('yotvikzpnx', 1)]
+Locked: {'o', 'd', 'j', 'n', 's', 'x', 'z', 'f', 'y', 'a', 'p', 'b', 'v', 'k', 'r', 'c', 't', 'i'}
+Evaluating geu
+Head matches: 0
+Locking geu
+No head matches for geu; floating
+Final pblocks: []
+Final floating: [('d', 1), ('j', 1), ('s', 1), ('b', 2), ('c', 1), ('raf', 1), ('yotvikzpnx', 1), ('geu', 1)]
+Case #92: 80640
+===========================main start=================
+['ims', 'lozkcgwi', 'l']
+[('l', 1), ('ims', 1), ('lozkcgwi', 1)]
+--------ITER START------------
+pblocks:  [('l', 1), ('ims', 1), ('lozkcgwi', 1)]
+floating: []
+Locked: set()
+Evaluating l
+Extending l with lozkcgwi
+New segment: lozkcgwi
+Locking ozkcgw
+--------ITER START------------
+pblocks:  [('ims', 1), ('lozkcgwi', 1)]
+floating: []
+Locked: {'o', 'z', 'g', 'k', 'w', 'c'}
+Evaluating ims
+Head matches: 1
+--------ITER START------------
+pblocks:  [('lozkcgwi', 1), ('ims', 1)]
+floating: []
+Locked: {'o', 'z', 'g', 'k', 'w', 'c'}
+Evaluating lozkcgwi
+Extending lozkcgwi with ims
+New segment: lozkcgwiims
+Locking ozkcgwiim
+--------ITER START------------
+pblocks:  [('lozkcgwiims', 1)]
+floating: []
+Locked: {'o', 'z', 'g', 'm', 'k', 'w', 'c', 'i'}
+Evaluating lozkcgwiims
+Head matches: 0
+Locking lozkcgwiims
+No head matches for lozkcgwiims; floating
+Final pblocks: []
+Final floating: [('lozkcgwiims', 1)]
+Case #93: 1
+===========================main start=================
+['y', 'y', 'wk', 'pl', 'y', 'huiemgjrxcsfvaobqtnzd', 'y']
+[('y', 24), ('wk', 1), ('pl', 1), ('huiemgjrxcsfvaobqtnzd', 1)]
+--------ITER START------------
+pblocks:  [('y', 24), ('wk', 1), ('pl', 1), ('huiemgjrxcsfvaobqtnzd', 1)]
+floating: []
+Locked: set()
+Evaluating y
+Head matches: 0
+Locking y
+No head matches for y; floating
+--------ITER START------------
+pblocks:  [('wk', 1), ('pl', 1), ('huiemgjrxcsfvaobqtnzd', 1)]
+floating: [('y', 24)]
+Locked: {'y'}
+Evaluating wk
+Head matches: 0
+No head matches for wk; floating
+--------ITER START------------
+pblocks:  [('pl', 1), ('huiemgjrxcsfvaobqtnzd', 1)]
+floating: [('y', 24), ('wk', 1)]
+Locked: {'y'}
+Evaluating pl
+Head matches: 0
+No head matches for pl; floating
+--------ITER START------------
+pblocks:  [('huiemgjrxcsfvaobqtnzd', 1)]
+floating: [('y', 24), ('wk', 1), ('pl', 1)]
+Locked: {'y'}
+Evaluating huiemgjrxcsfvaobqtnzd
+Head matches: 0
+Locking huiemgjrxcsfvaobqtnzd
+No head matches for huiemgjrxcsfvaobqtnzd; floating
+Final pblocks: []
+Final floating: [('y', 24), ('wk', 1), ('pl', 1), ('huiemgjrxcsfvaobqtnzd', 1)]
+Case #94: 576
+===========================main start=================
+['jemxah', 'ifyd', 'bvgtpzqsln', 'c', 'ou', 'r']
+[('r', 1), ('c', 1), ('jemxah', 1), ('ifyd', 1), ('bvgtpzqsln', 1), ('ou', 1)]
+--------ITER START------------
+pblocks:  [('r', 1), ('c', 1), ('jemxah', 1), ('ifyd', 1), ('bvgtpzqsln', 1), ('ou', 1)]
+floating: []
+Locked: set()
+Evaluating r
+Head matches: 0
+Locking r
+No head matches for r; floating
+--------ITER START------------
+pblocks:  [('c', 1), ('jemxah', 1), ('ifyd', 1), ('bvgtpzqsln', 1), ('ou', 1)]
+floating: [('r', 1)]
+Locked: {'r'}
+Evaluating c
+Head matches: 0
+Locking c
+No head matches for c; floating
+--------ITER START------------
+pblocks:  [('jemxah', 1), ('ifyd', 1), ('bvgtpzqsln', 1), ('ou', 1)]
+floating: [('r', 1), ('c', 1)]
+Locked: {'r', 'c'}
+Evaluating jemxah
+Head matches: 0
+Locking jemxah
+No head matches for jemxah; floating
+--------ITER START------------
+pblocks:  [('ifyd', 1), ('bvgtpzqsln', 1), ('ou', 1)]
+floating: [('r', 1), ('c', 1), ('jemxah', 1)]
+Locked: {'e', 'j', 'x', 'a', 'm', 'h', 'r', 'c'}
+Evaluating ifyd
+Head matches: 0
+Locking ifyd
+No head matches for ifyd; floating
+--------ITER START------------
+pblocks:  [('bvgtpzqsln', 1), ('ou', 1)]
+floating: [('r', 1), ('c', 1), ('jemxah', 1), ('ifyd', 1)]
+Locked: {'e', 'd', 'j', 'x', 'f', 'y', 'a', 'm', 'h', 'r', 'c', 'i'}
+Evaluating bvgtpzqsln
+Head matches: 0
+Locking bvgtpzqsln
+No head matches for bvgtpzqsln; floating
+--------ITER START------------
+pblocks:  [('ou', 1)]
+floating: [('r', 1), ('c', 1), ('jemxah', 1), ('ifyd', 1), ('bvgtpzqsln', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'q', 't', 'g', 'z', 'l', 'v', 'j', 'n', 'y', 'b', 'r', 's', 'p', 'm', 'c', 'i'}
+Evaluating ou
+Head matches: 0
+No head matches for ou; floating
+Final pblocks: []
+Final floating: [('r', 1), ('c', 1), ('jemxah', 1), ('ifyd', 1), ('bvgtpzqsln', 1), ('ou', 1)]
+Case #95: 720
+===========================main start=================
+['d', 'b', 'a', 'py', 'jnkos', 't', 'vwz', 'rml', 'qv', 'cgeuhifx']
+[('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1), ('vwz', 1), ('rml', 1), ('qv', 1), ('cgeuhifx', 1)]
+--------ITER START------------
+pblocks:  [('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1), ('vwz', 1), ('rml', 1), ('qv', 1), ('cgeuhifx', 1)]
+floating: []
+Locked: set()
+Evaluating d
+Head matches: 0
+Locking d
+No head matches for d; floating
+--------ITER START------------
+pblocks:  [('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1), ('vwz', 1), ('rml', 1), ('qv', 1), ('cgeuhifx', 1)]
+floating: [('d', 1)]
+Locked: {'d'}
+Evaluating a
+Head matches: 0
+Locking a
+No head matches for a; floating
+--------ITER START------------
+pblocks:  [('t', 1), ('b', 1), ('py', 1), ('jnkos', 1), ('vwz', 1), ('rml', 1), ('qv', 1), ('cgeuhifx', 1)]
+floating: [('d', 1), ('a', 1)]
+Locked: {'d', 'a'}
+Evaluating t
+Head matches: 0
+Locking t
+No head matches for t; floating
+--------ITER START------------
+pblocks:  [('b', 1), ('py', 1), ('jnkos', 1), ('vwz', 1), ('rml', 1), ('qv', 1), ('cgeuhifx', 1)]
+floating: [('d', 1), ('a', 1), ('t', 1)]
+Locked: {'d', 'a', 't'}
+Evaluating b
+Head matches: 0
+Locking b
+No head matches for b; floating
+--------ITER START------------
+pblocks:  [('py', 1), ('jnkos', 1), ('vwz', 1), ('rml', 1), ('qv', 1), ('cgeuhifx', 1)]
+floating: [('d', 1), ('a', 1), ('t', 1), ('b', 1)]
+Locked: {'b', 'd', 'a', 't'}
+Evaluating py
+Head matches: 0
+No head matches for py; floating
+--------ITER START------------
+pblocks:  [('jnkos', 1), ('vwz', 1), ('rml', 1), ('qv', 1), ('cgeuhifx', 1)]
+floating: [('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1)]
+Locked: {'b', 'd', 'a', 't'}
+Evaluating jnkos
+Head matches: 0
+Locking jnkos
+No head matches for jnkos; floating
+--------ITER START------------
+pblocks:  [('vwz', 1), ('rml', 1), ('qv', 1), ('cgeuhifx', 1)]
+floating: [('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1)]
+Locked: {'o', 'd', 'n', 'j', 's', 'a', 'b', 'k', 't'}
+Evaluating vwz
+Head matches: 1
+--------ITER START------------
+pblocks:  [('rml', 1), ('qv', 1), ('cgeuhifx', 1), ('vwz', 1)]
+floating: [('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1)]
+Locked: {'o', 'd', 'n', 'j', 's', 'a', 'b', 'k', 't'}
+Evaluating rml
+Head matches: 0
+Locking rml
+No head matches for rml; floating
+--------ITER START------------
+pblocks:  [('qv', 1), ('cgeuhifx', 1), ('vwz', 1)]
+floating: [('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1), ('rml', 1)]
+Locked: {'o', 'd', 'n', 'j', 's', 'a', 'b', 'm', 'l', 'k', 'r', 't'}
+Evaluating qv
+Extending qv with vwz
+New segment: qvvwz
+Locking vvw
+--------ITER START------------
+pblocks:  [('cgeuhifx', 1), ('qvvwz', 1)]
+floating: [('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1), ('rml', 1)]
+Locked: {'o', 'd', 'n', 'j', 's', 'a', 'b', 'm', 'l', 'v', 'k', 'r', 'w', 't'}
+Evaluating cgeuhifx
+Head matches: 0
+Locking cgeuhifx
+No head matches for cgeuhifx; floating
+--------ITER START------------
+pblocks:  [('qvvwz', 1)]
+floating: [('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1), ('rml', 1), ('cgeuhifx', 1)]
+Locked: {'e', 'd', 'x', 'f', 'a', 'h', 'k', 't', 'g', 'l', 'v', 'w', 'n', 'j', 'b', 'r', 'o', 's', 'm', 'u', 'c', 'i'}
+Evaluating qvvwz
+Head matches: 0
+Locking qvvwz
+No head matches for qvvwz; floating
+Final pblocks: []
+Final floating: [('d', 1), ('a', 1), ('t', 1), ('b', 1), ('py', 1), ('jnkos', 1), ('rml', 1), ('cgeuhifx', 1), ('qvvwz', 1)]
+Case #96: 362880
+===========================main start=================
+['bc', 'a', 'a']
+[('a', 2), ('bc', 1)]
+--------ITER START------------
+pblocks:  [('a', 2), ('bc', 1)]
+floating: []
+Locked: set()
+Evaluating a
+Head matches: 0
+Locking a
+No head matches for a; floating
+--------ITER START------------
+pblocks:  [('bc', 1)]
+floating: [('a', 2)]
+Locked: {'a'}
+Evaluating bc
+Head matches: 0
+No head matches for bc; floating
+Final pblocks: []
+Final floating: [('a', 2), ('bc', 1)]
+Case #97: 4
+===========================main start=================
+['p']
+[('p', 1)]
+--------ITER START------------
+pblocks:  [('p', 1)]
+floating: []
+Locked: set()
+Evaluating p
+Head matches: 0
+Locking p
+No head matches for p; floating
+Final pblocks: []
+Final floating: [('p', 1)]
+Case #98: 1
+===========================main start=================
+['vsmoqbuy', 'nexaglhtcfdwzp']
+[('vsmoqbuy', 1), ('nexaglhtcfdwzp', 1)]
+--------ITER START------------
+pblocks:  [('vsmoqbuy', 1), ('nexaglhtcfdwzp', 1)]
+floating: []
+Locked: set()
+Evaluating vsmoqbuy
+Head matches: 0
+Locking vsmoqbuy
+No head matches for vsmoqbuy; floating
+--------ITER START------------
+pblocks:  [('nexaglhtcfdwzp', 1)]
+floating: [('vsmoqbuy', 1)]
+Locked: {'o', 's', 'y', 'b', 'm', 'q', 'u', 'v'}
+Evaluating nexaglhtcfdwzp
+Head matches: 0
+Locking nexaglhtcfdwzp
+No head matches for nexaglhtcfdwzp; floating
+Final pblocks: []
+Final floating: [('vsmoqbuy', 1), ('nexaglhtcfdwzp', 1)]
+Case #99: 2
+===========================main start=================
+['a', 'a', 'abc']
+[('a', 2), ('abc', 1)]
+--------ITER START------------
+pblocks:  [('a', 2), ('abc', 1)]
+floating: []
+Locked: set()
+Evaluating a
+Extending a with abc
+New segment: abc
+--------ITER START------------
+pblocks:  [('abc', 2)]
+floating: []
+Locked: set()
+Evaluating abc
+Head matches: 0
+Locking abc
+No head matches for abc; floating
+Final pblocks: []
+Final floating: [('abc', 2)]
+Case #100: 2
